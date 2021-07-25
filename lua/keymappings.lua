@@ -2,6 +2,31 @@
 -- =============================================================================
 
 local map = vim.api.nvim_set_keymap
+local opts = {silent=true, noremap=true}
+
+-- 個人用
+-- -----------------------------------------------------------------------------
+
+vim.g.maplocalleader = ','
+
+map('i', 'jj',              '<Esc>',                                    opts)
+map('n', 'H',               '0',                                        opts)
+map('n', 'L',               '$',                                        opts)
+map('n', 'X',               'd$',                                       opts)
+
+map('n', '<LocalLeader>ci', ':e ~/.config/nvim/init.lua<CR>',           opts)
+map('n', '<LocalLeader>cI', ':source %<CR>',                            opts)
+map('n', '<C-r><C-r>',      ':source %<CR>',                            opts)
+map('n', '<LocalLeader>ck', ':e ~/.config/nvim/lua/keymappings.lua<CR>',opts)
+map('n', '<C-s>',           ':w!<CR>',                                  opts)
+map('n', '<C-q>',           ':q!<CR>',                                  opts)
+
+map('n', '\\',              ':NvimTreeToggle<CR>',                      opts)
+map('n', '<LocalLeader>t',  ':FloatermNew<CR>',                         opts)
+map('n', '<LocalLeader>ff', ':Telescope find_files<CR>',                opts)
+map('n', '<LocalLeader>fb', ':Telescope buffers<CR>',                   opts)
+map('n', '<LocalLeader>fg', ':Telescope live_grep<CR>',                 opts)
+map('n', '<LocalLeader>fh', ':Telescope help_tags<CR>',                 opts)
 
 -- Cursor movement
 -- -----------------------------------------------------------------------------

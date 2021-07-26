@@ -11,15 +11,254 @@
 !_TAG_PROGRAM_VERSION	5.9.0	/78621a0a/
 "{test	lua/utf8/charclass/compiletime/builder.lua	/^    return "{test = function(self, cc) return cc == " .. self.codes[1] .. " end}"$/;"	f
 "{test	submodules/utf8.lua/charclass/compiletime/builder.lua	/^    return "{test = function(self, cc) return cc == " .. self.codes[1] .. " end}"$/;"	f
+#!	my-snippets/python.json	/^  "#!": {$/;"	o
+'	my-snippets/python.json	/^  "'": {$/;"	o
+/(^|(?<=\\\\W))\\\\./	my-snippets/python.json	/^  "\/(^|(?<=\\\\W))\\\\.\/": {$/;"	o
+0	my-snippets/htmldjango.json	/^      "<!-- ****************************** -->",$/;"	s	array:卦爻辭.body
+0	my-snippets/htmldjango.json	/^      "<div class=\\"form-group\\">",$/;"	s	array:Django: input field with label.body
+0	my-snippets/htmldjango.json	/^      "<div class=\\"row\\">",$/;"	s	array:Django: input field #1.body
+0	my-snippets/htmldjango.json	/^      "<form method=\\"post\\" class=\\"$0\\">",$/;"	s	array:Django: form new.body
+0	my-snippets/htmldjango.json	/^      "<form method=\\"post\\" class=\\"${1:form-horizontal}\\">",$/;"	s	array:Django: form.body
+0	my-snippets/htmldjango.json	/^      "{% block javascript %}",$/;"	s	array:Django: Block Script src.body
+0	my-snippets/htmldjango.json	/^      "{% block javascript %}",$/;"	s	array:Django: block script source.body
+0	my-snippets/htmldjango.json	/^      "{% block styles %}",$/;"	s	array:Django: Block Styles.body
+0	my-snippets/htmldjango.json	/^      "{% extends 'base.html' %}",$/;"	s	array:Django: HTML tags for View.body
+0	my-snippets/htmldjango.json	/^      "{% extends \\"hello\/layout.html\\" %}",$/;"	s	array:Django: template extending layout.html.body
+0	my-snippets/htmldjango.json	/^      "{% load static %}",$/;"	s	array:Django: base.html.body
+0	my-snippets/htmldjango.json	/^    "body": ["<a href=\\"{% url '$1' %}\\" $2>$3<\/a>"],$/;"	s	array:Django: a href.body
+0	my-snippets/htmldjango.json	/^    "body": ["<img src=\\"{% static '$1' %}\\" \/>"],$/;"	s	array:Django: img src.body
+0	my-snippets/htmldjango.json	/^    "body": ["<link rel=\\"stylesheet\\" href=\\"{% static '$1.css' %}\\" \/>"],$/;"	s	array:Django: source of style file.body
+0	my-snippets/htmldjango.json	/^    "body": ["<script src=\\"{% static '$1.js' %}\\"><\/script>"],$/;"	s	array:Django: script src .body
+0	my-snippets/htmldjango.json	/^    "body": ["{% block $1 %}", "$2", "{% endblock $1 %}"],$/;"	s	array:Django: block .body
+0	my-snippets/htmldjango.json	/^    "body": ["{% block $1 %}{% endblock $1 %}"],$/;"	s	array:Django: block in one line.body
+0	my-snippets/htmldjango.json	/^    "body": ["{% block content %}$1", "{% endblock content %}"],$/;"	s	array:Django: block content.body
+0	my-snippets/htmldjango.json	/^    "body": ["{% block title %}$1{% endblock %}"],$/;"	s	array:Django: block title.body
+0	my-snippets/htmldjango.json	/^    "body": ["{% else %}", "  $1"],$/;"	s	array:Django: else.body
+0	my-snippets/htmldjango.json	/^    "body": ["{% extends '$1' %}", ""],$/;"	s	array:Django: extends.body
+0	my-snippets/htmldjango.json	/^    "body": ["{% for $1 in $2 %}", "  $3", "{% empty %}", "", "{% endfor %}"],$/;"	s	array:Django: for loop.body
+0	my-snippets/htmldjango.json	/^    "body": ["{% if $1 %}", "  $2", "{% endif %}"],$/;"	s	array:Django: if.body
+0	my-snippets/htmldjango.json	/^    "body": ["{% include '$1' %}", ""],$/;"	s	array:Django: include.body
+0	my-snippets/htmldjango.json	/^    "body": ["{% load $1 %}", ""],$/;"	s	array:Django: load .body
+0	my-snippets/htmldjango.json	/^    "body": ["{% load static %}", ""],$/;"	s	array:Django: load static files.body
+0	my-snippets/htmldjango.json	/^    "body": ["{% load static %}"],$/;"	s	array:Django: load static files.body
+0	my-snippets/markdown.json	/^			"![$1]($2)"$/;"	s	array:圖片.body
+0	my-snippets/markdown.json	/^			"**$1**"$/;"	s	array:字體加粗.body
+0	my-snippets/markdown.json	/^			"::: theorem $1",$/;"	s	array:定理.body
+0	my-snippets/markdown.json	/^			"::: tip",$/;"	s	array:提示.body
+0	my-snippets/markdown.json	/^			"[$1]($2)"$/;"	s	array:連結.body
+0	my-snippets/markdown.json	/^			"`$1`"$/;"	s	array:字體反白.body
+0	my-snippets/markdown.json	/^			"```",$/;"	s	array:程式碼.body
 0.1	submodules/lua-wcwidth/CHANGELOG.md	/^## 0.1$/;"	s	chapter:Change Log
+1	my-snippets/htmldjango.json	/^      "  <div class=\\"col-md-4 text-right\\">",$/;"	s	array:Django: input field #1.body
+1	my-snippets/htmldjango.json	/^      "  <label for=\\"{{ form.$1.id_for_label }}\\" class=\\"col-md-5 control-label\\">",$/;"	s	array:Django: input field with label.body
+1	my-snippets/htmldjango.json	/^      "  {% csrf_token %}",$/;"	s	array:Django: form new.body
+1	my-snippets/htmldjango.json	/^      "  {% csrf_token %}",$/;"	s	array:Django: form.body
+1	my-snippets/htmldjango.json	/^      "",$/;"	s	array:Django: HTML tags for View.body
+1	my-snippets/htmldjango.json	/^      "",$/;"	s	array:Django: template extending layout.html.body
+1	my-snippets/htmldjango.json	/^      "<!-- 卦                          辭 -->",$/;"	s	array:卦爻辭.body
+1	my-snippets/htmldjango.json	/^      "<!DOCTYPE html>",$/;"	s	array:Django: base.html.body
+1	my-snippets/htmldjango.json	/^      "<link rel=\\"stylesheet\\" href=\\"{% static '$1\/${2:site}.css' %}\\" \/>",$/;"	s	array:Django: Block Styles.body
+1	my-snippets/htmldjango.json	/^      "<script src=\\"$1\\"><\/script>",$/;"	s	array:Django: block script source.body
+1	my-snippets/htmldjango.json	/^      "<script src={% static \\"$1\\" %}><\/script>",$/;"	s	array:Django: Block Script src.body
+1	my-snippets/htmldjango.json	/^    "body": ["{% block $1 %}", "$2", "{% endblock $1 %}"],$/;"	s	array:Django: block .body
+1	my-snippets/htmldjango.json	/^    "body": ["{% block content %}$1", "{% endblock content %}"],$/;"	s	array:Django: block content.body
+1	my-snippets/htmldjango.json	/^    "body": ["{% else %}", "  $1"],$/;"	s	array:Django: else.body
+1	my-snippets/htmldjango.json	/^    "body": ["{% extends '$1' %}", ""],$/;"	s	array:Django: extends.body
+1	my-snippets/htmldjango.json	/^    "body": ["{% for $1 in $2 %}", "  $3", "{% empty %}", "", "{% endfor %}"],$/;"	s	array:Django: for loop.body
+1	my-snippets/htmldjango.json	/^    "body": ["{% if $1 %}", "  $2", "{% endif %}"],$/;"	s	array:Django: if.body
+1	my-snippets/htmldjango.json	/^    "body": ["{% include '$1' %}", ""],$/;"	s	array:Django: include.body
+1	my-snippets/htmldjango.json	/^    "body": ["{% load $1 %}", ""],$/;"	s	array:Django: load .body
+1	my-snippets/htmldjango.json	/^    "body": ["{% load static %}", ""],$/;"	s	array:Django: load static files.body
+1	my-snippets/markdown.json	/^			"$1",$/;"	s	array:提示.body
+1	my-snippets/markdown.json	/^			"$1",$/;"	s	array:程式碼.body
+1	my-snippets/markdown.json	/^			"$2",$/;"	s	array:定理.body
+10	my-snippets/htmldjango.json	/^      "  <td><\/td>",$/;"	s	array:卦爻辭.body
+10	my-snippets/htmldjango.json	/^      "<body>",$/;"	s	array:Django: base.html.body
+10	my-snippets/htmldjango.json	/^      "{% block javascript %}",$/;"	s	array:Django: HTML tags for View.body
+11	my-snippets/htmldjango.json	/^      "    <div class=\\"container\\">",$/;"	s	array:Django: base.html.body
+11	my-snippets/htmldjango.json	/^      "<\/tr>",$/;"	s	array:卦爻辭.body
+11	my-snippets/htmldjango.json	/^      "<script>",$/;"	s	array:Django: HTML tags for View.body
+12	my-snippets/htmldjango.json	/^      "      {% include 'article\/header.html' %}",$/;"	s	array:Django: base.html.body
+12	my-snippets/htmldjango.json	/^      "  ",$/;"	s	array:Django: HTML tags for View.body
+12	my-snippets/htmldjango.json	/^      "<!-- ---------------------------- -->",$/;"	s	array:卦爻辭.body
+13	my-snippets/htmldjango.json	/^      "      <div class=\\"col-md-2\\">",$/;"	s	array:Django: base.html.body
+13	my-snippets/htmldjango.json	/^      "<!-- 爻                        辭 -->",$/;"	s	array:卦爻辭.body
+13	my-snippets/htmldjango.json	/^      "<\/script>",$/;"	s	array:Django: HTML tags for View.body
+14	my-snippets/htmldjango.json	/^      "        {% include 'article\/sidebar.html' %}",$/;"	s	array:Django: base.html.body
+14	my-snippets/htmldjango.json	/^      "<!-- ---------------------------- -->",$/;"	s	array:卦爻辭.body
+14	my-snippets/htmldjango.json	/^      "{% endblock javascript %}",$/;"	s	array:Django: HTML tags for View.body
+15	my-snippets/htmldjango.json	/^      "      <\/div>",$/;"	s	array:Django: base.html.body
+15	my-snippets/htmldjango.json	/^      ""$/;"	s	array:Django: HTML tags for View.body
+15	my-snippets/htmldjango.json	/^      "",$/;"	s	array:卦爻辭.body
+16	my-snippets/htmldjango.json	/^      "      <div class=\\"col-md-10\\">",$/;"	s	array:Django: base.html.body
+16	my-snippets/htmldjango.json	/^      "<!-- 初爻 -->",$/;"	s	array:卦爻辭.body
+17	my-snippets/htmldjango.json	/^      "        {% block content %}{% endblock %}",$/;"	s	array:Django: base.html.body
+17	my-snippets/htmldjango.json	/^      "<tr>",$/;"	s	array:卦爻辭.body
+18	my-snippets/htmldjango.json	/^      "      <\/div>",$/;"	s	array:Django: base.html.body
+18	my-snippets/htmldjango.json	/^      "  <td><\/td>",$/;"	s	array:卦爻辭.body
+19	my-snippets/htmldjango.json	/^      "      {% include 'article\/footer.html' %}",$/;"	s	array:Django: base.html.body
+19	my-snippets/htmldjango.json	/^      "  <td><\/td>",$/;"	s	array:卦爻辭.body
+2	my-snippets/htmldjango.json	/^      "    $1",$/;"	s	array:Django: input field with label.body
+2	my-snippets/htmldjango.json	/^      "    <span>$1：<\/span>",$/;"	s	array:Django: input field #1.body
+2	my-snippets/htmldjango.json	/^      "  $3",$/;"	s	array:Django: form new.body
+2	my-snippets/htmldjango.json	/^      "  {{ form.as_p }}",$/;"	s	array:Django: form.body
+2	my-snippets/htmldjango.json	/^      "",$/;"	s	array:Django: Block Script src.body
+2	my-snippets/htmldjango.json	/^      "",$/;"	s	array:Django: block script source.body
+2	my-snippets/htmldjango.json	/^      "<!-- ****************************** -->",$/;"	s	array:卦爻辭.body
+2	my-snippets/htmldjango.json	/^      "<html lang=\\"zh-tw\\">",$/;"	s	array:Django: base.html.body
+2	my-snippets/htmldjango.json	/^      "{% block title %}",$/;"	s	array:Django: template extending layout.html.body
+2	my-snippets/htmldjango.json	/^      "{% endblock styles %}",$/;"	s	array:Django: Block Styles.body
+2	my-snippets/htmldjango.json	/^      "{% load static %}",$/;"	s	array:Django: HTML tags for View.body
+2	my-snippets/htmldjango.json	/^    "body": ["{% block $1 %}", "$2", "{% endblock $1 %}"],$/;"	s	array:Django: block .body
+2	my-snippets/htmldjango.json	/^    "body": ["{% for $1 in $2 %}", "  $3", "{% empty %}", "", "{% endfor %}"],$/;"	s	array:Django: for loop.body
+2	my-snippets/htmldjango.json	/^    "body": ["{% if $1 %}", "  $2", "{% endif %}"],$/;"	s	array:Django: if.body
+2	my-snippets/markdown.json	/^			" ",$/;"	s	array:定理.body
+2	my-snippets/markdown.json	/^			":::"$/;"	s	array:提示.body
+2	my-snippets/markdown.json	/^			"```"$/;"	s	array:程式碼.body
+20	my-snippets/htmldjango.json	/^      "    <\/div>",$/;"	s	array:Django: base.html.body
+20	my-snippets/htmldjango.json	/^      "  <td>",$/;"	s	array:卦爻辭.body
+21	my-snippets/htmldjango.json	/^      "    ",$/;"	s	array:卦爻辭.body
+21	my-snippets/htmldjango.json	/^      "",$/;"	s	array:Django: base.html.body
+22	my-snippets/htmldjango.json	/^      "    <script src=\\"{% static 'js\/jquery.min.js' %}\\"><\/script>",$/;"	s	array:Django: base.html.body
+22	my-snippets/htmldjango.json	/^      "  <\/td>",$/;"	s	array:卦爻辭.body
+23	my-snippets/htmldjango.json	/^      "    <script src=\\"{% static 'js\/bootstrap.js' %}\\"><\/script>",$/;"	s	array:Django: base.html.body
+23	my-snippets/htmldjango.json	/^      "<\/tr>",$/;"	s	array:卦爻辭.body
+24	my-snippets/htmldjango.json	/^      "    <script src=\\"{% static 'js\/layer.js' %}\\"><\/script>",$/;"	s	array:Django: base.html.body
+24	my-snippets/htmldjango.json	/^      "<!-- 二爻 -->",$/;"	s	array:卦爻辭.body
+25	my-snippets/htmldjango.json	/^      "",$/;"	s	array:Django: base.html.body
+25	my-snippets/htmldjango.json	/^      "<tr>",$/;"	s	array:卦爻辭.body
+26	my-snippets/htmldjango.json	/^      "    {% block javascript %}{% endblock %}",$/;"	s	array:Django: base.html.body
+26	my-snippets/htmldjango.json	/^      "  <td><\/td>",$/;"	s	array:卦爻辭.body
+27	my-snippets/htmldjango.json	/^      "  <td><\/td>",$/;"	s	array:卦爻辭.body
+27	my-snippets/htmldjango.json	/^      "<\/html>",$/;"	s	array:Django: base.html.body
+28	my-snippets/htmldjango.json	/^      "  <td>",$/;"	s	array:卦爻辭.body
+28	my-snippets/htmldjango.json	/^      ""$/;"	s	array:Django: base.html.body
+29	my-snippets/htmldjango.json	/^      "    ",$/;"	s	array:卦爻辭.body
+3	my-snippets/htmldjango.json	/^      "  <\/div>",$/;"	s	array:Django: input field #1.body
+3	my-snippets/htmldjango.json	/^      "  <\/label>",$/;"	s	array:Django: input field with label.body
+3	my-snippets/htmldjango.json	/^      "  <button type=\\"submit\\" class=\\"${1:save btn btn-default}\\">$2<\/button>",$/;"	s	array:Django: form new.body
+3	my-snippets/htmldjango.json	/^      "  <button type=\\"submit\\" class=\\"${1:save btn btn-default}\\">$2<\/button>",$/;"	s	array:Django: form.body
+3	my-snippets/htmldjango.json	/^      ""$/;"	s	array:Django: Block Styles.body
+3	my-snippets/htmldjango.json	/^      "",$/;"	s	array:Django: HTML tags for View.body
+3	my-snippets/htmldjango.json	/^      "$1",$/;"	s	array:Django: template extending layout.html.body
+3	my-snippets/htmldjango.json	/^      "<head>",$/;"	s	array:Django: base.html.body
+3	my-snippets/htmldjango.json	/^      "<script>",$/;"	s	array:Django: Block Script src.body
+3	my-snippets/htmldjango.json	/^      "<script>",$/;"	s	array:Django: block script source.body
+3	my-snippets/htmldjango.json	/^      "<tr>",$/;"	s	array:卦爻辭.body
+3	my-snippets/htmldjango.json	/^    "body": ["{% for $1 in $2 %}", "  $3", "{% empty %}", "", "{% endfor %}"],$/;"	s	array:Django: for loop.body
+3	my-snippets/markdown.json	/^			"::: right",$/;"	s	array:定理.body
+30	my-snippets/htmldjango.json	/^      "  <\/td>",$/;"	s	array:卦爻辭.body
+31	my-snippets/htmldjango.json	/^      "<\/tr>",$/;"	s	array:卦爻辭.body
+32	my-snippets/htmldjango.json	/^      "<!-- 三爻 -->",$/;"	s	array:卦爻辭.body
+33	my-snippets/htmldjango.json	/^      "<tr>",$/;"	s	array:卦爻辭.body
+34	my-snippets/htmldjango.json	/^      "  <td><\/td>",$/;"	s	array:卦爻辭.body
+35	my-snippets/htmldjango.json	/^      "  <td><\/td>",$/;"	s	array:卦爻辭.body
+36	my-snippets/htmldjango.json	/^      "  <td>",$/;"	s	array:卦爻辭.body
+37	my-snippets/htmldjango.json	/^      "    ",$/;"	s	array:卦爻辭.body
+38	my-snippets/htmldjango.json	/^      "  <\/td>",$/;"	s	array:卦爻辭.body
+39	my-snippets/htmldjango.json	/^      "<\/tr>",$/;"	s	array:卦爻辭.body
+4	my-snippets/htmldjango.json	/^      "    <meta http-equiv=\\"X-UA-Compatible\\" content=\\"IE=Edge\\">",$/;"	s	array:Django: base.html.body
+4	my-snippets/htmldjango.json	/^      "  $2",$/;"	s	array:Django: Block Script src.body
+4	my-snippets/htmldjango.json	/^      "  $2",$/;"	s	array:Django: block script source.body
+4	my-snippets/htmldjango.json	/^      "  <div class=\\"col-md-6 text-left\\">",$/;"	s	array:Django: input field with label.body
+4	my-snippets/htmldjango.json	/^      "  <div class=\\"col-md-8 text-left\\">",$/;"	s	array:Django: input field #1.body
+4	my-snippets/htmldjango.json	/^      "  <td>",$/;"	s	array:卦爻辭.body
+4	my-snippets/htmldjango.json	/^      "<\/form>"$/;"	s	array:Django: form new.body
+4	my-snippets/htmldjango.json	/^      "<\/form>"$/;"	s	array:Django: form.body
+4	my-snippets/htmldjango.json	/^      "{% block title %}$1{% endblock %}",$/;"	s	array:Django: HTML tags for View.body
+4	my-snippets/htmldjango.json	/^      "{% endblock title %}",$/;"	s	array:Django: template extending layout.html.body
+4	my-snippets/htmldjango.json	/^    "body": ["{% for $1 in $2 %}", "  $3", "{% empty %}", "", "{% endfor %}"],$/;"	s	array:Django: for loop.body
+4	my-snippets/markdown.json	/^			"from [$3]($4)",$/;"	s	array:定理.body
+40	my-snippets/htmldjango.json	/^      "<!-- 四爻 -->",$/;"	s	array:卦爻辭.body
+41	my-snippets/htmldjango.json	/^      "<tr>",$/;"	s	array:卦爻辭.body
+42	my-snippets/htmldjango.json	/^      "  <td><\/td>",$/;"	s	array:卦爻辭.body
+43	my-snippets/htmldjango.json	/^      "  <td><\/td>",$/;"	s	array:卦爻辭.body
+44	my-snippets/htmldjango.json	/^      "  <td>",$/;"	s	array:卦爻辭.body
+45	my-snippets/htmldjango.json	/^      "    ",$/;"	s	array:卦爻辭.body
+46	my-snippets/htmldjango.json	/^      "  <\/td>",$/;"	s	array:卦爻辭.body
+47	my-snippets/htmldjango.json	/^      "<\/tr>",$/;"	s	array:卦爻辭.body
+48	my-snippets/htmldjango.json	/^      "<!-- 五爻 -->",$/;"	s	array:卦爻辭.body
+49	my-snippets/htmldjango.json	/^      "<tr>",$/;"	s	array:卦爻辭.body
+5	my-snippets/htmldjango.json	/^      "    ",$/;"	s	array:卦爻辭.body
+5	my-snippets/htmldjango.json	/^      "    <meta charset=\\"UTF-8\\">",$/;"	s	array:Django: base.html.body
+5	my-snippets/htmldjango.json	/^      "    {{ $2 }}",$/;"	s	array:Django: input field #1.body
+5	my-snippets/htmldjango.json	/^      "    {{ form.$1 }}",$/;"	s	array:Django: input field with label.body
+5	my-snippets/htmldjango.json	/^      "",$/;"	s	array:Django: HTML tags for View.body
+5	my-snippets/htmldjango.json	/^      "",$/;"	s	array:Django: template extending layout.html.body
+5	my-snippets/htmldjango.json	/^      "<\/script>",$/;"	s	array:Django: Block Script src.body
+5	my-snippets/htmldjango.json	/^      "<\/script>",$/;"	s	array:Django: block script source.body
+5	my-snippets/markdown.json	/^			":::"$/;"	s	array:定理.body
+50	my-snippets/htmldjango.json	/^      "  <td><\/td>",$/;"	s	array:卦爻辭.body
+51	my-snippets/htmldjango.json	/^      "  <td><\/td>",$/;"	s	array:卦爻辭.body
+52	my-snippets/htmldjango.json	/^      "  <td>",$/;"	s	array:卦爻辭.body
+53	my-snippets/htmldjango.json	/^      "    ",$/;"	s	array:卦爻辭.body
+54	my-snippets/htmldjango.json	/^      "  <\/td>",$/;"	s	array:卦爻辭.body
+55	my-snippets/htmldjango.json	/^      "<\/tr>",$/;"	s	array:卦爻辭.body
+56	my-snippets/htmldjango.json	/^      "<!-- 上爻 -->",$/;"	s	array:卦爻辭.body
+57	my-snippets/htmldjango.json	/^      "<tr>",$/;"	s	array:卦爻辭.body
+58	my-snippets/htmldjango.json	/^      "  <td><\/td>",$/;"	s	array:卦爻辭.body
+59	my-snippets/htmldjango.json	/^      "  <td><\/td>",$/;"	s	array:卦爻辭.body
+6	my-snippets/htmldjango.json	/^      "    <meta name=\\"viewport\\" content=\\"width=device-width, initial-scale=1\\">",$/;"	s	array:Django: base.html.body
+6	my-snippets/htmldjango.json	/^      "  <\/div>",$/;"	s	array:Django: input field #1.body
+6	my-snippets/htmldjango.json	/^      "  <\/div>",$/;"	s	array:Django: input field with label.body
+6	my-snippets/htmldjango.json	/^      "  <\/td>",$/;"	s	array:卦爻辭.body
+6	my-snippets/htmldjango.json	/^      "{% block content %}",$/;"	s	array:Django: HTML tags for View.body
+6	my-snippets/htmldjango.json	/^      "{% block content %}",$/;"	s	array:Django: template extending layout.html.body
+6	my-snippets/htmldjango.json	/^      "{% endblock javascript %}",$/;"	s	array:Django: Block Script src.body
+6	my-snippets/htmldjango.json	/^      "{% endblock javascript %}",$/;"	s	array:Django: block script source.body
+60	my-snippets/htmldjango.json	/^      "  <td>",$/;"	s	array:卦爻辭.body
+61	my-snippets/htmldjango.json	/^      "    ",$/;"	s	array:卦爻辭.body
+62	my-snippets/htmldjango.json	/^      "  <\/td>",$/;"	s	array:卦爻辭.body
+63	my-snippets/htmldjango.json	/^      "<\/tr>"$/;"	s	array:卦爻辭.body
+7	my-snippets/htmldjango.json	/^      "    <title>{% block title %}{% endblock%}<\/title>",$/;"	s	array:Django: base.html.body
+7	my-snippets/htmldjango.json	/^      "  $2",$/;"	s	array:Django: HTML tags for View.body
+7	my-snippets/htmldjango.json	/^      "  <td>",$/;"	s	array:卦爻辭.body
+7	my-snippets/htmldjango.json	/^      ""$/;"	s	array:Django: Block Script src.body
+7	my-snippets/htmldjango.json	/^      ""$/;"	s	array:Django: block script source.body
+7	my-snippets/htmldjango.json	/^      "$2",$/;"	s	array:Django: template extending layout.html.body
+7	my-snippets/htmldjango.json	/^      "<\/div>"$/;"	s	array:Django: input field #1.body
+7	my-snippets/htmldjango.json	/^      "<\/div>"$/;"	s	array:Django: input field with label.body
+8	my-snippets/htmldjango.json	/^      "    ",$/;"	s	array:卦爻辭.body
+8	my-snippets/htmldjango.json	/^      "    <link rel=\\"stylesheet\\" href=\\"{% static 'css\/bootstrap.css' %}\\">",$/;"	s	array:Django: base.html.body
+8	my-snippets/htmldjango.json	/^      "{% endblock content %}"$/;"	s	array:Django: template extending layout.html.body
+8	my-snippets/htmldjango.json	/^      "{% endblock content %}",$/;"	s	array:Django: HTML tags for View.body
+9	my-snippets/htmldjango.json	/^      "  <\/td>",$/;"	s	array:卦爻辭.body
+9	my-snippets/htmldjango.json	/^      "",$/;"	s	array:Django: HTML tags for View.body
+9	my-snippets/htmldjango.json	/^      "<\/head>",$/;"	s	array:Django: base.html.body
 Added	submodules/lua-wcwidth/CHANGELOG.md	/^### Added$/;"	S	section:Change Log""0.1
 Added	submodules/lua-wcwidth/CHANGELOG.md	/^### Added$/;"	S	section:Change Log""[0.2] - 2016-07-13
+Array.isArray()	my-snippets/javascript.json	/^	"Array.isArray()": {$/;"	o
 Change Log	submodules/lua-wcwidth/CHANGELOG.md	/^# Change Log$/;"	c
 Changed	submodules/lua-wcwidth/CHANGELOG.md	/^### Changed$/;"	S	section:Change Log""[0.3] - 2019-02-15
 Changed	submodules/lua-wcwidth/CHANGELOG.md	/^### Changed$/;"	S	section:Change Log""[0.4] - 2020-01-14
 Changed	submodules/lua-wcwidth/CHANGELOG.md	/^### Changed$/;"	S	section:Change Log""[0.5] - 2020-03-29
 Configuration:	lua/utf8/README.md	/^#### Configuration:$/;"	t	chapter:utf8.lua
 Configuration:	submodules/utf8.lua/README.md	/^#### Configuration:$/;"	t	chapter:utf8.lua
+Django: Block Script src	my-snippets/htmldjango.json	/^  "Django: Block Script src": {$/;"	o
+Django: Block Styles	my-snippets/htmldjango.json	/^  "Django: Block Styles": {$/;"	o
+Django: HTML tags for View	my-snippets/htmldjango.json	/^  "Django: HTML tags for View": {$/;"	o
+Django: a href	my-snippets/htmldjango.json	/^  "Django: a href": {$/;"	o
+Django: base.html	my-snippets/htmldjango.json	/^  "Django: base.html": {$/;"	o
+Django: block 	my-snippets/htmldjango.json	/^  "Django: block ": {$/;"	o
+Django: block content	my-snippets/htmldjango.json	/^  "Django: block content": {$/;"	o
+Django: block in one line	my-snippets/htmldjango.json	/^  "Django: block in one line": {$/;"	o
+Django: block script source	my-snippets/htmldjango.json	/^  "Django: block script source": {$/;"	o
+Django: block title	my-snippets/htmldjango.json	/^  "Django: block title": {$/;"	o
+Django: else	my-snippets/htmldjango.json	/^  "Django: else": {$/;"	o
+Django: extends	my-snippets/htmldjango.json	/^  "Django: extends": {$/;"	o
+Django: for loop	my-snippets/htmldjango.json	/^  "Django: for loop": {$/;"	o
+Django: form	my-snippets/htmldjango.json	/^  "Django: form": {$/;"	o
+Django: form new	my-snippets/htmldjango.json	/^  "Django: form new": {$/;"	o
+Django: if	my-snippets/htmldjango.json	/^  "Django: if": {$/;"	o
+Django: img src	my-snippets/htmldjango.json	/^  "Django: img src": {$/;"	o
+Django: include	my-snippets/htmldjango.json	/^  "Django: include": {$/;"	o
+Django: input field #1	my-snippets/htmldjango.json	/^  "Django: input field #1": {$/;"	o
+Django: input field with label	my-snippets/htmldjango.json	/^  "Django: input field with label": {$/;"	o
+Django: load 	my-snippets/htmldjango.json	/^  "Django: load ": {$/;"	o
+Django: load static files	my-snippets/htmldjango.json	/^  "Django: load static files": {$/;"	o
+Django: script src 	my-snippets/htmldjango.json	/^  "Django: script src ": {$/;"	o
+Django: source of style file	my-snippets/htmldjango.json	/^  "Django: source of style file": {$/;"	o
+Django: template extending layout.html	my-snippets/htmldjango.json	/^  "Django: template extending layout.html": {$/;"	o
 Example:	lua/utf8/README.md	/^#### Example:$/;"	t	chapter:utf8.lua
 Example:	submodules/utf8.lua/README.md	/^#### Example:$/;"	t	chapter:utf8.lua
 Features	lua/json/README.md	/^## Features$/;"	s	chapter:![json.lua](https://cloud.githubusercontent.com/assets/3920290/9281532/99e5e0cc-42bd-11e5-8fce-eaff2f7fc681.png)
@@ -30,6 +269,8 @@ Installation:	lua/utf8/README.md	/^#### Installation:$/;"	t	chapter:utf8.lua
 Installation:	submodules/utf8.lua/README.md	/^#### Installation:$/;"	t	chapter:utf8.lua
 Issue reporting:	lua/utf8/README.md	/^#### Issue reporting:$/;"	t	chapter:utf8.lua
 Issue reporting:	submodules/utf8.lua/README.md	/^#### Issue reporting:$/;"	t	chapter:utf8.lua
+JSON.parse()	my-snippets/javascript.json	/^	"JSON.parse()": {$/;"	o
+JSON.stringify()	my-snippets/javascript.json	/^	"JSON.stringify()": {$/;"	o
 License	lua/json/README.md	/^## License$/;"	s	chapter:![json.lua](https://cloud.githubusercontent.com/assets/3920290/9281532/99e5e0cc-42bd-11e5-8fce-eaff2f7fc681.png)
 License	submodules/json.lua/README.md	/^## License$/;"	s	chapter:![json.lua](https://cloud.githubusercontent.com/assets/3920290/9281532/99e5e0cc-42bd-11e5-8fce-eaff2f7fc681.png)
 M._align_comment_in_line	lua/utils/align_comment.lua	/^function M._align_comment_in_line(line, comment_pattern, fill_char, alignment)$/;"	f
@@ -47,8 +288,21 @@ M.get_max_temp	lua/weather/init.lua	/^function M.get_max_temp()$/;"	f
 M.get_min_temp	lua/weather/init.lua	/^function M.get_min_temp()$/;"	f
 M.get_temp	lua/weather/init.lua	/^function M.get_temp()$/;"	f
 M.init	lua/weather/init.lua	/^function M.init()$/;"	f
+Node callback	my-snippets/javascript.json	/^	"Node callback": {$/;"	o
 Notes	lua/json/README.md	/^## Notes$/;"	s	chapter:![json.lua](https://cloud.githubusercontent.com/assets/3920290/9281532/99e5e0cc-42bd-11e5-8fce-eaff2f7fc681.png)
 Notes	submodules/json.lua/README.md	/^## Notes$/;"	s	chapter:![json.lua](https://cloud.githubusercontent.com/assets/3920290/9281532/99e5e0cc-42bd-11e5-8fce-eaff2f7fc681.png)
+Object.assign	my-snippets/javascript.json	/^	"Object.assign": {$/;"	o
+Object.create	my-snippets/javascript.json	/^	"Object.create": {$/;"	o
+Object.defineProperty	my-snippets/javascript.json	/^	"Object.defineProperty": {$/;"	o
+Object.getOwnPropertyDescriptor	my-snippets/javascript.json	/^	"Object.getOwnPropertyDescriptor": {$/;"	o
+Object.keys	my-snippets/javascript.json	/^	"Object.keys": {$/;"	o
+Object.values	my-snippets/javascript.json	/^	"Object.values": {$/;"	o
+Promise	my-snippets/javascript.json	/^	"Promise": {$/;"	o
+Promise.all	my-snippets/javascript.json	/^	"Promise.all": {$/;"	o
+Promise.catch	my-snippets/javascript.json	/^	"Promise.catch": {$/;"	o
+Promise.reject	my-snippets/javascript.json	/^	"Promise.reject": {$/;"	o
+Promise.resolve	my-snippets/javascript.json	/^	"Promise.resolve": {$/;"	o
+Promise.then	my-snippets/javascript.json	/^	"Promise.then": {$/;"	o
 Unicode Tables	submodules/lua-wcwidth/README.md	/^Unicode Tables$/;"	s	chapter:lua-wcwidth
 Unicode Tables	submodules/lua-wcwidth/README.md.in	/^Unicode Tables$/;"	s	chapter:lua-wcwidth
 Usage	lua/json/README.md	/^## Usage$/;"	s	chapter:![json.lua](https://cloud.githubusercontent.com/assets/3920290/9281532/99e5e0cc-42bd-11e5-8fce-eaff2f7fc681.png)
@@ -70,6 +324,7 @@ Usage:	submodules/utf8.lua/README.md	/^#### Usage:$/;"	t	chapter:utf8.lua
 [Documentation:](test/test.lua)	lua/utf8/README.md	/^#### [Documentation:](test\/test.lua)$/;"	t	chapter:utf8.lua
 [Documentation:](test/test.lua)	submodules/utf8.lua/README.md	/^#### [Documentation:](test\/test.lua)$/;"	t	chapter:utf8.lua
 [Unreleased]	submodules/lua-wcwidth/CHANGELOG.md	/^## [Unreleased]$/;"	s	chapter:Change Log
+\\"	my-snippets/python.json	/^  "\\"": {$/;"	o
 \x21[json.lua](https://cloud.githubusercontent.com/assets/3920290/9281532/99e5e0cc-42bd-11e5-8fce-eaff2f7fc681.png)	lua/json/README.md	/^# ![json.lua](https:\/\/cloud.githubusercontent.com\/assets\/3920290\/9281532\/99e5e0cc-42bd-11e/;"	c
 \x21[json.lua](https://cloud.githubusercontent.com/assets/3920290/9281532/99e5e0cc-42bd-11e5-8fce-eaff2f7fc681.png)	submodules/json.lua/README.md	/^# ![json.lua](https:\/\/cloud.githubusercontent.com\/assets\/3920290\/9281532\/99e5e0cc-42bd-11e/;"	c
 _G.s_tab_complete	lua/config/nvim-compe/init.lua	/^_G.s_tab_complete = function()$/;"	f
@@ -78,16 +333,42 @@ __tostring	lua/utf8/context/runtime.lua	/^  __tostring = function(self)$/;"	f
 __tostring	submodules/utf8.lua/context/runtime.lua	/^  __tostring = function(self)$/;"	f
 _lookup	lua/wcwidth/init.lua	/^local function _lookup(rune, table)$/;"	f
 _lookup	submodules/lua-wcwidth/wcwidth/init.lua	/^local function _lookup(rune, table)$/;"	f
+aae	my-snippets/python.json	/^  "aae": {$/;"	o
 add	lua/utf8/regex_parser.lua	/^      local function add(fun)$/;"	f
 add	submodules/utf8.lua/regex_parser.lua	/^      local function add(fun)$/;"	f
+addEventListener	my-snippets/javascript.json	/^	"addEventListener": {$/;"	o
+adminview	my-snippets/python.json	/^  "adminview": {$/;"	o
+ae	my-snippets/python.json	/^  "ae": {$/;"	o
+af	my-snippets/python.json	/^  "af": {$/;"	o
+after	my-snippets/javascript.json	/^	"after": {$/;"	o
+afterEach	my-snippets/javascript.json	/^	"afterEach": {$/;"	o
+an	my-snippets/python.json	/^  "an": {$/;"	o
+ann	my-snippets/python.json	/^  "ann": {$/;"	o
+anonymous function	my-snippets/javascript.json	/^	"anonymous function": {$/;"	o
 any	lua/utf8/ends/compiletime/vanilla.lua	/^  any = function()$/;"	f
 any	submodules/utf8.lua/ends/compiletime/vanilla.lua	/^  any = function()$/;"	f
+appendChild	my-snippets/javascript.json	/^	"appendChild": {$/;"	o
+ar	my-snippets/python.json	/^  "ar": {$/;"	o
+arrow function	my-snippets/javascript.json	/^	"arrow function": {$/;"	o
+arrow function with body	my-snippets/javascript.json	/^	"arrow function with body": {$/;"	o
+arrow function with destructuring	my-snippets/javascript.json	/^	"arrow function with destructuring": {$/;"	o
+arrow function with return	my-snippets/javascript.json	/^	"arrow function with return": {$/;"	o
 assert	lua/utf8/test/util.lua	/^local assert = function(cond, ...)$/;"	f
 assert	submodules/utf8.lua/test/util.lua	/^local assert = function(cond, ...)$/;"	f
 assert_equals	lua/utf8/test/util.lua	/^local function assert_equals(a,b)$/;"	f
 assert_equals	submodules/utf8.lua/test/util.lua	/^local function assert_equals(a,b)$/;"	f
+async arrow function	my-snippets/javascript.json	/^	"async arrow function": {$/;"	o
+async function	my-snippets/javascript.json	/^	"async function": {$/;"	o
+at	my-snippets/python.json	/^  "at": {$/;"	o
+attr	my-snippets/python.json	/^  "attr": {$/;"	o
+await	my-snippets/javascript.json	/^	"await": {$/;"	o
+await Promise.all	my-snippets/javascript.json	/^	"await Promise.all": {$/;"	o
+await Promise.all map	my-snippets/javascript.json	/^	"await Promise.all map": {$/;"	o
 balancer	lua/utf8/modifier/compiletime/vanilla.lua	/^  balancer = function(pair, name)$/;"	f
 balancer	submodules/utf8.lua/modifier/compiletime/vanilla.lua	/^  balancer = function(pair, name)$/;"	f
+before	my-snippets/javascript.json	/^	"before": {$/;"	o
+beforeAll	my-snippets/javascript.json	/^	"beforeAll": {$/;"	o
+beforeEach	my-snippets/javascript.json	/^	"beforeEach": {$/;"	o
 bench.get_cpu_name	lua/json/bench/util/bench.lua	/^function bench.get_cpu_name()$/;"	f
 bench.get_cpu_name	submodules/json.lua/bench/util/bench.lua	/^function bench.get_cpu_name()$/;"	f
 bench.print_results	lua/json/bench/util/bench.lua	/^function bench.print_results(results)$/;"	f
@@ -96,6 +377,288 @@ bench.print_system_info	lua/json/bench/util/bench.lua	/^function bench.print_sys
 bench.print_system_info	submodules/json.lua/bench/util/bench.lua	/^function bench.print_system_info()$/;"	f
 bench.run	lua/json/bench/util/bench.lua	/^function bench.run(name, count, func)$/;"	f
 bench.run	submodules/json.lua/bench/util/bench.lua	/^function bench.run(name, count, func)$/;"	f
+body	my-snippets/htmldjango.json	/^    "body": ["<a href=\\"{% url '$1' %}\\" $2>$3<\/a>"],$/;"	a	object:Django: a href
+body	my-snippets/htmldjango.json	/^    "body": ["<img src=\\"{% static '$1' %}\\" \/>"],$/;"	a	object:Django: img src
+body	my-snippets/htmldjango.json	/^    "body": ["<link rel=\\"stylesheet\\" href=\\"{% static '$1.css' %}\\" \/>"],$/;"	a	object:Django: source of style file
+body	my-snippets/htmldjango.json	/^    "body": ["<script src=\\"{% static '$1.js' %}\\"><\/script>"],$/;"	a	object:Django: script src 
+body	my-snippets/htmldjango.json	/^    "body": ["{% block $1 %}", "$2", "{% endblock $1 %}"],$/;"	a	object:Django: block 
+body	my-snippets/htmldjango.json	/^    "body": ["{% block $1 %}{% endblock $1 %}"],$/;"	a	object:Django: block in one line
+body	my-snippets/htmldjango.json	/^    "body": ["{% block content %}$1", "{% endblock content %}"],$/;"	a	object:Django: block content
+body	my-snippets/htmldjango.json	/^    "body": ["{% block title %}$1{% endblock %}"],$/;"	a	object:Django: block title
+body	my-snippets/htmldjango.json	/^    "body": ["{% else %}", "  $1"],$/;"	a	object:Django: else
+body	my-snippets/htmldjango.json	/^    "body": ["{% extends '$1' %}", ""],$/;"	a	object:Django: extends
+body	my-snippets/htmldjango.json	/^    "body": ["{% for $1 in $2 %}", "  $3", "{% empty %}", "", "{% endfor %}"],$/;"	a	object:Django: for loop
+body	my-snippets/htmldjango.json	/^    "body": ["{% if $1 %}", "  $2", "{% endif %}"],$/;"	a	object:Django: if
+body	my-snippets/htmldjango.json	/^    "body": ["{% include '$1' %}", ""],$/;"	a	object:Django: include
+body	my-snippets/htmldjango.json	/^    "body": ["{% load $1 %}", ""],$/;"	a	object:Django: load 
+body	my-snippets/htmldjango.json	/^    "body": ["{% load static %}", ""],$/;"	a	object:Django: load static files
+body	my-snippets/htmldjango.json	/^    "body": ["{% load static %}"],$/;"	a	object:Django: load static files
+body	my-snippets/htmldjango.json	/^    "body": [$/;"	a	object:Django: Block Script src
+body	my-snippets/htmldjango.json	/^    "body": [$/;"	a	object:Django: Block Styles
+body	my-snippets/htmldjango.json	/^    "body": [$/;"	a	object:Django: HTML tags for View
+body	my-snippets/htmldjango.json	/^    "body": [$/;"	a	object:Django: base.html
+body	my-snippets/htmldjango.json	/^    "body": [$/;"	a	object:Django: block script source
+body	my-snippets/htmldjango.json	/^    "body": [$/;"	a	object:Django: form
+body	my-snippets/htmldjango.json	/^    "body": [$/;"	a	object:Django: form new
+body	my-snippets/htmldjango.json	/^    "body": [$/;"	a	object:Django: input field #1
+body	my-snippets/htmldjango.json	/^    "body": [$/;"	a	object:Django: input field with label
+body	my-snippets/htmldjango.json	/^    "body": [$/;"	a	object:Django: template extending layout.html
+body	my-snippets/htmldjango.json	/^    "body": [$/;"	a	object:卦爻辭
+body	my-snippets/javascript.json	/^		"body": "${1:Class}.prototype.${2:method} = function (${3:arguments}) {\\n\\t${0}\\n}"$/;"	s	object:prototype method
+body	my-snippets/javascript.json	/^		"body": "${1:cond} ? ${2:true} : ${3:false}"$/;"	s	object:ternary
+body	my-snippets/javascript.json	/^		"body": "${1:document}.addEventListener('${2:event}', ${3:ev} => {\\n\\t${0}\\n})"$/;"	s	object:addEventListener
+body	my-snippets/javascript.json	/^		"body": "${1:document}.createDocumentFragment(${2:elem})"$/;"	s	object:createDocumentFragment
+body	my-snippets/javascript.json	/^		"body": "${1:document}.createElement(${2:elem})"$/;"	s	object:createElement
+body	my-snippets/javascript.json	/^		"body": "${1:document}.getElementById('${2:id}')"$/;"	s	object:getElementById
+body	my-snippets/javascript.json	/^		"body": "${1:document}.querySelector('${2:selector}')"$/;"	s	object:querySelector
+body	my-snippets/javascript.json	/^		"body": "${1:document}.removeEventListener('${2:event}', ${3:listener})"$/;"	s	object:removeEventListener
+body	my-snippets/javascript.json	/^		"body": "${1:el}.appendChild(${2:elem})"$/;"	s	object:appendChild
+body	my-snippets/javascript.json	/^		"body": "${1:el}.classList.add('${2:class}')"$/;"	s	object:classList.add
+body	my-snippets/javascript.json	/^		"body": "${1:el}.classList.remove('${2:class}')"$/;"	s	object:classList.remove
+body	my-snippets/javascript.json	/^		"body": "${1:el}.classList.toggle('${2:class}')"$/;"	s	object:classList.toggle
+body	my-snippets/javascript.json	/^		"body": "${1:el}.getAttribute('${2:attr}')"$/;"	s	object:getAttribute
+body	my-snippets/javascript.json	/^		"body": "${1:el}.removeAttribute('${2:attr}')"$/;"	s	object:removeAttribute
+body	my-snippets/javascript.json	/^		"body": "${1:el}.removeChild(${2:elem})"$/;"	s	object:removeChild
+body	my-snippets/javascript.json	/^		"body": "${1:el}.setAttribute('${2:attr}', ${3:value})"$/;"	s	object:setAttribute
+body	my-snippets/javascript.json	/^		"body": "${1:emitter}.on('${2:event}', (${3:arguments}) => {\\n\\t${0}\\n})"$/;"	s	object:event handler
+body	my-snippets/javascript.json	/^		"body": "${1:iterable}.every((${2:item}) => {\\n\\t${0}\\n})"$/;"	s	object:every
+body	my-snippets/javascript.json	/^		"body": "${1:iterable}.filter((${2:item}) => {\\n\\t${0}\\n})"$/;"	s	object:filter
+body	my-snippets/javascript.json	/^		"body": "${1:iterable}.find((${2:item}) => {\\n\\t${0}\\n})"$/;"	s	object:find
+body	my-snippets/javascript.json	/^		"body": "${1:iterable}.forEach((${2:item}) => {\\n\\t${0}\\n})"$/;"	s	object:forEach loop
+body	my-snippets/javascript.json	/^		"body": "${1:iterable}.map((${2:item}) => {\\n\\t${0}\\n})"$/;"	s	object:map
+body	my-snippets/javascript.json	/^		"body": "${1:iterable}.reduce((${2:previous}, ${3:current}) => {\\n\\t${0}\\n}${4:, initial})"$/;"	s	object:reduce
+body	my-snippets/javascript.json	/^		"body": "${1:iterable}.some((${2:item}) => {\\n\\t${0}\\n})"$/;"	s	object:some
+body	my-snippets/javascript.json	/^		"body": "${1:method} (${2:arguments}) {\\n\\t${0}\\n}"$/;"	s	object:method
+body	my-snippets/javascript.json	/^		"body": "${1:promise}.catch(error => {\\n\\t${0}\\n})"$/;"	s	object:Promise.catch
+body	my-snippets/javascript.json	/^		"body": "${1:promise}.then((${2:value}) => {\\n\\t${0}\\n})"$/;"	s	object:Promise.then
+body	my-snippets/javascript.json	/^		"body": "${1:source} instanceof ${2:Object}"$/;"	s	object:instanceof
+body	my-snippets/javascript.json	/^		"body": "'use strict'"$/;"	s	object:use strict
+body	my-snippets/javascript.json	/^		"body": "(${1:arguments}) => ${2:statement}"$/;"	s	object:arrow function
+body	my-snippets/javascript.json	/^		"body": "(${1:arguments}) => {\\n\\t${0}\\n}"$/;"	s	object:arrow function with body
+body	my-snippets/javascript.json	/^		"body": "(${1:arguments}) => {\\n\\treturn ${0}\\n}"$/;"	s	object:arrow function with return
+body	my-snippets/javascript.json	/^		"body": "() => {\\n\\t{$TM_SELECTED_TEXT}\\n}",$/;"	s	object:wrap selection in arrow function
+body	my-snippets/javascript.json	/^		"body": "({${1:arguments}}) => ${2:statement}"$/;"	s	object:arrow function with destructuring
+body	my-snippets/javascript.json	/^		"body": ";(function (${1:arguments}) {\\n\\t${0}\\n})(${2})"$/;"	s	object:immediately-invoked function expression
+body	my-snippets/javascript.json	/^		"body": "Array.from(${1:document}.getElementsByClassName('${2:class}'))"$/;"	s	object:getElementsByClassName
+body	my-snippets/javascript.json	/^		"body": "Array.from(${1:document}.getElementsByTagName('${2:tag}'))"$/;"	s	object:getElementsByTagName
+body	my-snippets/javascript.json	/^		"body": "Array.from(${1:document}.querySelectorAll('${2:selector}'))"$/;"	s	object:querySelectorAll
+body	my-snippets/javascript.json	/^		"body": "Array.isArray(${1:source})"$/;"	s	object:Array.isArray()
+body	my-snippets/javascript.json	/^		"body": "JSON.parse($0)"$/;"	s	object:JSON.parse()
+body	my-snippets/javascript.json	/^		"body": "JSON.stringify($0)"$/;"	s	object:JSON.stringify()
+body	my-snippets/javascript.json	/^		"body": "Object.assign(${1:dest}, ${2:source})"$/;"	s	object:Object.assign
+body	my-snippets/javascript.json	/^		"body": "Object.create(${1:obj})"$/;"	s	object:Object.create
+body	my-snippets/javascript.json	/^		"body": "Object.defineProperty(${1:dest}, '${2:prop}', {\\n\\t${0}\\n})"$/;"	s	object:Object.defineProperty
+body	my-snippets/javascript.json	/^		"body": "Object.getOwnPropertyDescriptor(${1:obj}, '${2:prop}')"$/;"	s	object:Object.getOwnPropertyDescriptor
+body	my-snippets/javascript.json	/^		"body": "Object.keys(${1:obj})"$/;"	s	object:Object.keys
+body	my-snippets/javascript.json	/^		"body": "Object.values(${1:obj})"$/;"	s	object:Object.values
+body	my-snippets/javascript.json	/^		"body": "Promise"$/;"	s	object:Promise
+body	my-snippets/javascript.json	/^		"body": "Promise.all(${1:value})"$/;"	s	object:Promise.all
+body	my-snippets/javascript.json	/^		"body": "Promise.reject(${1:value})"$/;"	s	object:Promise.reject
+body	my-snippets/javascript.json	/^		"body": "Promise.resolve(${1:value})"$/;"	s	object:Promise.resolve
+body	my-snippets/javascript.json	/^		"body": "after(() => {\\n\\t${0}\\n})"$/;"	s	object:after
+body	my-snippets/javascript.json	/^		"body": "afterEach(() => {\\n\\t${0}\\n})"$/;"	s	object:afterEach
+body	my-snippets/javascript.json	/^		"body": "async (${1:arguments}) => {\\n\\t${0}\\n}"$/;"	s	object:async arrow function
+body	my-snippets/javascript.json	/^		"body": "async () => {\\n\\t{$TM_SELECTED_TEXT}\\n}",$/;"	s	object:wrap selection in async arrow function
+body	my-snippets/javascript.json	/^		"body": "async function (${1:arguments}) {\\n\\t${0}\\n}"$/;"	s	object:async function
+body	my-snippets/javascript.json	/^		"body": "await ${0}"$/;"	s	object:await
+body	my-snippets/javascript.json	/^		"body": "await Promise.all(${1:array}.map((async ${2:value}) => {\\n\\t${0}\\n}))"$/;"	s	object:await Promise.all map
+body	my-snippets/javascript.json	/^		"body": "await Promise.all(${1:value})"$/;"	s	object:await Promise.all
+body	my-snippets/javascript.json	/^		"body": "before(async () => {\\n\\t${0}\\n})"$/;"	s	object:before
+body	my-snippets/javascript.json	/^		"body": "beforeAll(async () => {\\n\\t${0}\\n})"$/;"	s	object:beforeAll
+body	my-snippets/javascript.json	/^		"body": "beforeEach(async () => {\\n\\t${0}\\n})"$/;"	s	object:beforeEach
+body	my-snippets/javascript.json	/^		"body": "class ${1:name} extends ${2:base} {\\n\\tconstructor (${3:arguments}) {\\n\\t\\tsuper/;"	s	object:class extends
+body	my-snippets/javascript.json	/^		"body": "class ${1:name} {\\n\\tconstructor (${2:arguments}) {\\n\\t\\t${0}\\n\\t}\\n}"$/;"	s	object:class
+body	my-snippets/javascript.json	/^		"body": "class ${1:name} {\\n\\tconstructor (${2:arguments}) {\\n\\t\\t${0}\\n\\t}\\n}\\n\\nmo/;"	s	object:module as class
+body	my-snippets/javascript.json	/^		"body": "console.dir('${0}:', ${0})"$/;"	s	object:console.dir
+body	my-snippets/javascript.json	/^		"body": "console.error(${0})"$/;"	s	object:console.error
+body	my-snippets/javascript.json	/^		"body": "console.log(${0})"$/;"	s	object:console.log
+body	my-snippets/javascript.json	/^		"body": "console.log('${0}:', ${0})"$/;"	s	object:console.log a variable
+body	my-snippets/javascript.json	/^		"body": "console.warn(${0})"$/;"	s	object:console.warn
+body	my-snippets/javascript.json	/^		"body": "const ${0} = ${1:cond} ? ${2:true} : ${3:false}"$/;"	s	object:ternary assignment
+body	my-snippets/javascript.json	/^		"body": "const ${1:module} = require('${1:module}')"$/;"	s	object:const module = require('module')
+body	my-snippets/javascript.json	/^		"body": "const ${1:name} = (${2:arguments}) => {\\n\\treturn ${0}\\n}"$/;"	s	object:const arrow function assignment
+body	my-snippets/javascript.json	/^		"body": "const ${1:name} = [\\n\\t${0}\\n]"$/;"	s	object:const array
+body	my-snippets/javascript.json	/^		"body": "const ${1:name} = await ${2:value}"$/;"	s	object:const assignment awaited
+body	my-snippets/javascript.json	/^		"body": "const ${1:name} = yield ${2:value}"$/;"	s	object:const assignment yielded
+body	my-snippets/javascript.json	/^		"body": "const ${1:name} = {\\n\\t${0}\\n}"$/;"	s	object:const object
+body	my-snippets/javascript.json	/^		"body": "const ${1:name}"$/;"	s	object:const statement
+body	my-snippets/javascript.json	/^		"body": "const [ ${2:prop} ] = ${1:value}"$/;"	s	object:const statement from array destructuring
+body	my-snippets/javascript.json	/^		"body": "const { ${1:name} } = await ${2:value}"$/;"	s	object:const destructuring assignment awaited
+body	my-snippets/javascript.json	/^		"body": "const { ${2:prop} } = ${1:value}"$/;"	s	object:const statement from destructuring
+body	my-snippets/javascript.json	/^		"body": "constructor () {\\n\\t${0}\\n}"$/;"	s	object:constructor
+body	my-snippets/javascript.json	/^		"body": "describe('${1:description}', () => {\\n\\t${0}\\n})"$/;"	s	object:describe
+body	my-snippets/javascript.json	/^		"body": "else if (${1:condition}) {\\n\\t${0}\\n}"$/;"	s	object:else if statement
+body	my-snippets/javascript.json	/^		"body": "else {\\n\\t${0}\\n}"$/;"	s	object:else statement
+body	my-snippets/javascript.json	/^		"body": "ev.preventDefault()\\nev.stopPropagation()\\nreturn false"$/;"	s	object:dom event cancel default and propagation
+body	my-snippets/javascript.json	/^		"body": "export ${1:member}"$/;"	s	object:module export
+body	my-snippets/javascript.json	/^		"body": "export const ${1:member} = ${2:value}"$/;"	s	object:module export const
+body	my-snippets/javascript.json	/^		"body": "export default ${1:member}"$/;"	s	object:module default export
+body	my-snippets/javascript.json	/^		"body": "export default function ${1:name} (${2:arguments}) {\\n\\t${0}\\n}"$/;"	s	object:module default export function
+body	my-snippets/javascript.json	/^		"body": "export function ${1:member} (${2:arguments}) {\\n\\t${0}\\n}"$/;"	s	object:export named function
+body	my-snippets/javascript.json	/^		"body": "exports.${1:member} = ${2:value}"$/;"	s	object:exports.member
+body	my-snippets/javascript.json	/^		"body": "for (const ${1:key} of ${2:source}) {\\n\\t${0}\\n}"$/;"	s	object:for of loop
+body	my-snippets/javascript.json	/^		"body": "for (let ${1:i} = 0, ${2:len} = ${3:iterable}.length; ${1:i} < ${2:len}; ${1:i}++) {\\/;"	s	object:for loop
+body	my-snippets/javascript.json	/^		"body": "for (let ${1:key} in ${2:source}) {\\n\\tif (${2:source}.hasOwnProperty(${1:key})) {\\/;"	s	object:for in loop
+body	my-snippets/javascript.json	/^		"body": "function ${1:name} (${2:arguments}) {\\n\\t${0}\\n}"$/;"	s	object:named function
+body	my-snippets/javascript.json	/^		"body": "function (${1:arguments}) {${0}}"$/;"	s	object:anonymous function
+body	my-snippets/javascript.json	/^		"body": "function (err, ${1:value}) {\\n\\tif (err) throw err\\n\\t${0}\\n}"$/;"	s	object:Node callback
+body	my-snippets/javascript.json	/^		"body": "function* ${1:name}(${2:arguments}) {\\n\\t${0}\\n}"$/;"	s	object:named generator
+body	my-snippets/javascript.json	/^		"body": "function* (${1:arguments}) {\\n\\t${0}\\n}"$/;"	s	object:generator function
+body	my-snippets/javascript.json	/^		"body": "get ${1:property} () {\\n\\t${0}\\n}"$/;"	s	object:getter
+body	my-snippets/javascript.json	/^		"body": "get ${1:property} () {\\n\\t${0}\\n}\\nset ${1:property} (${2:value}) {\\n\\t\\n}"$/;"	s	object:getter + setter
+body	my-snippets/javascript.json	/^		"body": "if (${1:condition}) {\\n\\t${0}\\n} else {\\n\\t\\n}"$/;"	s	object:if/else statement
+body	my-snippets/javascript.json	/^		"body": "if (${1:condition}) {\\n\\t${0}\\n}"$/;"	s	object:if statement
+body	my-snippets/javascript.json	/^		"body": "import ${2:*} as ${3:name} from '${1:module}'"$/;"	s	object:import module as
+body	my-snippets/javascript.json	/^		"body": "import ${2:*} from '${1:module}'"$/;"	s	object:import module
+body	my-snippets/javascript.json	/^		"body": "import {$2} from '${1:module}'"$/;"	s	object:import module destructured
+body	my-snippets/javascript.json	/^		"body": "it('${1:description}', () => {\\n\\t${0}\\n})"$/;"	s	object:it synchronous
+body	my-snippets/javascript.json	/^		"body": "it('${1:description}', (done) => {\\n\\t${0}\\n})"$/;"	s	object:it with a callback
+body	my-snippets/javascript.json	/^		"body": "it('${1:description}', async () => {\\n\\t${0}\\n})"$/;"	s	object:it asynchronous
+body	my-snippets/javascript.json	/^		"body": "let ${0} \\n if (${2:condition}) {\\n\\t${1}\\n}"$/;"	s	object:let and if statement
+body	my-snippets/javascript.json	/^		"body": "let ${1:array}Index = ${1:array}.length\\nwhile (${1:array}Index--) {\\n\\t${0}\\n}"$/;"	s	object:while iteration decrementing
+body	my-snippets/javascript.json	/^		"body": "let ${1:name} = await ${2:value}"$/;"	s	object:let assignment awaited
+body	my-snippets/javascript.json	/^		"body": "let ${1:name} = yield ${2:value}"$/;"	s	object:let assignment yielded
+body	my-snippets/javascript.json	/^		"body": "let ${1:name}"$/;"	s	object:let statement
+body	my-snippets/javascript.json	/^		"body": "module.exports = ${1:name}"$/;"	s	object:module.exports
+body	my-snippets/javascript.json	/^		"body": "new Promise((resolve, reject) => {\\n\\t${0}\\n})"$/;"	s	object:new Promise
+body	my-snippets/javascript.json	/^		"body": "process.env"$/;"	s	object:process.env
+body	my-snippets/javascript.json	/^		"body": "require('${1:module}')"$/;"	s	object:require
+body	my-snippets/javascript.json	/^		"body": "return ${0}"$/;"	s	object:return
+body	my-snippets/javascript.json	/^		"body": "return [\\n\\t${0}\\n]"$/;"	s	object:return new array
+body	my-snippets/javascript.json	/^		"body": "return new Promise((resolve, reject) => {\\n\\t${0}\\n})"$/;"	s	object:return promise
+body	my-snippets/javascript.json	/^		"body": "return null"$/;"	s	object:return null
+body	my-snippets/javascript.json	/^		"body": "return this"$/;"	s	object:return this
+body	my-snippets/javascript.json	/^		"body": "return {\\n\\t${0}\\n}"$/;"	s	object:return new object
+body	my-snippets/javascript.json	/^		"body": "set ${1:property} (${2:value}) {\\n\\t${0}\\n}"$/;"	s	object:setter
+body	my-snippets/javascript.json	/^		"body": "setImmediate(() => {\\n\\t${0}\\n})"$/;"	s	object:setImmediate
+body	my-snippets/javascript.json	/^		"body": "setInterval(() => {\\n\\t${0}\\n}, ${1:delay})"$/;"	s	object:setInterval
+body	my-snippets/javascript.json	/^		"body": "this."$/;"	s	object:this
+body	my-snippets/javascript.json	/^		"body": "throw new ${0:error}"$/;"	s	object:throw new Error
+body	my-snippets/javascript.json	/^		"body": "try {\\n\\t${0}\\n} catch (${1:err}) {\\n\\t\\n} finally {\\n\\t\\n}"$/;"	s	object:try/catch/finally
+body	my-snippets/javascript.json	/^		"body": "try {\\n\\t${0}\\n} catch (${1:err}) {\\n\\t\\n}"$/;"	s	object:try/catch
+body	my-snippets/javascript.json	/^		"body": "try {\\n\\t${0}\\n} finally {\\n\\t\\n}"$/;"	s	object:try/finally
+body	my-snippets/javascript.json	/^		"body": "typeof ${1:source} === '${2:undefined}'"$/;"	s	object:typeof
+body	my-snippets/javascript.json	/^		"body": "var ${1:name} = ${2:value}"$/;"	s	object:var assignment
+body	my-snippets/javascript.json	/^		"body": "var ${1:name}"$/;"	s	object:var statement
+body	my-snippets/javascript.json	/^		"body": "while (${1:condition}) {\\n\\t${0}\\n}"$/;"	s	object:while loop
+body	my-snippets/javascript.json	/^		"body": "yield ${0}"$/;"	s	object:yield
+body	my-snippets/markdown.json	/^		"body": [$/;"	a	object:圖片
+body	my-snippets/markdown.json	/^		"body": [$/;"	a	object:字體加粗
+body	my-snippets/markdown.json	/^		"body": [$/;"	a	object:字體反白
+body	my-snippets/markdown.json	/^		"body": [$/;"	a	object:定理
+body	my-snippets/markdown.json	/^		"body": [$/;"	a	object:提示
+body	my-snippets/markdown.json	/^		"body": [$/;"	a	object:程式碼
+body	my-snippets/markdown.json	/^		"body": [$/;"	a	object:連結
+body	my-snippets/python.json	/^    "body": "# -*- coding: utf-8 -*-\\n\\"\\"\\"\\n\\t`!p snip.rv = get_dir_and_file_name(snip)`/;"	s	object:pmdoc
+body	my-snippets/python.json	/^    "body": "#!\/usr\/bin\/env python\\n$0",$/;"	s	object:#!
+body	my-snippets/python.json	/^    "body": "${1:FIELDNAME} = forms.BooleanField($2)",$/;"	s	object:fbool
+body	my-snippets/python.json	/^    "body": "${1:FIELDNAME} = forms.CharField($2)",$/;"	s	object:fchar
+body	my-snippets/python.json	/^    "body": "${1:FIELDNAME} = forms.ChoiceField($2)",$/;"	s	object:fchoice
+body	my-snippets/python.json	/^    "body": "${1:FIELDNAME} = forms.ComboField($2)",$/;"	s	object:fcombo
+body	my-snippets/python.json	/^    "body": "${1:FIELDNAME} = forms.DateField($2)",$/;"	s	object:fdate
+body	my-snippets/python.json	/^    "body": "${1:FIELDNAME} = forms.DateTimeField($2)",$/;"	s	object:fdatetime
+body	my-snippets/python.json	/^    "body": "${1:FIELDNAME} = forms.DecimalField($2)",$/;"	s	object:fdecimal
+body	my-snippets/python.json	/^    "body": "${1:FIELDNAME} = forms.EmailField($2)",$/;"	s	object:fmail
+body	my-snippets/python.json	/^    "body": "${1:FIELDNAME} = forms.FileField($2)",$/;"	s	object:ffile
+body	my-snippets/python.json	/^    "body": "${1:FIELDNAME} = forms.FilePathField($2)",$/;"	s	object:ffilepath
+body	my-snippets/python.json	/^    "body": "${1:FIELDNAME} = forms.FloatField($2)",$/;"	s	object:ffloat
+body	my-snippets/python.json	/^    "body": "${1:FIELDNAME} = forms.IPAddressField($2)",$/;"	s	object:fip
+body	my-snippets/python.json	/^    "body": "${1:FIELDNAME} = forms.ImageField($2)",$/;"	s	object:fimg
+body	my-snippets/python.json	/^    "body": "${1:FIELDNAME} = forms.IntegerField($2)",$/;"	s	object:fint
+body	my-snippets/python.json	/^    "body": "${1:FIELDNAME} = forms.ModelChoiceField($2)",$/;"	s	object:fmochoice
+body	my-snippets/python.json	/^    "body": "${1:FIELDNAME} = forms.ModelMultipleChoiceField($2)",$/;"	s	object:fmomuchoice
+body	my-snippets/python.json	/^    "body": "${1:FIELDNAME} = forms.MultiValueField($2)",$/;"	s	object:fmuval
+body	my-snippets/python.json	/^    "body": "${1:FIELDNAME} = forms.MultipleChoiceField($2)",$/;"	s	object:fmuchoice
+body	my-snippets/python.json	/^    "body": "${1:FIELDNAME} = forms.NullBooleanField($2)",$/;"	s	object:fnullbool
+body	my-snippets/python.json	/^    "body": "${1:FIELDNAME} = forms.RegexField($2)",$/;"	s	object:freg
+body	my-snippets/python.json	/^    "body": "${1:FIELDNAME} = forms.SlugField($2)",$/;"	s	object:fslug
+body	my-snippets/python.json	/^    "body": "${1:FIELDNAME} = forms.SplitDateTimeField($2)",$/;"	s	object:fsdatetime
+body	my-snippets/python.json	/^    "body": "${1:FIELDNAME} = forms.TimeField($2)",$/;"	s	object:ftime
+body	my-snippets/python.json	/^    "body": "${1:FIELDNAME} = forms.TypedChoiceField($2)",$/;"	s	object:ftchoice
+body	my-snippets/python.json	/^    "body": "${1:FIELDNAME} = forms.TypedMultipleChoiceField($2)",$/;"	s	object:ftmuchoice
+body	my-snippets/python.json	/^    "body": "${1:FIELDNAME} = forms.URLField($2)",$/;"	s	object:furl
+body	my-snippets/python.json	/^    "body": "${1:FIELDNAME} = models.AutoField($2)",$/;"	s	object:mauto
+body	my-snippets/python.json	/^    "body": "${1:FIELDNAME} = models.BigIntegerField($2)",$/;"	s	object:mbigint
+body	my-snippets/python.json	/^    "body": "${1:FIELDNAME} = models.BooleanField($2)",$/;"	s	object:mbool
+body	my-snippets/python.json	/^    "body": "${1:FIELDNAME} = models.CharField($2, max_length=${3:50})",$/;"	s	object:mchar
+body	my-snippets/python.json	/^    "body": "${1:FIELDNAME} = models.CommaSeparatedIntegerField($2)",$/;"	s	object:mcoseint
+body	my-snippets/python.json	/^    "body": "${1:FIELDNAME} = models.DateField($2)",$/;"	s	object:mdate
+body	my-snippets/python.json	/^    "body": "${1:FIELDNAME} = models.DateTimeField($2)",$/;"	s	object:mdatetime
+body	my-snippets/python.json	/^    "body": "${1:FIELDNAME} = models.DecimalField(max_digits=${2:10}, decimal_places=${3:2})",$/;"	s	object:mdecimal
+body	my-snippets/python.json	/^    "body": "${1:FIELDNAME} = models.EmailField($2)",$/;"	s	object:memail
+body	my-snippets/python.json	/^    "body": "${1:FIELDNAME} = models.FileField($2)",$/;"	s	object:mfile
+body	my-snippets/python.json	/^    "body": "${1:FIELDNAME} = models.FilePathField($2)",$/;"	s	object:mfilepath
+body	my-snippets/python.json	/^    "body": "${1:FIELDNAME} = models.FloatField($2)",$/;"	s	object:mfloat
+body	my-snippets/python.json	/^    "body": "${1:FIELDNAME} = models.ForeignKey($2)",$/;"	s	object:fk
+body	my-snippets/python.json	/^    "body": "${1:FIELDNAME} = models.IPAddressField($2)",$/;"	s	object:mip
+body	my-snippets/python.json	/^    "body": "${1:FIELDNAME} = models.ImageField($2)",$/;"	s	object:mimg
+body	my-snippets/python.json	/^    "body": "${1:FIELDNAME} = models.IntegerField($2)",$/;"	s	object:mint
+body	my-snippets/python.json	/^    "body": "${1:FIELDNAME} = models.ManyToManyField($2)",$/;"	s	object:m2m
+body	my-snippets/python.json	/^    "body": "${1:FIELDNAME} = models.NullBooleanField($2)",$/;"	s	object:mnullbool
+body	my-snippets/python.json	/^    "body": "${1:FIELDNAME} = models.OneToOneField($2)",$/;"	s	object:o2o
+body	my-snippets/python.json	/^    "body": "${1:FIELDNAME} = models.PhoneNumberField($2)",$/;"	s	object:mphone
+body	my-snippets/python.json	/^    "body": "${1:FIELDNAME} = models.PositiveIntegerField($2)",$/;"	s	object:mposint
+body	my-snippets/python.json	/^    "body": "${1:FIELDNAME} = models.PositiveSmallIntegerField($2)",$/;"	s	object:mpossmallint
+body	my-snippets/python.json	/^    "body": "${1:FIELDNAME} = models.SlugField($2)",$/;"	s	object:mslug
+body	my-snippets/python.json	/^    "body": "${1:FIELDNAME} = models.SmallIntegerField($2)",$/;"	s	object:msmallint
+body	my-snippets/python.json	/^    "body": "${1:FIELDNAME} = models.TextField($2)",$/;"	s	object:mtext
+body	my-snippets/python.json	/^    "body": "${1:FIELDNAME} = models.TimeField($2)",$/;"	s	object:mtime
+body	my-snippets/python.json	/^    "body": "${1:FIELDNAME} = models.URLField($2)",$/;"	s	object:murl
+body	my-snippets/python.json	/^    "body": "${1:FIELDNAME} = models.USStateField($2)",$/;"	s	object:musstate
+body	my-snippets/python.json	/^    "body": "${1:FIELDNAME} = models.XMLField($2)",$/;"	s	object:mxml
+body	my-snippets/python.json	/^    "body": "'''\\n${1:${VISUAL:doc}}\\n`!p triple_quotes_handle_trailing(snip, \\"'\\")`",$/;"	s	object:'
+body	my-snippets/python.json	/^    "body": "@classmethod\\ndef ${1:function}(`!p\\nif snip.indent:\\n\\tsnip.rv = 'cls' + (\\",/;"	s	object:defc
+body	my-snippets/python.json	/^    "body": "@property\\ndef ${1:name}(self):\\n\\t${2:return self._$1}$0",$/;"	s	object:roprop
+body	my-snippets/python.json	/^    "body": "@staticmethod\\ndef ${1:function}(${2:arg1}):\\n\\t`!p snip.rv = triple_quotes(snip/;"	s	object:defs
+body	my-snippets/python.json	/^    "body": "\\"\\"\\"\\n${1:${VISUAL:doc}}\\n`!p triple_quotes_handle_trailing(snip, '\\"')`",$/;"	s	object:\\"
+body	my-snippets/python.json	/^    "body": "`!p snip.rv = triple_quotes(snip)`\\n${1:${VISUAL:doc}}\\n`!p snip.rv = triple_quot/;"	s	object:doc
+body	my-snippets/python.json	/^    "body": "class $1Admin(admin.ModelAdmin):\\n\\t'''\\n\\t\\tAdmin View for $1\\n\\t'''\\n\\tl/;"	s	object:adminview
+body	my-snippets/python.json	/^    "body": "class $1Inline(admin.StackedInline):\\n\\t'''\\n\\tStacked Inline View for $1\\n\\t/;"	s	object:stackedinline
+body	my-snippets/python.json	/^    "body": "class $1Inline(admin.TabularInline):\\n\\t'''\\n\\tTabular Inline View for $1\\n\\t/;"	s	object:tabularinline
+body	my-snippets/python.json	/^    "body": "class ${1:CLASS_NAME}(TemplateView):\\n\\ttemplate_name = \\"${2:TEMPLATE_NAME}\\""/;"	s	object:templateview
+body	my-snippets/python.json	/^    "body": "class ${1:FORMNAME}(forms.Form):\\n\\n\\t${2:# TODO: Define form fields here}",$/;"	s	object:form
+body	my-snippets/python.json	/^    "body": "class ${1:MODELNAME}(models.Model):\\n\\t$0\\n\\tclass Meta:\\n\\t\\tverbose_name =/;"	s	object:model
+body	my-snippets/python.json	/^    "body": "class ${1:MODELNAME}(models.Model):\\n\\t${2:# TODO: Define fields here}\\n\\n\\tcl/;"	s	object:modelfull
+body	my-snippets/python.json	/^    "body": "class ${1:MODELNAME}Form(forms.ModelForm):\\n\\n\\tclass Meta:\\n\\t\\tmodel = $1",$/;"	s	object:modelform
+body	my-snippets/python.json	/^    "body": "class ${1:MODEL_NAME}CreateView(CreateView):\\n\\tmodel = $1\\n\\ttemplate_name = \\/;"	s	object:createview
+body	my-snippets/python.json	/^    "body": "class ${1:MODEL_NAME}DeleteView(DeleteView):\\n\\tmodel = $1\\n\\ttemplate_name = \\/;"	s	object:deleteview
+body	my-snippets/python.json	/^    "body": "class ${1:MODEL_NAME}DetailView(DetailView):\\n\\tmodel = $1\\n\\ttemplate_name = \\/;"	s	object:detailview
+body	my-snippets/python.json	/^    "body": "class ${1:MODEL_NAME}ListView(ListView):\\n\\tmodel = $1\\n\\ttemplate_name = \\"${/;"	s	object:dj-listview
+body	my-snippets/python.json	/^    "body": "class ${1:MODEL_NAME}ListView(ListView):\\n\\tmodel = $1\\n\\ttemplate_name = \\"${/;"	s	object:listview
+body	my-snippets/python.json	/^    "body": "class ${1:MODEL_NAME}UpdateView(UpdateView):\\n\\tmodel = $1\\n\\ttemplate_name = \\/;"	s	object:updateview
+body	my-snippets/python.json	/^    "body": "class ${1:MyClass}(${2:object}):\\n\\n\\t`!p snip.rv = triple_quotes(snip)`${3:Docs/;"	s	object:class
+body	my-snippets/python.json	/^    "body": "class ${1:MyClass}(${2:object}):\\n\\n\\t`!p snip.rv = triple_quotes(snip)`${3:Docs/;"	s	object:slotclass
+body	my-snippets/python.json	/^    "body": "class Test${1:Class}(${2:unittest.TestCase}):\\n\\n\\t`!p snip.rv = triple_quotes(s/;"	s	object:testcase
+body	my-snippets/python.json	/^    "body": "def ${1:fname}(`!p snip.rv = \\"self, \\" if snip.indent else \\"\\"`$2):\\n\\t$0",$/;"	s	object:deff
+body	my-snippets/python.json	/^    "body": "def ${1:function}(`!p\\nif snip.indent:\\n\\tsnip.rv = 'self' + (\\", \\" if len(t[/;"	s	object:def
+body	my-snippets/python.json	/^    "body": "def ${1:name}():\\n\\t`!p snip.rv = triple_quotes(snip) if t[2] else ''\\n`${2:TODO/;"	s	object:rwprop
+body	my-snippets/python.json	/^    "body": "def __add__(self, other):\\n\\t${1:pass}\\n\\ndef __sub__(self, other):\\n\\t${2:pa/;"	s	object:numeric
+body	my-snippets/python.json	/^    "body": "def __eq__(self, other):\\n\\t${1:pass}\\n\\ndef __ne__(self, other):\\n\\t${2:pass/;"	s	object:cmp
+body	my-snippets/python.json	/^    "body": "def __get__(self, instance, owner):\\n\\t${1:pass}\\n\\ndef __set__(self, instance,/;"	s	object:desc
+body	my-snippets/python.json	/^    "body": "def __getattr__(self, name):\\n\\t${1:pass}\\n\\ndef __setattr__(self, name, value)/;"	s	object:attr
+body	my-snippets/python.json	/^    "body": "def __len__(self):\\n\\t${1:pass}\\n\\ndef __getitem__(self, key):\\n\\t${2:pass}\\/;"	s	object:contain
+body	my-snippets/python.json	/^    "body": "def __repr__(self):\\n\\t${1:pass}\\n\\ndef __str__(self):\\n\\t${2:pass}\\n\\ndef /;"	s	object:repr
+body	my-snippets/python.json	/^    "body": "def dispatch(self, request, *args, **kwargs):\\n\\treturn super(${1:CLASS_NAME}, se/;"	s	object:dispatch
+body	my-snippets/python.json	/^    "body": "def get_context_data(self, **kwargs):\\n\\tkwargs['extra_context'] = ${1:'New Value/;"	s	object:context
+body	my-snippets/python.json	/^    "body": "for ${1:item} in ${2:iterable}:\\n\\t${3:${VISUAL:pass}}",$/;"	s	object:for
+body	my-snippets/python.json	/^    "body": "from ${1:module} import ${2:Stuff}",$/;"	s	object:from
+body	my-snippets/python.json	/^    "body": "if ${1:condition}:\\n\\t${2:${VISUAL:pass}}",$/;"	s	object:if
+body	my-snippets/python.json	/^    "body": "if ${1:condition}:\\n\\t${2:${VISUAL:pass}}\\nelif ${3:condition}:\\n\\t${4:pass}\\/;"	s	object:ifee
+body	my-snippets/python.json	/^    "body": "if ${1:condition}:\\n\\t${2:${VISUAL:pass}}\\nelse:\\n\\t${3:pass}",$/;"	s	object:ife
+body	my-snippets/python.json	/^    "body": "if __name__ == `!p snip.rv = get_quoting_style(snip)`__main__`!p snip.rv = get_quot/;"	s	object:ifmain
+body	my-snippets/python.json	/^    "body": "self.",$/;"	s	object:/(^|(?<=\\\\W))\\\\./
+body	my-snippets/python.json	/^    "body": "self.assertAlmostEqual(${1:${VISUAL:first}}, ${2:second})",$/;"	s	object:aae
+body	my-snippets/python.json	/^    "body": "self.assertEqual(${1:${VISUAL:first}}, ${2:second})",$/;"	s	object:ae
+body	my-snippets/python.json	/^    "body": "self.assertFalse(${1:${VISUAL:expression}})",$/;"	s	object:af
+body	my-snippets/python.json	/^    "body": "self.assertIsNone(${1:${VISUAL:expression}})",$/;"	s	object:an
+body	my-snippets/python.json	/^    "body": "self.assertIsNotNone(${1:${VISUAL:expression}})",$/;"	s	object:ann
+body	my-snippets/python.json	/^    "body": "self.assertRaises(${1:exception}, ${2:${VISUAL:func}}${3\/.+\/, \/}${3:arguments})"/;"	s	object:ar
+body	my-snippets/python.json	/^    "body": "self.assertTrue(${1:${VISUAL:expression}})",$/;"	s	object:at
+body	my-snippets/python.json	/^    "body": "try:\\n\\t${1:${VISUAL:pass}}\\nexcept ${2:Exception} as ${3:e}:\\n\\t${4:raise $3}/;"	s	object:try
+body	my-snippets/python.json	/^    "body": "try:\\n\\t${1:${VISUAL:pass}}\\nexcept ${2:Exception} as ${3:e}:\\n\\t${4:raise $3}/;"	s	object:trye
+body	my-snippets/python.json	/^    "body": "try:\\n\\t${1:${VISUAL:pass}}\\nexcept ${2:Exception} as ${3:e}:\\n\\t${4:raise $3}/;"	s	object:tryf
+body	my-snippets/python.json	/^    "body": "try:\\n\\t${1:${VISUAL:pass}}\\nexcept${2: ${3:Exception} as ${4:e}}:\\n\\t${5:rais/;"	s	object:tryef
+body	my-snippets/python.json	/^    "body": "with ${1:expr}`!p snip.rv = \\" as \\" if t[2] else \\"\\"`${2:var}:\\n\\t${3:${VIS/;"	s	object:with
 builder.new	lua/utf8/charclass/compiletime/builder.lua	/^function builder.new()$/;"	f
 builder.new	submodules/utf8.lua/charclass/compiletime/builder.lua	/^function builder.new()$/;"	f
 builder:build	lua/utf8/charclass/compiletime/builder.lua	/^function builder:build()$/;"	f
@@ -129,6 +692,9 @@ check	submodules/utf8.lua/modifier/compiletime/vanilla.lua	/^local function chec
 check_back_space	lua/config/nvim-compe/init.lua	/^local check_back_space = function()$/;"	f
 check_table	submodules/lua-wcwidth/spec/unicodetables_spec.lua	/^local function check_table(t, step)$/;"	f
 check_width	lua/config/galaxyline/init.lua	/^local check_width = function()$/;"	f
+class	my-snippets/javascript.json	/^	"class": {$/;"	o
+class	my-snippets/python.json	/^  "class": {$/;"	o
+class extends	my-snippets/javascript.json	/^	"class extends": {$/;"	o
 class.new	lua/utf8/charclass/runtime/base.lua	/^function class.new()$/;"	f
 class.new	submodules/utf8.lua/charclass/runtime/base.lua	/^function class.new()$/;"	f
 class:do_test	lua/utf8/charclass/runtime/base.lua	/^function class:do_test(char_code)$/;"	f
@@ -159,12 +725,37 @@ class:with_subs	lua/utf8/charclass/runtime/base.lua	/^function class:with_subs(.
 class:with_subs	submodules/utf8.lua/charclass/runtime/base.lua	/^function class:with_subs(...)$/;"	f
 class:without_classes	lua/utf8/charclass/runtime/base.lua	/^function class:without_classes(...)$/;"	f
 class:without_classes	submodules/utf8.lua/charclass/runtime/base.lua	/^function class:without_classes(...)$/;"	f
+classList.add	my-snippets/javascript.json	/^	"classList.add": {$/;"	o
+classList.remove	my-snippets/javascript.json	/^	"classList.remove": {$/;"	o
+classList.toggle	my-snippets/javascript.json	/^	"classList.toggle": {$/;"	o
+cmp	my-snippets/python.json	/^  "cmp": {$/;"	o
 codepoint_to_utf8	lua/json/json.lua	/^local function codepoint_to_utf8(n)$/;"	f
 codepoint_to_utf8	submodules/json.lua/json.lua	/^local function codepoint_to_utf8(n)$/;"	f
 colors_name	colors/NeoSolarized.vim	/^let colors_name = "NeoSolarized"$/;"	v
 condition	lua/config/galaxyline/init.lua	/^    condition = function()$/;"	f
+console.dir	my-snippets/javascript.json	/^	"console.dir": {$/;"	o
+console.error	my-snippets/javascript.json	/^	"console.error": {$/;"	o
+console.log	my-snippets/javascript.json	/^	"console.log": {$/;"	o
+console.log a variable	my-snippets/javascript.json	/^	"console.log a variable": {$/;"	o
+console.warn	my-snippets/javascript.json	/^	"console.warn": {$/;"	o
+const array	my-snippets/javascript.json	/^	"const array": {$/;"	o
+const arrow function assignment	my-snippets/javascript.json	/^	"const arrow function assignment": {$/;"	o
+const assignment awaited	my-snippets/javascript.json	/^	"const assignment awaited": {$/;"	o
+const assignment yielded	my-snippets/javascript.json	/^	"const assignment yielded": {$/;"	o
+const destructuring assignment awaited	my-snippets/javascript.json	/^	"const destructuring assignment awaited": {$/;"	o
+const module = require('module')	my-snippets/javascript.json	/^	"const module = require('module')": {$/;"	o
+const object	my-snippets/javascript.json	/^	"const object": {$/;"	o
+const statement	my-snippets/javascript.json	/^	"const statement": {$/;"	o
+const statement from array destructuring	my-snippets/javascript.json	/^	"const statement from array destructuring": {$/;"	o
+const statement from destructuring	my-snippets/javascript.json	/^	"const statement from destructuring": {$/;"	o
+constructor	my-snippets/javascript.json	/^	"constructor": {$/;"	o
+contain	my-snippets/python.json	/^  "contain": {$/;"	o
+context	my-snippets/python.json	/^  "context": {$/;"	o
+createDocumentFragment	my-snippets/javascript.json	/^	"createDocumentFragment": {$/;"	o
+createElement	my-snippets/javascript.json	/^	"createElement": {$/;"	o
 create_set	lua/json/json.lua	/^local function create_set(...)$/;"	f
 create_set	submodules/json.lua/json.lua	/^local function create_set(...)$/;"	f
+createview	my-snippets/python.json	/^  "createview": {$/;"	o
 ctx.begins	lua/utf8/regex_parser.lua	/^        ctx.begins = functions$/;"	f
 ctx.begins	submodules/utf8.lua/regex_parser.lua	/^        ctx.begins = functions$/;"	f
 ctx.ends	lua/utf8/regex_parser.lua	/^        ctx.ends = functions$/;"	f
@@ -193,10 +784,167 @@ cursor_position	lua/config/galaxyline/init.lua	/^local cursor_position = functio
 cursor_position_perc	lua/config/galaxyline/init.lua	/^local cursor_position_perc = function()$/;"	f
 decode_error	lua/json/json.lua	/^local function decode_error(str, idx, msg)$/;"	f
 decode_error	submodules/json.lua/json.lua	/^local function decode_error(str, idx, msg)$/;"	f
+def	my-snippets/python.json	/^  "def": {$/;"	o
 default	lua/utf8/begins/compiletime/vanilla.lua	/^local function default()$/;"	f
 default	lua/utf8/ends/compiletime/vanilla.lua	/^local function default()$/;"	f
 default	submodules/utf8.lua/begins/compiletime/vanilla.lua	/^local function default()$/;"	f
 default	submodules/utf8.lua/ends/compiletime/vanilla.lua	/^local function default()$/;"	f
+defc	my-snippets/python.json	/^  "defc": {$/;"	o
+deff	my-snippets/python.json	/^  "deff": {$/;"	o
+defs	my-snippets/python.json	/^  "defs": {$/;"	o
+deleteview	my-snippets/python.json	/^  "deleteview": {$/;"	o
+desc	my-snippets/python.json	/^  "desc": {$/;"	o
+describe	my-snippets/javascript.json	/^	"describe": {$/;"	o
+description	my-snippets/htmldjango.json	/^    "description": "Boilerplate template that extends layout.html"$/;"	s	object:Django: template extending layout.html
+description	my-snippets/htmldjango.json	/^    "description": "Django: Block Script src"$/;"	s	object:Django: Block Script src
+description	my-snippets/htmldjango.json	/^    "description": "Django: Block Styles"$/;"	s	object:Django: Block Styles
+description	my-snippets/htmldjango.json	/^    "description": "Django: HTML tags for View"$/;"	s	object:Django: HTML tags for View
+description	my-snippets/htmldjango.json	/^    "description": "Django: a href"$/;"	s	object:Django: a href
+description	my-snippets/htmldjango.json	/^    "description": "Django: base.html"$/;"	s	object:Django: base.html
+description	my-snippets/htmldjango.json	/^    "description": "Django: block "$/;"	s	object:Django: block 
+description	my-snippets/htmldjango.json	/^    "description": "Django: block content"$/;"	s	object:Django: block content
+description	my-snippets/htmldjango.json	/^    "description": "Django: block script source"$/;"	s	object:Django: block script source
+description	my-snippets/htmldjango.json	/^    "description": "Django: block title"$/;"	s	object:Django: block title
+description	my-snippets/htmldjango.json	/^    "description": "Django: else"$/;"	s	object:Django: else
+description	my-snippets/htmldjango.json	/^    "description": "Django: extends"$/;"	s	object:Django: extends
+description	my-snippets/htmldjango.json	/^    "description": "Django: for loop"$/;"	s	object:Django: for loop
+description	my-snippets/htmldjango.json	/^    "description": "Django: form as_p"$/;"	s	object:Django: form
+description	my-snippets/htmldjango.json	/^    "description": "Django: if"$/;"	s	object:Django: if
+description	my-snippets/htmldjango.json	/^    "description": "Django: img src"$/;"	s	object:Django: img src
+description	my-snippets/htmldjango.json	/^    "description": "Django: include"$/;"	s	object:Django: include
+description	my-snippets/htmldjango.json	/^    "description": "Django: input field #1"$/;"	s	object:Django: input field #1
+description	my-snippets/htmldjango.json	/^    "description": "Django: input field with label"$/;"	s	object:Django: input field with label
+description	my-snippets/htmldjango.json	/^    "description": "Django: load "$/;"	s	object:Django: load 
+description	my-snippets/htmldjango.json	/^    "description": "Django: load static files"$/;"	s	object:Django: load static files
+description	my-snippets/htmldjango.json	/^    "description": "Django: new form"$/;"	s	object:Django: form new
+description	my-snippets/htmldjango.json	/^    "description": "Django: script src "$/;"	s	object:Django: script src 
+description	my-snippets/htmldjango.json	/^    "description": "Django: source of style file"$/;"	s	object:Django: source of style file
+description	my-snippets/htmldjango.json	/^    "description": "One line block "$/;"	s	object:Django: block in one line
+description	my-snippets/htmldjango.json	/^    "description": "編輯卦爻辭用"$/;"	s	object:卦爻辭
+description	my-snippets/javascript.json	/^		"description": "wraps text in arrow function"$/;"	s	object:wrap selection in arrow function
+description	my-snippets/javascript.json	/^		"description": "wraps text in arrow function"$/;"	s	object:wrap selection in async arrow function
+description	my-snippets/markdown.json	/^		"description": "Bold Font"$/;"	s	object:字體加粗
+description	my-snippets/markdown.json	/^		"description": "Hyper-link"$/;"	s	object:連結
+description	my-snippets/markdown.json	/^		"description": "Image"$/;"	s	object:圖片
+description	my-snippets/markdown.json	/^		"description": "Reverse Font"$/;"	s	object:字體反白
+description	my-snippets/markdown.json	/^		"description": "Theorem"$/;"	s	object:定理
+description	my-snippets/markdown.json	/^		"description": "Tip"$/;"	s	object:提示
+description	my-snippets/markdown.json	/^		"description": "code"$/;"	s	object:程式碼
+description	my-snippets/python.json	/^    "description": "#!\/usr\/bin\/env python"$/;"	s	object:#!
+description	my-snippets/python.json	/^    "description": "Assert False"$/;"	s	object:af
+description	my-snippets/python.json	/^    "description": "Assert True"$/;"	s	object:at
+description	my-snippets/python.json	/^    "description": "Assert almost equal"$/;"	s	object:aae
+description	my-snippets/python.json	/^    "description": "Assert equal"$/;"	s	object:ae
+description	my-snippets/python.json	/^    "description": "Assert is None"$/;"	s	object:an
+description	my-snippets/python.json	/^    "description": "Assert is not None"$/;"	s	object:ann
+description	my-snippets/python.json	/^    "description": "Assert raises"$/;"	s	object:ar
+description	my-snippets/python.json	/^    "description": "AutoField"$/;"	s	object:mauto
+description	my-snippets/python.json	/^    "description": "BigIntegerField"$/;"	s	object:mbigint
+description	my-snippets/python.json	/^    "description": "BooleanField"$/;"	s	object:fbool
+description	my-snippets/python.json	/^    "description": "BooleanField"$/;"	s	object:mbool
+description	my-snippets/python.json	/^    "description": "CharField"$/;"	s	object:fchar
+description	my-snippets/python.json	/^    "description": "CharField"$/;"	s	object:mchar
+description	my-snippets/python.json	/^    "description": "ChoiceField"$/;"	s	object:fchoice
+description	my-snippets/python.json	/^    "description": "ComboField"$/;"	s	object:fcombo
+description	my-snippets/python.json	/^    "description": "CommaSeparatedIntegerField"$/;"	s	object:mcoseint
+description	my-snippets/python.json	/^    "description": "DateField"$/;"	s	object:fdate
+description	my-snippets/python.json	/^    "description": "DateField"$/;"	s	object:mdate
+description	my-snippets/python.json	/^    "description": "DateTimeField"$/;"	s	object:fdatetime
+description	my-snippets/python.json	/^    "description": "DateTimeField"$/;"	s	object:mdatetime
+description	my-snippets/python.json	/^    "description": "DecimalField"$/;"	s	object:fdecimal
+description	my-snippets/python.json	/^    "description": "DecimalField"$/;"	s	object:mdecimal
+description	my-snippets/python.json	/^    "description": "Dispatch View method"$/;"	s	object:dispatch
+description	my-snippets/python.json	/^    "description": "Django List View"$/;"	s	object:dj-listview
+description	my-snippets/python.json	/^    "description": "EmailField"$/;"	s	object:fmail
+description	my-snippets/python.json	/^    "description": "EmailField"$/;"	s	object:memail
+description	my-snippets/python.json	/^    "description": "FileField"$/;"	s	object:ffile
+description	my-snippets/python.json	/^    "description": "FileField"$/;"	s	object:mfile
+description	my-snippets/python.json	/^    "description": "FilePathField"$/;"	s	object:ffilepath
+description	my-snippets/python.json	/^    "description": "FilePathField"$/;"	s	object:mfilepath
+description	my-snippets/python.json	/^    "description": "FloatField"$/;"	s	object:ffloat
+description	my-snippets/python.json	/^    "description": "FloatField"$/;"	s	object:mfloat
+description	my-snippets/python.json	/^    "description": "ForeignKey"$/;"	s	object:fk
+description	my-snippets/python.json	/^    "description": "Form"$/;"	s	object:form
+description	my-snippets/python.json	/^    "description": "Generic Create View"$/;"	s	object:createview
+description	my-snippets/python.json	/^    "description": "Generic Delete View"$/;"	s	object:deleteview
+description	my-snippets/python.json	/^    "description": "Generic Detail View"$/;"	s	object:detailview
+description	my-snippets/python.json	/^    "description": "Generic List View"$/;"	s	object:listview
+description	my-snippets/python.json	/^    "description": "Generic Template View"$/;"	s	object:templateview
+description	my-snippets/python.json	/^    "description": "Generic Update View"$/;"	s	object:updateview
+description	my-snippets/python.json	/^    "description": "IPAddressField"$/;"	s	object:fip
+description	my-snippets/python.json	/^    "description": "IPAddressField"$/;"	s	object:mip
+description	my-snippets/python.json	/^    "description": "If \/ Elif \/ Else"$/;"	s	object:ifee
+description	my-snippets/python.json	/^    "description": "If \/ Else"$/;"	s	object:ife
+description	my-snippets/python.json	/^    "description": "If"$/;"	s	object:if
+description	my-snippets/python.json	/^    "description": "ImageField"$/;"	s	object:fimg
+description	my-snippets/python.json	/^    "description": "ImageField"$/;"	s	object:mimg
+description	my-snippets/python.json	/^    "description": "IntegerField"$/;"	s	object:fint
+description	my-snippets/python.json	/^    "description": "IntegerField"$/;"	s	object:mint
+description	my-snippets/python.json	/^    "description": "ManyToManyField"$/;"	s	object:m2m
+description	my-snippets/python.json	/^    "description": "Model Admin View"$/;"	s	object:adminview
+description	my-snippets/python.json	/^    "description": "Model"$/;"	s	object:model
+description	my-snippets/python.json	/^    "description": "Model"$/;"	s	object:modelfull
+description	my-snippets/python.json	/^    "description": "ModelChoiceField"$/;"	s	object:fmochoice
+description	my-snippets/python.json	/^    "description": "ModelForm"$/;"	s	object:modelform
+description	my-snippets/python.json	/^    "description": "ModelMultipleChoiceField"$/;"	s	object:fmomuchoice
+description	my-snippets/python.json	/^    "description": "MultiValueField"$/;"	s	object:fmuval
+description	my-snippets/python.json	/^    "description": "MultipleChoiceField"$/;"	s	object:fmuchoice
+description	my-snippets/python.json	/^    "description": "NullBooleanField"$/;"	s	object:fnullbool
+description	my-snippets/python.json	/^    "description": "NullBooleanField"$/;"	s	object:mnullbool
+description	my-snippets/python.json	/^    "description": "OneToOneField"$/;"	s	object:o2o
+description	my-snippets/python.json	/^    "description": "PhoneNumberField"$/;"	s	object:mphone
+description	my-snippets/python.json	/^    "description": "PositiveIntegerField"$/;"	s	object:mposint
+description	my-snippets/python.json	/^    "description": "PositiveSmallIntegerField"$/;"	s	object:mpossmallint
+description	my-snippets/python.json	/^    "description": "Read Only Property"$/;"	s	object:roprop
+description	my-snippets/python.json	/^    "description": "Read write property"$/;"	s	object:rwprop
+description	my-snippets/python.json	/^    "description": "RegexField"$/;"	s	object:freg
+description	my-snippets/python.json	/^    "description": "SlugField"$/;"	s	object:fslug
+description	my-snippets/python.json	/^    "description": "SlugField"$/;"	s	object:mslug
+description	my-snippets/python.json	/^    "description": "SmallIntegerField"$/;"	s	object:msmallint
+description	my-snippets/python.json	/^    "description": "SplitDateTimeField"$/;"	s	object:fsdatetime
+description	my-snippets/python.json	/^    "description": "Stacked Inline"$/;"	s	object:stackedinline
+description	my-snippets/python.json	/^    "description": "Tabular Inline"$/;"	s	object:tabularinline
+description	my-snippets/python.json	/^    "description": "TextField"$/;"	s	object:mtext
+description	my-snippets/python.json	/^    "description": "TimeField"$/;"	s	object:ftime
+description	my-snippets/python.json	/^    "description": "TimeField"$/;"	s	object:mtime
+description	my-snippets/python.json	/^    "description": "Try \/ Except \/ Else \/ Finally"$/;"	s	object:tryef
+description	my-snippets/python.json	/^    "description": "Try \/ Except \/ Else"$/;"	s	object:trye
+description	my-snippets/python.json	/^    "description": "Try \/ Except \/ Finally"$/;"	s	object:tryf
+description	my-snippets/python.json	/^    "description": "Try \/ Except"$/;"	s	object:try
+description	my-snippets/python.json	/^    "description": "TypedChoiceField"$/;"	s	object:ftchoice
+description	my-snippets/python.json	/^    "description": "TypedMultipleChoiceField"$/;"	s	object:ftmuchoice
+description	my-snippets/python.json	/^    "description": "URLField"$/;"	s	object:furl
+description	my-snippets/python.json	/^    "description": "URLField"$/;"	s	object:murl
+description	my-snippets/python.json	/^    "description": "USStateField"$/;"	s	object:musstate
+description	my-snippets/python.json	/^    "description": "XMLField"$/;"	s	object:mxml
+description	my-snippets/python.json	/^    "description": "class method with docstrings"$/;"	s	object:defc
+description	my-snippets/python.json	/^    "description": "class with docstrings"$/;"	s	object:class
+description	my-snippets/python.json	/^    "description": "class with slots and docstrings"$/;"	s	object:slotclass
+description	my-snippets/python.json	/^    "description": "doc block (triple quotes)"$/;"	s	object:doc
+description	my-snippets/python.json	/^    "description": "for loop"$/;"	s	object:for
+description	my-snippets/python.json	/^    "description": "from module import name"$/;"	s	object:from
+description	my-snippets/python.json	/^    "description": "function or class method"$/;"	s	object:deff
+description	my-snippets/python.json	/^    "description": "function with docstrings"$/;"	s	object:def
+description	my-snippets/python.json	/^    "description": "get_context_data view method"$/;"	s	object:context
+description	my-snippets/python.json	/^    "description": "ifmain"$/;"	s	object:ifmain
+description	my-snippets/python.json	/^    "description": "methods for customizing attribute access"$/;"	s	object:attr
+description	my-snippets/python.json	/^    "description": "methods for emulating a container type"$/;"	s	object:contain
+description	my-snippets/python.json	/^    "description": "methods for emulating a numeric type"$/;"	s	object:numeric
+description	my-snippets/python.json	/^    "description": "methods implementing descriptors"$/;"	s	object:desc
+description	my-snippets/python.json	/^    "description": "methods implementing rich comparison"$/;"	s	object:cmp
+description	my-snippets/python.json	/^    "description": "methods implementing string representation"$/;"	s	object:repr
+description	my-snippets/python.json	/^    "description": "pocoo style module doc string"$/;"	s	object:pmdoc
+description	my-snippets/python.json	/^    "description": "pyunit testcase"$/;"	s	object:testcase
+description	my-snippets/python.json	/^    "description": "self."$/;"	s	object:/(^|(?<=\\\\W))\\\\./
+description	my-snippets/python.json	/^    "description": "static method with docstrings"$/;"	s	object:defs
+description	my-snippets/python.json	/^    "description": "triple quoted string (double quotes)"$/;"	s	object:\\"
+description	my-snippets/python.json	/^    "description": "triple quoted string (single quotes)"$/;"	s	object:'
+description	my-snippets/python.json	/^    "description": "with"$/;"	s	object:with
+detailview	my-snippets/python.json	/^  "detailview": {$/;"	o
+dispatch	my-snippets/python.json	/^  "dispatch": {$/;"	o
+dj-listview	my-snippets/python.json	/^  "dj-listview": {$/;"	o
+doc	my-snippets/python.json	/^  "doc": {$/;"	o
+dom event cancel default and propagation	my-snippets/javascript.json	/^	"dom event cancel default and propagation": {$/;"	o
 dostring	lua/utf8/test/test_pm.lua	/^local function dostring (s) return (loadstring or load)(s)() or "" end$/;"	f
 dostring	submodules/utf8.lua/test/test_pm.lua	/^local function dostring (s) return (loadstring or load)(s)() or "" end$/;"	f
 dummy.new	lua/utf8/charclass/runtime/dummy.lua	/^function dummy.new()$/;"	f
@@ -207,6 +955,8 @@ dummy:without_classes	lua/utf8/charclass/runtime/dummy.lua	/^function dummy:with
 dummy:without_classes	submodules/utf8.lua/charclass/runtime/dummy.lua	/^function dummy:without_classes(...)$/;"	f
 dump	lua/utf8/util.lua	/^local function dump(val, tab)$/;"	f
 dump	submodules/utf8.lua/util.lua	/^local function dump(val, tab)$/;"	f
+else if statement	my-snippets/javascript.json	/^	"else if statement": {$/;"	o
+else statement	my-snippets/javascript.json	/^	"else statement": {$/;"	o
 encode	lua/json/json.lua	/^encode = function(val, stack)$/;"	f
 encode	submodules/json.lua/json.lua	/^encode = function(val, stack)$/;"	f
 encode_nil	lua/json/json.lua	/^local function encode_nil(val)$/;"	f
@@ -224,6 +974,10 @@ equals	submodules/utf8.lua/test/util.lua	/^local function equals(t1, t2)$/;"	f
 error_msg	plugin/packer_compiled.lua	/^local no_errors, error_msg = pcall(function()$/;"	f
 escape_char	lua/json/json.lua	/^local function escape_char(c)$/;"	f
 escape_char	submodules/json.lua/json.lua	/^local function escape_char(c)$/;"	f
+event handler	my-snippets/javascript.json	/^	"event handler": {$/;"	o
+every	my-snippets/javascript.json	/^	"every": {$/;"	o
+export named function	my-snippets/javascript.json	/^	"export named function": {$/;"	o
+exports.member	my-snippets/javascript.json	/^	"exports.member": {$/;"	o
 f	lua/utf8/test/test_pm.lua	/^function f(a,b) return utf8.gsub(a,'.',b) end$/;"	f
 f	lua/utf8/test/test_pm.lua	/^function f(s, p)$/;"	f
 f	lua/wcwidth/init.lua	/^   local ok, f = pcall(function ()$/;"	f
@@ -232,15 +986,52 @@ f	submodules/utf8.lua/test/test_pm.lua	/^function f(a,b) return utf8.gsub(a,'.',
 f	submodules/utf8.lua/test/test_pm.lua	/^function f(s, p)$/;"	f
 f1	lua/utf8/test/test_pm.lua	/^function f1(s, p)$/;"	f
 f1	submodules/utf8.lua/test/test_pm.lua	/^function f1(s, p)$/;"	f
+fbool	my-snippets/python.json	/^  "fbool": {$/;"	o
+fchar	my-snippets/python.json	/^  "fchar": {$/;"	o
+fchoice	my-snippets/python.json	/^  "fchoice": {$/;"	o
+fcombo	my-snippets/python.json	/^  "fcombo": {$/;"	o
+fdate	my-snippets/python.json	/^  "fdate": {$/;"	o
+fdatetime	my-snippets/python.json	/^  "fdatetime": {$/;"	o
+fdecimal	my-snippets/python.json	/^  "fdecimal": {$/;"	o
+ffile	my-snippets/python.json	/^  "ffile": {$/;"	o
+ffilepath	my-snippets/python.json	/^  "ffilepath": {$/;"	o
+ffloat	my-snippets/python.json	/^  "ffloat": {$/;"	o
+filter	my-snippets/javascript.json	/^	"filter": {$/;"	o
+fimg	my-snippets/python.json	/^  "fimg": {$/;"	o
+find	my-snippets/javascript.json	/^	"find": {$/;"	o
+fint	my-snippets/python.json	/^  "fint": {$/;"	o
+fip	my-snippets/python.json	/^  "fip": {$/;"	o
+fk	my-snippets/python.json	/^  "fk": {$/;"	o
+fmail	my-snippets/python.json	/^  "fmail": {$/;"	o
+fmochoice	my-snippets/python.json	/^  "fmochoice": {$/;"	o
+fmomuchoice	my-snippets/python.json	/^  "fmomuchoice": {$/;"	o
+fmuchoice	my-snippets/python.json	/^  "fmuchoice": {$/;"	o
+fmuval	my-snippets/python.json	/^  "fmuval": {$/;"	o
+fnullbool	my-snippets/python.json	/^  "fnullbool": {$/;"	o
+foo	test.py	/^def foo():$/;"	f
+for	my-snippets/python.json	/^  "for": {$/;"	o
+for in loop	my-snippets/javascript.json	/^	"for in loop": {$/;"	o
+for loop	my-snippets/javascript.json	/^	"for loop": {$/;"	o
+for of loop	my-snippets/javascript.json	/^	"for of loop": {$/;"	o
+forEach loop	my-snippets/javascript.json	/^	"forEach loop": {$/;"	o
+form	my-snippets/python.json	/^  "form": {$/;"	o
 format_range	submodules/lua-wcwidth/update-tables	/^format_range () {$/;"	f
+freg	my-snippets/python.json	/^  "freg": {$/;"	o
+from	my-snippets/python.json	/^  "from": {$/;"	o
 fromstart	lua/utf8/begins/compiletime/vanilla.lua	/^  fromstart = function(ctx)$/;"	f
 fromstart	submodules/utf8.lua/begins/compiletime/vanilla.lua	/^  fromstart = function(ctx)$/;"	f
 frontier	lua/utf8/modifier/compiletime/frontier.lua	/^  frontier = function(class, name)$/;"	f
 frontier	submodules/utf8.lua/modifier/compiletime/frontier.lua	/^  frontier = function(class, name)$/;"	f
+fsdatetime	my-snippets/python.json	/^  "fsdatetime": {$/;"	o
+fslug	my-snippets/python.json	/^  "fslug": {$/;"	o
+ftchoice	my-snippets/python.json	/^  "ftchoice": {$/;"	o
+ftime	my-snippets/python.json	/^  "ftime": {$/;"	o
+ftmuchoice	my-snippets/python.json	/^  "ftmuchoice": {$/;"	o
 func	lua/utf8/functions/lua53.lua	/^  local func = get_matcher_function(regex, false)$/;"	f
 func	lua/utf8/functions/lua53.lua	/^  local func = get_matcher_function(regex, plain)$/;"	f
 func	submodules/utf8.lua/functions/lua53.lua	/^  local func = get_matcher_function(regex, false)$/;"	f
 func	submodules/utf8.lua/functions/lua53.lua	/^  local func = get_matcher_function(regex, plain)$/;"	f
+furl	my-snippets/python.json	/^  "furl": {$/;"	o
 g:neosolarized_bold	colors/NeoSolarized.vim	/^let g:neosolarized_bold = get(g:, "neosolarized_bold", 1)$/;"	v
 g:neosolarized_contrast	colors/NeoSolarized.vim	/^let g:neosolarized_contrast = get(g:, "neosolarized_contrast", "normal")$/;"	v
 g:neosolarized_diffmode	colors/NeoSolarized.vim	/^let g:neosolarized_diffmode = get(g:, "neosolarized_diffmode", "normal")$/;"	v
@@ -274,20 +1065,41 @@ g:terminal_color_8	colors/NeoSolarized.vim	/^  let g:terminal_color_8 = g:termin
 g:terminal_color_8	colors/NeoSolarized.vim	/^  let g:terminal_color_8 = s:gui_base02$/;"	v
 g:terminal_color_9	colors/NeoSolarized.vim	/^  let g:terminal_color_9 = g:terminal_color_1$/;"	v
 g:terminal_color_9	colors/NeoSolarized.vim	/^  let g:terminal_color_9 = s:gui_orange$/;"	v
+generator function	my-snippets/javascript.json	/^	"generator function": {$/;"	o
+getAttribute	my-snippets/javascript.json	/^	"getAttribute": {$/;"	o
+getElementById	my-snippets/javascript.json	/^	"getElementById": {$/;"	o
+getElementsByClassName	my-snippets/javascript.json	/^	"getElementsByClassName": {$/;"	o
+getElementsByTagName	my-snippets/javascript.json	/^	"getElementsByTagName": {$/;"	o
 get_matcher_function	lua/utf8/functions/lua53.lua	/^function get_matcher_function(regex, plain)$/;"	f
 get_matcher_function	submodules/utf8.lua/functions/lua53.lua	/^function get_matcher_function(regex, plain)$/;"	f
 get_temp_color	lua/weather/init.lua	/^local function get_temp_color(temp)$/;"	f
 get_weather	lua/weather/init.lua	/^local function get_weather()$/;"	f
+getter	my-snippets/javascript.json	/^	"getter": {$/;"	o
+getter + setter	my-snippets/javascript.json	/^	"getter + setter": {$/;"	o
 global	lua/utf8/test/strict.lua	/^function global(...)$/;"	f
 global	submodules/utf8.lua/test/strict.lua	/^function global(...)$/;"	f
 halfodd	lua/wcwidth/init.lua	/^local halfodd = (function ()$/;"	f
 halfodd	submodules/lua-wcwidth/wcwidth/init.lua	/^local halfodd = (function ()$/;"	f
 hs_highlight_boolean	colors/NeoSolarized.vim	/^let hs_highlight_boolean=1$/;"	v
 hs_highlight_delimiters	colors/NeoSolarized.vim	/^let hs_highlight_delimiters=1$/;"	v
+if	my-snippets/python.json	/^  "if": {$/;"	o
+if statement	my-snippets/javascript.json	/^	"if statement": {$/;"	o
+if/else statement	my-snippets/javascript.json	/^	"if\/else statement": {$/;"	o
+ife	my-snippets/python.json	/^  "ife": {$/;"	o
+ifee	my-snippets/python.json	/^  "ifee": {$/;"	o
+ifmain	my-snippets/python.json	/^  "ifmain": {$/;"	o
+immediately-invoked function expression	my-snippets/javascript.json	/^	"immediately-invoked function expression": {$/;"	o
+import module	my-snippets/javascript.json	/^	"import module": {$/;"	o
+import module as	my-snippets/javascript.json	/^	"import module as": {$/;"	o
+import module destructured	my-snippets/javascript.json	/^	"import module destructured": {$/;"	o
+instanceof	my-snippets/javascript.json	/^	"instanceof": {$/;"	o
 int32array	lua/utf8/init.lua	/^    int32array = function(size)$/;"	f
 int32array	submodules/utf8.lua/init.lua	/^    int32array = function(size)$/;"	f
 isbalanced	lua/utf8/test/test_pm.lua	/^function isbalanced (s)$/;"	f
 isbalanced	submodules/utf8.lua/test/test_pm.lua	/^function isbalanced (s)$/;"	f
+it asynchronous	my-snippets/javascript.json	/^	"it asynchronous": {$/;"	o
+it synchronous	my-snippets/javascript.json	/^	"it synchronous": {$/;"	o
+it with a callback	my-snippets/javascript.json	/^	"it with a callback": {$/;"	o
 json.decode	lua/json/bench/bench_decode.lua	/^    json.decode = function(...) return _decode(json, ...) end$/;"	f
 json.decode	lua/json/bench/bench_encode.lua	/^    json.decode = function(...) return _decode(json, ...) end$/;"	f
 json.decode	lua/json/json.lua	/^function json.decode(str)$/;"	f
@@ -304,29 +1116,78 @@ json.encode	submodules/json.lua/bench/bench_encode.lua	/^    json.encode = funct
 json.encode	submodules/json.lua/json.lua	/^function json.encode(val)$/;"	f
 json.encode(value)	lua/json/README.md	/^#### json.encode(value)$/;"	t	section:![json.lua](https://cloud.githubusercontent.com/assets/3920290/9281532/99e5e0cc-42bd-11e5-8fce-eaff2f7fc681.png)""Usage
 json.encode(value)	submodules/json.lua/README.md	/^#### json.encode(value)$/;"	t	section:![json.lua](https://cloud.githubusercontent.com/assets/3920290/9281532/99e5e0cc-42bd-11e5-8fce-eaff2f7fc681.png)""Usage
+let and if statement	my-snippets/javascript.json	/^	"let and if statement": {$/;"	o
+let assignment awaited	my-snippets/javascript.json	/^	"let assignment awaited": {$/;"	o
+let assignment yielded	my-snippets/javascript.json	/^	"let assignment yielded": {$/;"	o
+let statement	my-snippets/javascript.json	/^	"let statement": {$/;"	o
+listview	my-snippets/python.json	/^  "listview": {$/;"	o
 lua-wcwidth	submodules/lua-wcwidth/README.md	/^lua-wcwidth$/;"	c
 lua-wcwidth	submodules/lua-wcwidth/README.md.in	/^lua-wcwidth$/;"	c
+m2m	my-snippets/python.json	/^  "m2m": {$/;"	o
 make_readme	submodules/lua-wcwidth/update-tables	/^make_readme () {$/;"	f
 malform	lua/utf8/test/test_pm.lua	/^local function malform (p, m)$/;"	f
 malform	submodules/utf8.lua/test/test_pm.lua	/^local function malform (p, m)$/;"	f
+map	my-snippets/javascript.json	/^	"map": {$/;"	o
+mauto	my-snippets/python.json	/^  "mauto": {$/;"	o
+mbigint	my-snippets/python.json	/^  "mbigint": {$/;"	o
+mbool	my-snippets/python.json	/^  "mbool": {$/;"	o
+mchar	my-snippets/python.json	/^  "mchar": {$/;"	o
+mcoseint	my-snippets/python.json	/^  "mcoseint": {$/;"	o
+mdate	my-snippets/python.json	/^  "mdate": {$/;"	o
+mdatetime	my-snippets/python.json	/^  "mdatetime": {$/;"	o
+mdecimal	my-snippets/python.json	/^  "mdecimal": {$/;"	o
+memail	my-snippets/python.json	/^  "memail": {$/;"	o
+method	my-snippets/javascript.json	/^	"method": {$/;"	o
+mfile	my-snippets/python.json	/^  "mfile": {$/;"	o
+mfilepath	my-snippets/python.json	/^  "mfilepath": {$/;"	o
+mfloat	my-snippets/python.json	/^  "mfloat": {$/;"	o
+mimg	my-snippets/python.json	/^  "mimg": {$/;"	o
+mint	my-snippets/python.json	/^  "mint": {$/;"	o
 minus	lua/utf8/modifier/compiletime/vanilla.lua	/^  minus = function(class, name)$/;"	f
 minus	submodules/utf8.lua/modifier/compiletime/vanilla.lua	/^  minus = function(class, name)$/;"	f
+mip	my-snippets/python.json	/^  "mip": {$/;"	o
+mnullbool	my-snippets/python.json	/^  "mnullbool": {$/;"	o
 mod	lua/wcwidth/init.lua	/^   local mod = math.mod or function (x, d)$/;"	f
 mod	submodules/lua-wcwidth/wcwidth/init.lua	/^   local mod = math.mod or function (x, d)$/;"	f
 mode_hl	lua/config/galaxyline/init.lua	/^local function mode_hl()$/;"	f
 mode_name	lua/config/galaxyline/init.lua	/^local function mode_name()$/;"	f
+model	my-snippets/python.json	/^  "model": {$/;"	o
+modelform	my-snippets/python.json	/^  "modelform": {$/;"	o
+modelfull	my-snippets/python.json	/^  "modelfull": {$/;"	o
+module as class	my-snippets/javascript.json	/^	"module as class": {$/;"	o
+module default export	my-snippets/javascript.json	/^	"module default export": {$/;"	o
+module default export function	my-snippets/javascript.json	/^	"module default export function": {$/;"	o
+module export	my-snippets/javascript.json	/^	"module export": {$/;"	o
+module export const	my-snippets/javascript.json	/^	"module export const": {$/;"	o
+module.exports	my-snippets/javascript.json	/^	"module.exports": {$/;"	o
+mphone	my-snippets/python.json	/^  "mphone": {$/;"	o
+mposint	my-snippets/python.json	/^  "mposint": {$/;"	o
+mpossmallint	my-snippets/python.json	/^  "mpossmallint": {$/;"	o
+mslug	my-snippets/python.json	/^  "mslug": {$/;"	o
+msmallint	my-snippets/python.json	/^  "msmallint": {$/;"	o
 mt.__index	lua/utf8/test/strict.lua	/^mt.__index = function (t, n)$/;"	f
 mt.__index	submodules/utf8.lua/test/strict.lua	/^mt.__index = function (t, n)$/;"	f
 mt.__newindex	lua/utf8/test/strict.lua	/^mt.__newindex = function (t, n, v)$/;"	f
 mt.__newindex	submodules/utf8.lua/test/strict.lua	/^mt.__newindex = function (t, n, v)$/;"	f
+mtext	my-snippets/python.json	/^  "mtext": {$/;"	o
+mtime	my-snippets/python.json	/^  "mtime": {$/;"	o
+murl	my-snippets/python.json	/^  "murl": {$/;"	o
+musstate	my-snippets/python.json	/^  "musstate": {$/;"	o
+mxml	my-snippets/python.json	/^  "mxml": {$/;"	o
+my_list	test.py	/^my_list = [$/;"	v
+named function	my-snippets/javascript.json	/^	"named function": {$/;"	o
+named generator	my-snippets/javascript.json	/^	"named generator": {$/;"	o
 native.new	lua/utf8/charclass/runtime/native.lua	/^function native.new()$/;"	f
 native.new	submodules/utf8.lua/charclass/runtime/native.lua	/^function native.new()$/;"	f
 native:is	lua/utf8/charclass/runtime/native.lua	/^function native:is(class, char_code)$/;"	f
 native:is	submodules/utf8.lua/charclass/runtime/native.lua	/^function native:is(class, char_code)$/;"	f
 new	lua/utf8/context/compiletime.lua	/^  new = function()$/;"	f
 new	submodules/utf8.lua/context/compiletime.lua	/^  new = function()$/;"	f
+new Promise	my-snippets/javascript.json	/^	"new Promise": {$/;"	o
 next_char	lua/json/json.lua	/^local function next_char(str, idx, set, negate)$/;"	f
 next_char	submodules/json.lua/json.lua	/^local function next_char(str, idx, set, negate)$/;"	f
+numeric	my-snippets/python.json	/^  "numeric": {$/;"	o
+o2o	my-snippets/python.json	/^  "o2o": {$/;"	o
 on_attach	lua/lsp/init.lua	/^local on_attach = function(_, bufnr)$/;"	f
 p	lua/utf8/test/test_pm.lua	/^  p = utf8.gsub(p, "%%([0-9])", function (s) return "%" .. (tonumber(s)+1) end)$/;"	f
 p	submodules/utf8.lua/test/test_pm.lua	/^  p = utf8.gsub(p, "%%([0-9])", function (s) return "%" .. (tonumber(s)+1) end)$/;"	f
@@ -357,20 +1218,313 @@ parse_string	lua/json/json.lua	/^local function parse_string(str, i)$/;"	f
 parse_string	submodules/json.lua/json.lua	/^local function parse_string(str, i)$/;"	f
 parse_unicode_escape	lua/json/json.lua	/^local function parse_unicode_escape(s)$/;"	f
 parse_unicode_escape	submodules/json.lua/json.lua	/^local function parse_unicode_escape(s)$/;"	f
+pmdoc	my-snippets/python.json	/^  "pmdoc": {$/;"	o
+prefix	my-snippets/htmldjango.json	/^    "prefix": "dj_a_href",$/;"	s	object:Django: a href
+prefix	my-snippets/htmldjango.json	/^    "prefix": "dj_base",$/;"	s	object:Django: base.html
+prefix	my-snippets/htmldjango.json	/^    "prefix": "dj_blk",$/;"	s	object:Django: block in one line
+prefix	my-snippets/htmldjango.json	/^    "prefix": "dj_blk_src",$/;"	s	object:Django: Block Script src
+prefix	my-snippets/htmldjango.json	/^    "prefix": "dj_blk_styles",$/;"	s	object:Django: Block Styles
+prefix	my-snippets/htmldjango.json	/^    "prefix": "dj_blkc",$/;"	s	object:Django: block content
+prefix	my-snippets/htmldjango.json	/^    "prefix": "dj_blksrc",$/;"	s	object:Django: block script source
+prefix	my-snippets/htmldjango.json	/^    "prefix": "dj_blkt",$/;"	s	object:Django: block title
+prefix	my-snippets/htmldjango.json	/^    "prefix": "dj_block",$/;"	s	object:Django: block 
+prefix	my-snippets/htmldjango.json	/^    "prefix": "dj_else",$/;"	s	object:Django: else
+prefix	my-snippets/htmldjango.json	/^    "prefix": "dj_extends",$/;"	s	object:Django: extends
+prefix	my-snippets/htmldjango.json	/^    "prefix": "dj_fld-01",$/;"	s	object:Django: input field #1
+prefix	my-snippets/htmldjango.json	/^    "prefix": "dj_fld-02",$/;"	s	object:Django: input field with label
+prefix	my-snippets/htmldjango.json	/^    "prefix": "dj_for",$/;"	s	object:Django: for loop
+prefix	my-snippets/htmldjango.json	/^    "prefix": "dj_form_asp",$/;"	s	object:Django: form
+prefix	my-snippets/htmldjango.json	/^    "prefix": "dj_form_new",$/;"	s	object:Django: form new
+prefix	my-snippets/htmldjango.json	/^    "prefix": "dj_if",$/;"	s	object:Django: if
+prefix	my-snippets/htmldjango.json	/^    "prefix": "dj_img_src",$/;"	s	object:Django: img src
+prefix	my-snippets/htmldjango.json	/^    "prefix": "dj_include",$/;"	s	object:Django: include
+prefix	my-snippets/htmldjango.json	/^    "prefix": "dj_link_href",$/;"	s	object:Django: source of style file
+prefix	my-snippets/htmldjango.json	/^    "prefix": "dj_load",$/;"	s	object:Django: load 
+prefix	my-snippets/htmldjango.json	/^    "prefix": "dj_load_static",$/;"	s	object:Django: load static files
+prefix	my-snippets/htmldjango.json	/^    "prefix": "dj_loads",$/;"	s	object:Django: load static files
+prefix	my-snippets/htmldjango.json	/^    "prefix": "dj_script_src",$/;"	s	object:Django: script src 
+prefix	my-snippets/htmldjango.json	/^    "prefix": "dj_view",$/;"	s	object:Django: HTML tags for View
+prefix	my-snippets/htmldjango.json	/^    "prefix": "djextlayout",$/;"	s	object:Django: template extending layout.html
+prefix	my-snippets/htmldjango.json	/^    "prefix": "yi_table",$/;"	s	object:卦爻辭
+prefix	my-snippets/javascript.json	/^		"prefix": "a",$/;"	s	object:await
+prefix	my-snippets/javascript.json	/^		"prefix": "aa",$/;"	s	object:async arrow function
+prefix	my-snippets/javascript.json	/^		"prefix": "ac",$/;"	s	object:appendChild
+prefix	my-snippets/javascript.json	/^		"prefix": "ae",$/;"	s	object:addEventListener
+prefix	my-snippets/javascript.json	/^		"prefix": "af",$/;"	s	object:arrow function
+prefix	my-snippets/javascript.json	/^		"prefix": "afe",$/;"	s	object:afterEach
+prefix	my-snippets/javascript.json	/^		"prefix": "aft",$/;"	s	object:after
+prefix	my-snippets/javascript.json	/^		"prefix": "apa",$/;"	s	object:await Promise.all
+prefix	my-snippets/javascript.json	/^		"prefix": "apm",$/;"	s	object:await Promise.all map
+prefix	my-snippets/javascript.json	/^		"prefix": "asf",$/;"	s	object:async function
+prefix	my-snippets/javascript.json	/^		"prefix": "ba",$/;"	s	object:beforeAll
+prefix	my-snippets/javascript.json	/^		"prefix": "bf",$/;"	s	object:before
+prefix	my-snippets/javascript.json	/^		"prefix": "bfe",$/;"	s	object:beforeEach
+prefix	my-snippets/javascript.json	/^		"prefix": "c",$/;"	s	object:const statement
+prefix	my-snippets/javascript.json	/^		"prefix": "ca",$/;"	s	object:const assignment awaited
+prefix	my-snippets/javascript.json	/^		"prefix": "cad",$/;"	s	object:const statement from array destructuring
+prefix	my-snippets/javascript.json	/^		"prefix": "car",$/;"	s	object:const array
+prefix	my-snippets/javascript.json	/^		"prefix": "cb",$/;"	s	object:Node callback
+prefix	my-snippets/javascript.json	/^		"prefix": "cd",$/;"	s	object:const statement from destructuring
+prefix	my-snippets/javascript.json	/^		"prefix": "cda",$/;"	s	object:const destructuring assignment awaited
+prefix	my-snippets/javascript.json	/^		"prefix": "cdf",$/;"	s	object:createDocumentFragment
+prefix	my-snippets/javascript.json	/^		"prefix": "ce",$/;"	s	object:console.error
+prefix	my-snippets/javascript.json	/^		"prefix": "cel",$/;"	s	object:createElement
+prefix	my-snippets/javascript.json	/^		"prefix": "cf",$/;"	s	object:const arrow function assignment
+prefix	my-snippets/javascript.json	/^		"prefix": "cl",$/;"	s	object:console.log
+prefix	my-snippets/javascript.json	/^		"prefix": "cla",$/;"	s	object:classList.add
+prefix	my-snippets/javascript.json	/^		"prefix": "clr",$/;"	s	object:classList.remove
+prefix	my-snippets/javascript.json	/^		"prefix": "cn",$/;"	s	object:constructor
+prefix	my-snippets/javascript.json	/^		"prefix": "co",$/;"	s	object:const object
+prefix	my-snippets/javascript.json	/^		"prefix": "cod",$/;"	s	object:console.dir
+prefix	my-snippets/javascript.json	/^		"prefix": "cr",$/;"	s	object:const module = require('module')
+prefix	my-snippets/javascript.json	/^		"prefix": "cs",$/;"	s	object:class
+prefix	my-snippets/javascript.json	/^		"prefix": "csx",$/;"	s	object:class extends
+prefix	my-snippets/javascript.json	/^		"prefix": "ct",$/;"	s	object:classList.toggle
+prefix	my-snippets/javascript.json	/^		"prefix": "cv",$/;"	s	object:console.log a variable
+prefix	my-snippets/javascript.json	/^		"prefix": "cw",$/;"	s	object:console.warn
+prefix	my-snippets/javascript.json	/^		"prefix": "cy",$/;"	s	object:const assignment yielded
+prefix	my-snippets/javascript.json	/^		"prefix": "desc",$/;"	s	object:describe
+prefix	my-snippets/javascript.json	/^		"prefix": "e",$/;"	s	object:module export
+prefix	my-snippets/javascript.json	/^		"prefix": "ec",$/;"	s	object:module export const
+prefix	my-snippets/javascript.json	/^		"prefix": "ed",$/;"	s	object:module default export
+prefix	my-snippets/javascript.json	/^		"prefix": "edf",$/;"	s	object:module default export function
+prefix	my-snippets/javascript.json	/^		"prefix": "ef",$/;"	s	object:export named function
+prefix	my-snippets/javascript.json	/^		"prefix": "ei",$/;"	s	object:else if statement
+prefix	my-snippets/javascript.json	/^		"prefix": "el",$/;"	s	object:else statement
+prefix	my-snippets/javascript.json	/^		"prefix": "em",$/;"	s	object:exports.member
+prefix	my-snippets/javascript.json	/^		"prefix": "evc",$/;"	s	object:dom event cancel default and propagation
+prefix	my-snippets/javascript.json	/^		"prefix": "every",$/;"	s	object:every
+prefix	my-snippets/javascript.json	/^		"prefix": "f",$/;"	s	object:arrow function with body
+prefix	my-snippets/javascript.json	/^		"prefix": "fan",$/;"	s	object:anonymous function
+prefix	my-snippets/javascript.json	/^		"prefix": "fd",$/;"	s	object:arrow function with destructuring
+prefix	my-snippets/javascript.json	/^		"prefix": "fe",$/;"	s	object:forEach loop
+prefix	my-snippets/javascript.json	/^		"prefix": "fi",$/;"	s	object:for in loop
+prefix	my-snippets/javascript.json	/^		"prefix": "filter",$/;"	s	object:filter
+prefix	my-snippets/javascript.json	/^		"prefix": "find",$/;"	s	object:find
+prefix	my-snippets/javascript.json	/^		"prefix": "fl",$/;"	s	object:for loop
+prefix	my-snippets/javascript.json	/^		"prefix": "fn",$/;"	s	object:named function
+prefix	my-snippets/javascript.json	/^		"prefix": "fo",$/;"	s	object:for of loop
+prefix	my-snippets/javascript.json	/^		"prefix": "fr",$/;"	s	object:arrow function with return
+prefix	my-snippets/javascript.json	/^		"prefix": "ga",$/;"	s	object:getAttribute
+prefix	my-snippets/javascript.json	/^		"prefix": "gc",$/;"	s	object:getElementsByClassName
+prefix	my-snippets/javascript.json	/^		"prefix": "get",$/;"	s	object:getter
+prefix	my-snippets/javascript.json	/^		"prefix": "gf",$/;"	s	object:generator function
+prefix	my-snippets/javascript.json	/^		"prefix": "gfn",$/;"	s	object:named generator
+prefix	my-snippets/javascript.json	/^		"prefix": "gi",$/;"	s	object:getElementById
+prefix	my-snippets/javascript.json	/^		"prefix": "gs",$/;"	s	object:getter + setter
+prefix	my-snippets/javascript.json	/^		"prefix": "gt",$/;"	s	object:getElementsByTagName
+prefix	my-snippets/javascript.json	/^		"prefix": "i",$/;"	s	object:if statement
+prefix	my-snippets/javascript.json	/^		"prefix": "ia",$/;"	s	object:Array.isArray()
+prefix	my-snippets/javascript.json	/^		"prefix": "ia",$/;"	s	object:import module as
+prefix	my-snippets/javascript.json	/^		"prefix": "id",$/;"	s	object:import module destructured
+prefix	my-snippets/javascript.json	/^		"prefix": "ife",$/;"	s	object:if/else statement
+prefix	my-snippets/javascript.json	/^		"prefix": "iife",$/;"	s	object:immediately-invoked function expression
+prefix	my-snippets/javascript.json	/^		"prefix": "im",$/;"	s	object:import module
+prefix	my-snippets/javascript.json	/^		"prefix": "iof",$/;"	s	object:instanceof
+prefix	my-snippets/javascript.json	/^		"prefix": "it",$/;"	s	object:it asynchronous
+prefix	my-snippets/javascript.json	/^		"prefix": "itd",$/;"	s	object:it with a callback
+prefix	my-snippets/javascript.json	/^		"prefix": "its",$/;"	s	object:it synchronous
+prefix	my-snippets/javascript.json	/^		"prefix": "jp",$/;"	s	object:JSON.parse()
+prefix	my-snippets/javascript.json	/^		"prefix": "js",$/;"	s	object:JSON.stringify()
+prefix	my-snippets/javascript.json	/^		"prefix": "l",$/;"	s	object:let statement
+prefix	my-snippets/javascript.json	/^		"prefix": "la",$/;"	s	object:let assignment awaited
+prefix	my-snippets/javascript.json	/^		"prefix": "lif",$/;"	s	object:let and if statement
+prefix	my-snippets/javascript.json	/^		"prefix": "ly",$/;"	s	object:let assignment yielded
+prefix	my-snippets/javascript.json	/^		"prefix": "m",$/;"	s	object:method
+prefix	my-snippets/javascript.json	/^		"prefix": "map",$/;"	s	object:map
+prefix	my-snippets/javascript.json	/^		"prefix": "me",$/;"	s	object:module.exports
+prefix	my-snippets/javascript.json	/^		"prefix": "mec",$/;"	s	object:module as class
+prefix	my-snippets/javascript.json	/^		"prefix": "np",$/;"	s	object:new Promise
+prefix	my-snippets/javascript.json	/^		"prefix": "oa",$/;"	s	object:Object.assign
+prefix	my-snippets/javascript.json	/^		"prefix": "oc",$/;"	s	object:Object.create
+prefix	my-snippets/javascript.json	/^		"prefix": "od",$/;"	s	object:Object.defineProperty
+prefix	my-snippets/javascript.json	/^		"prefix": "og",$/;"	s	object:Object.getOwnPropertyDescriptor
+prefix	my-snippets/javascript.json	/^		"prefix": "ok",$/;"	s	object:Object.keys
+prefix	my-snippets/javascript.json	/^		"prefix": "on",$/;"	s	object:event handler
+prefix	my-snippets/javascript.json	/^		"prefix": "ov",$/;"	s	object:Object.values
+prefix	my-snippets/javascript.json	/^		"prefix": "p",$/;"	s	object:Promise
+prefix	my-snippets/javascript.json	/^		"prefix": "pa",$/;"	s	object:Promise.all
+prefix	my-snippets/javascript.json	/^		"prefix": "pc",$/;"	s	object:Promise.catch
+prefix	my-snippets/javascript.json	/^		"prefix": "pe",$/;"	s	object:process.env
+prefix	my-snippets/javascript.json	/^		"prefix": "prj",$/;"	s	object:Promise.reject
+prefix	my-snippets/javascript.json	/^		"prefix": "proto",$/;"	s	object:prototype method
+prefix	my-snippets/javascript.json	/^		"prefix": "prs",$/;"	s	object:Promise.resolve
+prefix	my-snippets/javascript.json	/^		"prefix": "pt",$/;"	s	object:Promise.then
+prefix	my-snippets/javascript.json	/^		"prefix": "qs",$/;"	s	object:querySelector
+prefix	my-snippets/javascript.json	/^		"prefix": "qsa",$/;"	s	object:querySelectorAll
+prefix	my-snippets/javascript.json	/^		"prefix": "r",$/;"	s	object:return
+prefix	my-snippets/javascript.json	/^		"prefix": "ra",$/;"	s	object:removeAttribute
+prefix	my-snippets/javascript.json	/^		"prefix": "ra",$/;"	s	object:return new array
+prefix	my-snippets/javascript.json	/^		"prefix": "rc",$/;"	s	object:removeChild
+prefix	my-snippets/javascript.json	/^		"prefix": "reduce",$/;"	s	object:reduce
+prefix	my-snippets/javascript.json	/^		"prefix": "rel",$/;"	s	object:removeEventListener
+prefix	my-snippets/javascript.json	/^		"prefix": "rn",$/;"	s	object:return null
+prefix	my-snippets/javascript.json	/^		"prefix": "ro",$/;"	s	object:return new object
+prefix	my-snippets/javascript.json	/^		"prefix": "rp",$/;"	s	object:return promise
+prefix	my-snippets/javascript.json	/^		"prefix": "rq",$/;"	s	object:require
+prefix	my-snippets/javascript.json	/^		"prefix": "rt",$/;"	s	object:return this
+prefix	my-snippets/javascript.json	/^		"prefix": "sa",$/;"	s	object:setAttribute
+prefix	my-snippets/javascript.json	/^		"prefix": "set",$/;"	s	object:setter
+prefix	my-snippets/javascript.json	/^		"prefix": "si",$/;"	s	object:setInterval
+prefix	my-snippets/javascript.json	/^		"prefix": "sim",$/;"	s	object:setImmediate
+prefix	my-snippets/javascript.json	/^		"prefix": "some",$/;"	s	object:some
+prefix	my-snippets/javascript.json	/^		"prefix": "t",$/;"	s	object:this
+prefix	my-snippets/javascript.json	/^		"prefix": "ta",$/;"	s	object:ternary assignment
+prefix	my-snippets/javascript.json	/^		"prefix": "tc",$/;"	s	object:try/catch
+prefix	my-snippets/javascript.json	/^		"prefix": "tcf",$/;"	s	object:try/catch/finally
+prefix	my-snippets/javascript.json	/^		"prefix": "te",$/;"	s	object:ternary
+prefix	my-snippets/javascript.json	/^		"prefix": "tf",$/;"	s	object:try/finally
+prefix	my-snippets/javascript.json	/^		"prefix": "tn",$/;"	s	object:throw new Error
+prefix	my-snippets/javascript.json	/^		"prefix": "to",$/;"	s	object:typeof
+prefix	my-snippets/javascript.json	/^		"prefix": "uss",$/;"	s	object:use strict
+prefix	my-snippets/javascript.json	/^		"prefix": "v",$/;"	s	object:var statement
+prefix	my-snippets/javascript.json	/^		"prefix": "va",$/;"	s	object:var assignment
+prefix	my-snippets/javascript.json	/^		"prefix": "wid",$/;"	s	object:while iteration decrementing
+prefix	my-snippets/javascript.json	/^		"prefix": "wl",$/;"	s	object:while loop
+prefix	my-snippets/javascript.json	/^		"prefix": "wrap selection in arrow function",$/;"	s	object:wrap selection in arrow function
+prefix	my-snippets/javascript.json	/^		"prefix": "wrap selection in async arrow function",$/;"	s	object:wrap selection in async arrow function
+prefix	my-snippets/javascript.json	/^		"prefix": "y",$/;"	s	object:yield
+prefix	my-snippets/markdown.json	/^		"prefix": "md_bold",$/;"	s	object:字體加粗
+prefix	my-snippets/markdown.json	/^		"prefix": "md_code",$/;"	s	object:程式碼
+prefix	my-snippets/markdown.json	/^		"prefix": "md_img",$/;"	s	object:圖片
+prefix	my-snippets/markdown.json	/^		"prefix": "md_lnk",$/;"	s	object:連結
+prefix	my-snippets/markdown.json	/^		"prefix": "md_rev",$/;"	s	object:字體反白
+prefix	my-snippets/markdown.json	/^		"prefix": "md_theorem",$/;"	s	object:定理
+prefix	my-snippets/markdown.json	/^		"prefix": "md_tip",$/;"	s	object:提示
+prefix	my-snippets/python.json	/^    "prefix": "#!",$/;"	s	object:#!
+prefix	my-snippets/python.json	/^    "prefix": "'",$/;"	s	object:'
+prefix	my-snippets/python.json	/^    "prefix": "\/(^|(?<=\\\\W))\\\\.\/",$/;"	s	object:/(^|(?<=\\\\W))\\\\./
+prefix	my-snippets/python.json	/^    "prefix": "\\"",$/;"	s	object:\\"
+prefix	my-snippets/python.json	/^    "prefix": "aae",$/;"	s	object:aae
+prefix	my-snippets/python.json	/^    "prefix": "adminview",$/;"	s	object:adminview
+prefix	my-snippets/python.json	/^    "prefix": "ae",$/;"	s	object:ae
+prefix	my-snippets/python.json	/^    "prefix": "af",$/;"	s	object:af
+prefix	my-snippets/python.json	/^    "prefix": "an",$/;"	s	object:an
+prefix	my-snippets/python.json	/^    "prefix": "ann",$/;"	s	object:ann
+prefix	my-snippets/python.json	/^    "prefix": "ar",$/;"	s	object:ar
+prefix	my-snippets/python.json	/^    "prefix": "at",$/;"	s	object:at
+prefix	my-snippets/python.json	/^    "prefix": "attr",$/;"	s	object:attr
+prefix	my-snippets/python.json	/^    "prefix": "class",$/;"	s	object:class
+prefix	my-snippets/python.json	/^    "prefix": "cmp",$/;"	s	object:cmp
+prefix	my-snippets/python.json	/^    "prefix": "contain",$/;"	s	object:contain
+prefix	my-snippets/python.json	/^    "prefix": "context",$/;"	s	object:context
+prefix	my-snippets/python.json	/^    "prefix": "createview",$/;"	s	object:createview
+prefix	my-snippets/python.json	/^    "prefix": "def",$/;"	s	object:def
+prefix	my-snippets/python.json	/^    "prefix": "defc",$/;"	s	object:defc
+prefix	my-snippets/python.json	/^    "prefix": "deff",$/;"	s	object:deff
+prefix	my-snippets/python.json	/^    "prefix": "defs",$/;"	s	object:defs
+prefix	my-snippets/python.json	/^    "prefix": "deleteview",$/;"	s	object:deleteview
+prefix	my-snippets/python.json	/^    "prefix": "desc",$/;"	s	object:desc
+prefix	my-snippets/python.json	/^    "prefix": "detailview",$/;"	s	object:detailview
+prefix	my-snippets/python.json	/^    "prefix": "dispatch",$/;"	s	object:dispatch
+prefix	my-snippets/python.json	/^    "prefix": "dj-listview",$/;"	s	object:dj-listview
+prefix	my-snippets/python.json	/^    "prefix": "doc",$/;"	s	object:doc
+prefix	my-snippets/python.json	/^    "prefix": "fbool",$/;"	s	object:fbool
+prefix	my-snippets/python.json	/^    "prefix": "fchar",$/;"	s	object:fchar
+prefix	my-snippets/python.json	/^    "prefix": "fchoice",$/;"	s	object:fchoice
+prefix	my-snippets/python.json	/^    "prefix": "fcombo",$/;"	s	object:fcombo
+prefix	my-snippets/python.json	/^    "prefix": "fdate",$/;"	s	object:fdate
+prefix	my-snippets/python.json	/^    "prefix": "fdatetime",$/;"	s	object:fdatetime
+prefix	my-snippets/python.json	/^    "prefix": "fdecimal",$/;"	s	object:fdecimal
+prefix	my-snippets/python.json	/^    "prefix": "ffile",$/;"	s	object:ffile
+prefix	my-snippets/python.json	/^    "prefix": "ffilepath",$/;"	s	object:ffilepath
+prefix	my-snippets/python.json	/^    "prefix": "ffloat",$/;"	s	object:ffloat
+prefix	my-snippets/python.json	/^    "prefix": "fimg",$/;"	s	object:fimg
+prefix	my-snippets/python.json	/^    "prefix": "fint",$/;"	s	object:fint
+prefix	my-snippets/python.json	/^    "prefix": "fip",$/;"	s	object:fip
+prefix	my-snippets/python.json	/^    "prefix": "fk",$/;"	s	object:fk
+prefix	my-snippets/python.json	/^    "prefix": "fmail",$/;"	s	object:fmail
+prefix	my-snippets/python.json	/^    "prefix": "fmochoice",$/;"	s	object:fmochoice
+prefix	my-snippets/python.json	/^    "prefix": "fmomuchoice",$/;"	s	object:fmomuchoice
+prefix	my-snippets/python.json	/^    "prefix": "fmuchoice",$/;"	s	object:fmuchoice
+prefix	my-snippets/python.json	/^    "prefix": "fmuval",$/;"	s	object:fmuval
+prefix	my-snippets/python.json	/^    "prefix": "fnullbool",$/;"	s	object:fnullbool
+prefix	my-snippets/python.json	/^    "prefix": "for",$/;"	s	object:for
+prefix	my-snippets/python.json	/^    "prefix": "form",$/;"	s	object:form
+prefix	my-snippets/python.json	/^    "prefix": "freg",$/;"	s	object:freg
+prefix	my-snippets/python.json	/^    "prefix": "from",$/;"	s	object:from
+prefix	my-snippets/python.json	/^    "prefix": "fsdatetime",$/;"	s	object:fsdatetime
+prefix	my-snippets/python.json	/^    "prefix": "fslug",$/;"	s	object:fslug
+prefix	my-snippets/python.json	/^    "prefix": "ftchoice",$/;"	s	object:ftchoice
+prefix	my-snippets/python.json	/^    "prefix": "ftime",$/;"	s	object:ftime
+prefix	my-snippets/python.json	/^    "prefix": "ftmuchoice",$/;"	s	object:ftmuchoice
+prefix	my-snippets/python.json	/^    "prefix": "furl",$/;"	s	object:furl
+prefix	my-snippets/python.json	/^    "prefix": "if",$/;"	s	object:if
+prefix	my-snippets/python.json	/^    "prefix": "ife",$/;"	s	object:ife
+prefix	my-snippets/python.json	/^    "prefix": "ifee",$/;"	s	object:ifee
+prefix	my-snippets/python.json	/^    "prefix": "ifmain",$/;"	s	object:ifmain
+prefix	my-snippets/python.json	/^    "prefix": "listview",$/;"	s	object:listview
+prefix	my-snippets/python.json	/^    "prefix": "m2m",$/;"	s	object:m2m
+prefix	my-snippets/python.json	/^    "prefix": "mauto",$/;"	s	object:mauto
+prefix	my-snippets/python.json	/^    "prefix": "mbigint",$/;"	s	object:mbigint
+prefix	my-snippets/python.json	/^    "prefix": "mbool",$/;"	s	object:mbool
+prefix	my-snippets/python.json	/^    "prefix": "mchar",$/;"	s	object:mchar
+prefix	my-snippets/python.json	/^    "prefix": "mcoseint",$/;"	s	object:mcoseint
+prefix	my-snippets/python.json	/^    "prefix": "mdate",$/;"	s	object:mdate
+prefix	my-snippets/python.json	/^    "prefix": "mdatetime",$/;"	s	object:mdatetime
+prefix	my-snippets/python.json	/^    "prefix": "mdecimal",$/;"	s	object:mdecimal
+prefix	my-snippets/python.json	/^    "prefix": "memail",$/;"	s	object:memail
+prefix	my-snippets/python.json	/^    "prefix": "mfile",$/;"	s	object:mfile
+prefix	my-snippets/python.json	/^    "prefix": "mfilepath",$/;"	s	object:mfilepath
+prefix	my-snippets/python.json	/^    "prefix": "mfloat",$/;"	s	object:mfloat
+prefix	my-snippets/python.json	/^    "prefix": "mimg",$/;"	s	object:mimg
+prefix	my-snippets/python.json	/^    "prefix": "mint",$/;"	s	object:mint
+prefix	my-snippets/python.json	/^    "prefix": "mip",$/;"	s	object:mip
+prefix	my-snippets/python.json	/^    "prefix": "mnullbool",$/;"	s	object:mnullbool
+prefix	my-snippets/python.json	/^    "prefix": "model",$/;"	s	object:model
+prefix	my-snippets/python.json	/^    "prefix": "modelform",$/;"	s	object:modelform
+prefix	my-snippets/python.json	/^    "prefix": "modelfull",$/;"	s	object:modelfull
+prefix	my-snippets/python.json	/^    "prefix": "mphone",$/;"	s	object:mphone
+prefix	my-snippets/python.json	/^    "prefix": "mposint",$/;"	s	object:mposint
+prefix	my-snippets/python.json	/^    "prefix": "mpossmallint",$/;"	s	object:mpossmallint
+prefix	my-snippets/python.json	/^    "prefix": "mslug",$/;"	s	object:mslug
+prefix	my-snippets/python.json	/^    "prefix": "msmallint",$/;"	s	object:msmallint
+prefix	my-snippets/python.json	/^    "prefix": "mtext",$/;"	s	object:mtext
+prefix	my-snippets/python.json	/^    "prefix": "mtime",$/;"	s	object:mtime
+prefix	my-snippets/python.json	/^    "prefix": "murl",$/;"	s	object:murl
+prefix	my-snippets/python.json	/^    "prefix": "musstate",$/;"	s	object:musstate
+prefix	my-snippets/python.json	/^    "prefix": "mxml",$/;"	s	object:mxml
+prefix	my-snippets/python.json	/^    "prefix": "numeric",$/;"	s	object:numeric
+prefix	my-snippets/python.json	/^    "prefix": "o2o",$/;"	s	object:o2o
+prefix	my-snippets/python.json	/^    "prefix": "pmdoc",$/;"	s	object:pmdoc
+prefix	my-snippets/python.json	/^    "prefix": "repr",$/;"	s	object:repr
+prefix	my-snippets/python.json	/^    "prefix": "roprop",$/;"	s	object:roprop
+prefix	my-snippets/python.json	/^    "prefix": "rwprop",$/;"	s	object:rwprop
+prefix	my-snippets/python.json	/^    "prefix": "slotclass",$/;"	s	object:slotclass
+prefix	my-snippets/python.json	/^    "prefix": "stackedinline",$/;"	s	object:stackedinline
+prefix	my-snippets/python.json	/^    "prefix": "tabularinline",$/;"	s	object:tabularinline
+prefix	my-snippets/python.json	/^    "prefix": "templateview",$/;"	s	object:templateview
+prefix	my-snippets/python.json	/^    "prefix": "testcase",$/;"	s	object:testcase
+prefix	my-snippets/python.json	/^    "prefix": "try",$/;"	s	object:try
+prefix	my-snippets/python.json	/^    "prefix": "trye",$/;"	s	object:trye
+prefix	my-snippets/python.json	/^    "prefix": "tryef",$/;"	s	object:tryef
+prefix	my-snippets/python.json	/^    "prefix": "tryf",$/;"	s	object:tryf
+prefix	my-snippets/python.json	/^    "prefix": "updateview",$/;"	s	object:updateview
+prefix	my-snippets/python.json	/^    "prefix": "with",$/;"	s	object:with
+process.env	my-snippets/javascript.json	/^	"process.env": {$/;"	o
+prototype method	my-snippets/javascript.json	/^	"prototype method": {$/;"	o
 provider	lua/config/galaxyline/init.lua	/^    provider = function() return ' ' end,$/;"	f
 provider	lua/config/galaxyline/init.lua	/^    provider = function() return '' end,$/;"	f
 provider	lua/config/galaxyline/init.lua	/^    provider = function() return '' end,$/;"	f
 provider	lua/config/galaxyline/init.lua	/^    provider = function()$/;"	f
 provider	lua/config/galaxyline/init.lua	/^    provider = {function() return ' ' end, 'FileSize'},$/;"	f
+querySelector	my-snippets/javascript.json	/^	"querySelector": {$/;"	o
+querySelectorAll	my-snippets/javascript.json	/^	"querySelectorAll": {$/;"	o
 question	lua/utf8/modifier/compiletime/vanilla.lua	/^  question = function(class, name)$/;"	f
 question	submodules/utf8.lua/modifier/compiletime/vanilla.lua	/^  question = function(class, name)$/;"	f
 r	lua/utf8/test/test_pm.lua	/^r = utf8.gsub(s, '()(%w+)()', function (a,w,b)$/;"	f
 r	submodules/utf8.lua/test/test_pm.lua	/^r = utf8.gsub(s, '()(%w+)()', function (a,w,b)$/;"	f
 range	lua/utf8/test/test_pm.lua	/^local function range (i, j)$/;"	f
 range	submodules/utf8.lua/test/test_pm.lua	/^local function range (i, j)$/;"	f
+reduce	my-snippets/javascript.json	/^	"reduce": {$/;"	o
+removeAttribute	my-snippets/javascript.json	/^	"removeAttribute": {$/;"	o
+removeChild	my-snippets/javascript.json	/^	"removeChild": {$/;"	o
+removeEventListener	my-snippets/javascript.json	/^	"removeEventListener": {$/;"	o
 replace	lua/utf8/functions/lua53.lua	/^local function replace(repl, args)$/;"	f
 replace	submodules/utf8.lua/functions/lua53.lua	/^local function replace(repl, args)$/;"	f
+repr	my-snippets/python.json	/^  "repr": {$/;"	o
 require	lua/json/bench/bench_decode.lua	/^require = function(modname)$/;"	f
+require	my-snippets/javascript.json	/^	"require": {$/;"	o
 require	submodules/json.lua/bench/bench_decode.lua	/^require = function(modname)$/;"	f
 res	lua/json/bench/bench_decode.lua	/^  local res = bench.run(name, 10, function() json.decode(text) end)$/;"	f
 res	lua/json/bench/bench_encode.lua	/^  local res = bench.run(name, 10, function() json.encode(data) end)$/;"	f
@@ -378,8 +1532,16 @@ res	lua/utf8/functions/lua53.lua	/^  res = generate_matcher_function(regex, plai
 res	submodules/json.lua/bench/bench_decode.lua	/^  local res = bench.run(name, 10, function() json.decode(text) end)$/;"	f
 res	submodules/json.lua/bench/bench_encode.lua	/^  local res = bench.run(name, 10, function() json.encode(data) end)$/;"	f
 res	submodules/utf8.lua/functions/lua53.lua	/^  res = generate_matcher_function(regex, plain)$/;"	f
+return	my-snippets/javascript.json	/^	"return": {$/;"	o
+return new array	my-snippets/javascript.json	/^	"return new array": {$/;"	o
+return new object	my-snippets/javascript.json	/^	"return new object": {$/;"	o
+return null	my-snippets/javascript.json	/^	"return null": {$/;"	o
+return promise	my-snippets/javascript.json	/^	"return promise": {$/;"	o
+return this	my-snippets/javascript.json	/^	"return this": {$/;"	o
 rev	lua/utf8/test/test_pm.lua	/^local function rev (s)$/;"	f
 rev	submodules/utf8.lua/test/test_pm.lua	/^local function rev (s)$/;"	f
+roprop	my-snippets/python.json	/^  "roprop": {$/;"	o
+rwprop	my-snippets/python.json	/^  "rwprop": {$/;"	o
 s:b	colors/NeoSolarized.vim	/^    let s:b           = ""$/;"	v
 s:b	colors/NeoSolarized.vim	/^    let s:b           = ",bold"$/;"	v
 s:bb	colors/NeoSolarized.vim	/^    let s:bb          = ""$/;"	v
@@ -497,14 +1659,21 @@ s:term_yellow	colors/NeoSolarized.vim	/^    let s:term_yellow      = "3"$/;"	v
 s:u	colors/NeoSolarized.vim	/^    let s:u           = ""$/;"	v
 s:u	colors/NeoSolarized.vim	/^    let s:u           = ",underline"$/;"	v
 save_profiles	plugin/packer_compiled.lua	/^local function save_profiles(threshold)$/;"	f
+setAttribute	my-snippets/javascript.json	/^	"setAttribute": {$/;"	o
+setImmediate	my-snippets/javascript.json	/^	"setImmediate": {$/;"	o
+setInterval	my-snippets/javascript.json	/^	"setInterval": {$/;"	o
 setglobal	lua/utf8/test/test_pm.lua	/^  local function setglobal (n,v) rawset(_G, n, v) end$/;"	f
 setglobal	submodules/utf8.lua/test/test_pm.lua	/^  local function setglobal (n,v) rawset(_G, n, v) end$/;"	f
+setter	my-snippets/javascript.json	/^	"setter": {$/;"	o
 setup	lua/utf8/test/context_runtime.lua	/^local function setup()$/;"	f
 setup	submodules/utf8.lua/test/context_runtime.lua	/^local function setup()$/;"	f
 simple	lua/utf8/modifier/compiletime/simple.lua	/^  simple = function(class, name)$/;"	f
 simple	submodules/utf8.lua/modifier/compiletime/simple.lua	/^  simple = function(class, name)$/;"	f
 sliding	lua/utf8/begins/compiletime/vanilla.lua	/^  sliding = function()$/;"	f
 sliding	submodules/utf8.lua/begins/compiletime/vanilla.lua	/^  sliding = function()$/;"	f
+slotclass	my-snippets/python.json	/^  "slotclass": {$/;"	o
+some	my-snippets/javascript.json	/^	"some": {$/;"	o
+stackedinline	my-snippets/python.json	/^  "stackedinline": {$/;"	o
 star	lua/utf8/modifier/compiletime/vanilla.lua	/^  star = function(class, name)$/;"	f
 star	submodules/utf8.lua/modifier/compiletime/vanilla.lua	/^  star = function(class, name)$/;"	f
 strset	lua/utf8/test/test_pm.lua	/^function strset (p)$/;"	f
@@ -512,7 +1681,11 @@ strset	submodules/utf8.lua/test/test_pm.lua	/^function strset (p)$/;"	f
 t	lua/config/nvim-compe/init.lua	/^local t = function(str)$/;"	f
 t	lua/utf8/test/test_pm.lua	/^t = {}; setmetatable(t, {__index = function (t,s) return utf8.upper(s) end})$/;"	f
 t	submodules/utf8.lua/test/test_pm.lua	/^t = {}; setmetatable(t, {__index = function (t,s) return utf8.upper(s) end})$/;"	f
+tabularinline	my-snippets/python.json	/^  "tabularinline": {$/;"	o
 task	lua/weather/init.lua	/^local task = vim.loop.new_async(function()$/;"	f
+templateview	my-snippets/python.json	/^  "templateview": {$/;"	o
+ternary	my-snippets/javascript.json	/^	"ternary": {$/;"	o
+ternary assignment	my-snippets/javascript.json	/^	"ternary assignment": {$/;"	o
 test	lua/json/test/test.lua	/^local function test(name, func)$/;"	f
 test	submodules/json.lua/test/test.lua	/^local function test(name, func)$/;"	f
 test_clone	lua/utf8/test/context_runtime.lua	/^local test_clone = (function()$/;"	f
@@ -526,14 +1699,27 @@ test_last_char	submodules/utf8.lua/test/context_runtime.lua	/^local test_last_ch
 test_next_char	lua/utf8/test/context_runtime.lua	/^local test_next_char = (function()$/;"	f
 test_next_char	submodules/utf8.lua/test/context_runtime.lua	/^local test_next_char = (function()$/;"	f
 test_phrase	submodules/lua-wcwidth/spec/wcwidth_spec.lua	/^local function test_phrase(input, expected_lengths, expected_total_length)$/;"	f
+testcase	my-snippets/python.json	/^  "testcase": {$/;"	o
+this	my-snippets/javascript.json	/^	"this": {$/;"	o
+throw new Error	my-snippets/javascript.json	/^	"throw new Error": {$/;"	o
 time	plugin/packer_compiled.lua	/^    time = function(chunk, start) end$/;"	f
 time	plugin/packer_compiled.lua	/^    time = function(chunk, start)$/;"	f
 toend	lua/utf8/ends/compiletime/vanilla.lua	/^  toend = function(ctx)$/;"	f
 toend	submodules/utf8.lua/ends/compiletime/vanilla.lua	/^  toend = function(ctx)$/;"	f
 tostring	lua/utf8/test/util.lua	/^local function tostring(v)$/;"	f
 tostring	submodules/utf8.lua/test/util.lua	/^local function tostring(v)$/;"	f
+try	my-snippets/python.json	/^  "try": {$/;"	o
+try/catch	my-snippets/javascript.json	/^	"try\/catch": {$/;"	o
+try/catch/finally	my-snippets/javascript.json	/^	"try\/catch\/finally": {$/;"	o
+try/finally	my-snippets/javascript.json	/^	"try\/finally": {$/;"	o
 try_loadstring	plugin/packer_compiled.lua	/^local function try_loadstring(s, component, name)$/;"	f
+trye	my-snippets/python.json	/^  "trye": {$/;"	o
+tryef	my-snippets/python.json	/^  "tryef": {$/;"	o
+tryf	my-snippets/python.json	/^  "tryf": {$/;"	o
+typeof	my-snippets/javascript.json	/^	"typeof": {$/;"	o
 u32hex	submodules/lua-wcwidth/update-tables	/^u32hex () {$/;"	f
+updateview	my-snippets/python.json	/^  "updateview": {$/;"	o
+use strict	my-snippets/javascript.json	/^	"use strict": {$/;"	o
 utf8.debug	lua/utf8/util.lua	/^function utf8.debug(...)$/;"	f
 utf8.debug	submodules/utf8.lua/util.lua	/^function utf8.debug(...)$/;"	f
 utf8.lower	lua/utf8/primitives/native.lua	/^function utf8.lower(str)$/;"	f
@@ -596,10 +1782,26 @@ utf8validate	lua/utf8/primitives/dummy.lua	/^local function utf8validate(str, by
 utf8validate	submodules/utf8.lua/primitives/dummy.lua	/^local function utf8validate(str, byte_pos)$/;"	f
 utf8validator	lua/utf8/primitives/dummy.lua	/^local function utf8validator(str, bs)$/;"	f
 utf8validator	submodules/utf8.lua/primitives/dummy.lua	/^local function utf8validator(str, bs)$/;"	f
+var assignment	my-snippets/javascript.json	/^	"var assignment": {$/;"	o
+var statement	my-snippets/javascript.json	/^	"var statement": {$/;"	o
 wcwidth	lua/wcwidth/init.lua	/^local function wcwidth (rune)$/;"	f
 wcwidth	submodules/lua-wcwidth/wcwidth/init.lua	/^local function wcwidth (rune)$/;"	f
+while iteration decrementing	my-snippets/javascript.json	/^	"while iteration decrementing": {$/;"	o
+while loop	my-snippets/javascript.json	/^	"while loop": {$/;"	o
 wide_table	submodules/lua-wcwidth/update-tables	/^wide_table () {$/;"	f
+with	my-snippets/python.json	/^  "with": {$/;"	o
+wrap selection in arrow function	my-snippets/javascript.json	/^	"wrap selection in arrow function": {$/;"	o
+wrap selection in async arrow function	my-snippets/javascript.json	/^	"wrap selection in async arrow function": {$/;"	o
+yield	my-snippets/javascript.json	/^	"yield": {$/;"	o
 zero_table	submodules/lua-wcwidth/update-tables	/^zero_table () {$/;"	f
+卦爻辭	my-snippets/htmldjango.json	/^  "卦爻辭": {$/;"	o
+圖片	my-snippets/markdown.json	/^	"圖片": {$/;"	o
+字體加粗	my-snippets/markdown.json	/^	"字體加粗": {$/;"	o
+字體反白	my-snippets/markdown.json	/^	"字體反白": {$/;"	o
 安裝 Submodule	README.md	/^## 安裝 Submodule$/;"	s	chapter:專案指引
+定理	my-snippets/markdown.json	/^	"定理": {$/;"	o
 專案指引	README.md	/^# 專案指引$/;"	c
+提示	my-snippets/markdown.json	/^	"提示": {$/;"	o
 摘要	README.md	/^## 摘要$/;"	s	chapter:專案指引
+程式碼	my-snippets/markdown.json	/^	"程式碼": {$/;"	o
+連結	my-snippets/markdown.json	/^	"連結": {$/;"	o

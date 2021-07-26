@@ -33,20 +33,40 @@
 -- }
 
 
+
+
 -- Set completeopt to have a better completion experience
+
+-- Prerequisite
 vim.o.completeopt = 'menuone,noselect'
+
+-- Enable LSP capabilities
+
+local capabilities = vim.lsp.protocol.make_client_capabilities()
+capabilities.textDocument.completion.completionItem.snippetSupport = true
+capabilities.textDocument.completion.completionItem.resolveSupport = {
+  properties = {
+    'documentation',
+    'detail',
+    'additionalTextEdits',
+  }
+}
+
+require'lspconfig'.rust_analyzer.setup {
+  capabilities = capabilities,
+}
 
 -- Compe setup
 require('compe').setup {
   source = {
     path = true,
+    buffer = true,
+    calc = true,
     nvim_lsp = true,
-    luasnip = true,
-    buffer = false,
-    calc = false,
     nvim_lua = false,
-    vsnip = false,
-    ultisnips = false,
+    vsnip = true,
+    ultisnips = true,
+    luasnip = true,
   },
 }
 
@@ -64,9 +84,18 @@ local check_back_space = function()
   end
 end
 
+-- xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+-- vim.g.luasnip_snippet_dir = '~/.config/nvim/snips'
+-- path = "~/.config/nvim/my-snippets/"
+require("luasnip/loaders/from_vscode").lazy_load({
+  path = "/Users/alanjui/.config/nvim/my-snippets"
+})
+-- xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+
 -- Use (s-)tab to:
 --- move to prev/next item in completion menuone
 --- jump to prev/next snippet's placeholder
+
 local luasnip = require 'luasnip'
 
 _G.tab_complete = function()
@@ -101,3 +130,13 @@ vim.api.nvim_set_keymap('s', '<S-Tab>', 'v:lua.s_tab_complete()', { expr = true 
 vim.api.nvim_set_keymap('i', '<cr>', 'compe#confirm("<cr>")', { expr = true })
 vim.api.nvim_set_keymap('i', '<c-space>', 'compe#complete()', { expr = true })
 vim.api.nvim_set_keymap('i', '<c-\\>',    'compe#complete()', { expr = true })
+
+-- Automatically select the first match
+vim.api.nvim_set_keymap("i", "<CR>", "compe#confirm({ 'keys': '<CR>', 'select': v:true })", { expr = true })
+
+-- vim.api.nvim_exec(
+-- [[
+-- let g:lexima_accept_pum_with_enter = 1
+-- ]],
+-- false)
+

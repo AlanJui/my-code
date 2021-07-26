@@ -39,10 +39,12 @@ require('packer').startup(function()
   use 'neovim/nvim-lspconfig' -- Collection of configurations for built-in LSP client
   use 'hrsh7th/nvim-compe' -- Autocompletion plugin
   use 'L3MON4D3/LuaSnip' -- Snippets plugin
+  use 'rafamadriz/friendly-snippets'
   -- My add-on
   use 'glepnir/dashboard-nvim'
   use 'ntpeters/vim-better-whitespace'
   use 'kyazdani42/nvim-tree.lua'
   use 'kyazdani42/nvim-web-devicons'
   use 'voldikss/vim-floaterm'
+  -- use 'cohama/lexima.vim' -- Auto close parentheses and repeat by dot dot dot...
 end)

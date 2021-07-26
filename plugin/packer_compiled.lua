@@ -77,6 +77,10 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/alanjui/.local/share/nvim/site/pack/packer/start/dashboard-nvim"
   },
+  ["friendly-snippets"] = {
+    loaded = true,
+    path = "/Users/alanjui/.local/share/nvim/site/pack/packer/start/friendly-snippets"
+  },
   ["gitsigns.nvim"] = {
     loaded = true,
     path = "/Users/alanjui/.local/share/nvim/site/pack/packer/start/gitsigns.nvim"
@@ -84,6 +88,10 @@ _G.packer_plugins = {
   ["indent-blankline.nvim"] = {
     loaded = true,
     path = "/Users/alanjui/.local/share/nvim/site/pack/packer/start/indent-blankline.nvim"
+  },
+  ["lexima.vim"] = {
+    loaded = true,
+    path = "/Users/alanjui/.local/share/nvim/site/pack/packer/start/lexima.vim"
   },
   ["lightline.vim"] = {
     loaded = true,

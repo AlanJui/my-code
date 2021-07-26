@@ -128,7 +128,7 @@ check	submodules/utf8.lua/modifier/compiletime/stub.lua	/^local function check(c
 check	submodules/utf8.lua/modifier/compiletime/vanilla.lua	/^local function check(ctx)$/;"	f
 check_back_space	lua/config/nvim-compe/init.lua	/^local check_back_space = function()$/;"	f
 check_table	submodules/lua-wcwidth/spec/unicodetables_spec.lua	/^local function check_table(t, step)$/;"	f
-check_width	_archived/galaxyline/init.lua	/^local check_width = function()$/;"	f
+check_width	lua/config/galaxyline/init.lua	/^local check_width = function()$/;"	f
 class.new	lua/utf8/charclass/runtime/base.lua	/^function class.new()$/;"	f
 class.new	submodules/utf8.lua/charclass/runtime/base.lua	/^function class.new()$/;"	f
 class:do_test	lua/utf8/charclass/runtime/base.lua	/^function class:do_test(char_code)$/;"	f
@@ -161,7 +161,7 @@ class:without_classes	lua/utf8/charclass/runtime/base.lua	/^function class:witho
 class:without_classes	submodules/utf8.lua/charclass/runtime/base.lua	/^function class:without_classes(...)$/;"	f
 codepoint_to_utf8	lua/json/json.lua	/^local function codepoint_to_utf8(n)$/;"	f
 codepoint_to_utf8	submodules/json.lua/json.lua	/^local function codepoint_to_utf8(n)$/;"	f
-condition	_archived/galaxyline/init.lua	/^    condition = function()$/;"	f
+condition	lua/config/galaxyline/init.lua	/^    condition = function()$/;"	f
 create_set	lua/json/json.lua	/^local function create_set(...)$/;"	f
 create_set	submodules/json.lua/json.lua	/^local function create_set(...)$/;"	f
 ctx.begins	lua/utf8/regex_parser.lua	/^        ctx.begins = functions$/;"	f
@@ -188,8 +188,8 @@ ctx:prev_char	lua/utf8/context/runtime.lua	/^function ctx:prev_char()$/;"	f
 ctx:prev_char	submodules/utf8.lua/context/runtime.lua	/^function ctx:prev_char()$/;"	f
 ctx:terminate	lua/utf8/context/runtime.lua	/^function ctx:terminate()$/;"	f
 ctx:terminate	submodules/utf8.lua/context/runtime.lua	/^function ctx:terminate()$/;"	f
-cursor_position	_archived/galaxyline/init.lua	/^local cursor_position = function()$/;"	f
-cursor_position_perc	_archived/galaxyline/init.lua	/^local cursor_position_perc = function()$/;"	f
+cursor_position	lua/config/galaxyline/init.lua	/^local cursor_position = function()$/;"	f
+cursor_position_perc	lua/config/galaxyline/init.lua	/^local cursor_position_perc = function()$/;"	f
 decode_error	lua/json/json.lua	/^local function decode_error(str, idx, msg)$/;"	f
 decode_error	submodules/json.lua/json.lua	/^local function decode_error(str, idx, msg)$/;"	f
 default	lua/utf8/begins/compiletime/vanilla.lua	/^local function default()$/;"	f
@@ -277,8 +277,8 @@ minus	lua/utf8/modifier/compiletime/vanilla.lua	/^  minus = function(class, name
 minus	submodules/utf8.lua/modifier/compiletime/vanilla.lua	/^  minus = function(class, name)$/;"	f
 mod	lua/wcwidth/init.lua	/^   local mod = math.mod or function (x, d)$/;"	f
 mod	submodules/lua-wcwidth/wcwidth/init.lua	/^   local mod = math.mod or function (x, d)$/;"	f
-mode_hl	_archived/galaxyline/init.lua	/^local function mode_hl()$/;"	f
-mode_name	_archived/galaxyline/init.lua	/^local function mode_name()$/;"	f
+mode_hl	lua/config/galaxyline/init.lua	/^local function mode_hl()$/;"	f
+mode_name	lua/config/galaxyline/init.lua	/^local function mode_name()$/;"	f
 mt.__index	lua/utf8/test/strict.lua	/^mt.__index = function (t, n)$/;"	f
 mt.__index	submodules/utf8.lua/test/strict.lua	/^mt.__index = function (t, n)$/;"	f
 mt.__newindex	lua/utf8/test/strict.lua	/^mt.__newindex = function (t, n, v)$/;"	f
@@ -321,11 +321,11 @@ parse_string	lua/json/json.lua	/^local function parse_string(str, i)$/;"	f
 parse_string	submodules/json.lua/json.lua	/^local function parse_string(str, i)$/;"	f
 parse_unicode_escape	lua/json/json.lua	/^local function parse_unicode_escape(s)$/;"	f
 parse_unicode_escape	submodules/json.lua/json.lua	/^local function parse_unicode_escape(s)$/;"	f
-provider	_archived/galaxyline/init.lua	/^    provider = function() return ' ' end,$/;"	f
-provider	_archived/galaxyline/init.lua	/^    provider = function() return '' end,$/;"	f
-provider	_archived/galaxyline/init.lua	/^    provider = function() return '' end,$/;"	f
-provider	_archived/galaxyline/init.lua	/^    provider = function()$/;"	f
-provider	_archived/galaxyline/init.lua	/^    provider = {function() return ' ' end, 'FileSize'},$/;"	f
+provider	lua/config/galaxyline/init.lua	/^    provider = function() return ' ' end,$/;"	f
+provider	lua/config/galaxyline/init.lua	/^    provider = function() return '' end,$/;"	f
+provider	lua/config/galaxyline/init.lua	/^    provider = function() return '' end,$/;"	f
+provider	lua/config/galaxyline/init.lua	/^    provider = function()$/;"	f
+provider	lua/config/galaxyline/init.lua	/^    provider = {function() return ' ' end, 'FileSize'},$/;"	f
 question	lua/utf8/modifier/compiletime/vanilla.lua	/^  question = function(class, name)$/;"	f
 question	submodules/utf8.lua/modifier/compiletime/vanilla.lua	/^  question = function(class, name)$/;"	f
 r	lua/utf8/test/test_pm.lua	/^r = utf8.gsub(s, '()(%w+)()', function (a,w,b)$/;"	f
@@ -448,5 +448,6 @@ wcwidth	lua/wcwidth/init.lua	/^local function wcwidth (rune)$/;"	f
 wcwidth	submodules/lua-wcwidth/wcwidth/init.lua	/^local function wcwidth (rune)$/;"	f
 wide_table	submodules/lua-wcwidth/update-tables	/^wide_table () {$/;"	f
 zero_table	submodules/lua-wcwidth/update-tables	/^zero_table () {$/;"	f
-安裝 Submodule	README.md	/^## 安裝 Submodule$/;"	s	chapter:安裝指引
-安裝指引	README.md	/^# 安裝指引$/;"	c
+安裝 Submodule	README.md	/^## 安裝 Submodule$/;"	s	chapter:專案指引
+專案指引	README.md	/^# 專案指引$/;"	c
+摘要	README.md	/^## 摘要$/;"	s	chapter:專案指引

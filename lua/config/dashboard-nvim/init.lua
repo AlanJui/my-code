@@ -1,9 +1,9 @@
 -- Plugin configuration: dashboard-nvim
 -- ============================================================================
 
-vim.g.dashboard_default_executive = 'telescope'
+-- vim.g.indent_blankline_filetype_exclude = {'dashboard'}
 
-local weather = require('weather')
+vim.g.dashboard_default_executive = 'telescope'
 
 vim.g.dashboard_custom_header = {
  ' ███╗   ██╗ ███████╗ ██████╗  ██╗   ██╗ ██╗ ███╗   ███╗',
@@ -23,3 +23,4 @@ vim.g.dashboard_custom_section = {
   d = {description = {'  Find Word          '}, command = 'Telescope live_grep'},
   e = {description = {'  Marks              '}, command = 'Telescope marks'}
 }
+

@@ -1,45 +1,48 @@
-local execute = vim.api.nvim_command
-local fn = vim.fn
+-- Install packer
+local install_path = vim.fn.stdpath 'data' .. '/site/pack/packer/start/packer.nvim'
 
--- Check if `packer` exists. If not, install it as a start plugin.
-local install_path = fn.stdpath('data')..'/site/pack/packer/start/packer.nvim'
-if fn.empty(fn.glob(install_path)) > 0 then
-  execute('!git clone https://github.com/wbthomason/packer.nvim '..install_path)
+if vim.fn.empty(vim.fn.glob(install_path)) > 0 then
+  vim.fn.execute('!git clone https://github.com/wbthomason/packer.nvim ' .. install_path)
 end
 
--- Auto compile when there are changes in `plugins.lua`.
-vim.cmd 'autocmd BufWritePost plugins.lua PackerCompile'
+vim.api.nvim_exec(
+  [[
+  augroup Packer
+    autocmd!
+    autocmd BufWritePost init.lua PackerCompile
+  augroup end
+]],
+  false
+)
 
-return require('packer').startup(function()
-  -- Packer can manage itself
-  use 'wbthomason/packer.nvim'
+local use = require('packer').use
+require('packer').startup(function()
+  use 'wbthomason/packer.nvim' -- Package manager
+  use 'tpope/vim-fugitive' -- Git commands in nvim
 
-  use 'GoldsteinE/compe-latex-symbols'
-  use 'JuliaEditorSupport/julia-vim'
-  use 'SirVer/ultisnips'
+  use 'tpope/vim-rhubarb' -- Fugitive-companion to interact with github
+  use 'tpope/vim-commentary' -- "gc" to comment visual regions/lines
+  use 'ludovicchabant/vim-gutentags' -- Automatic tags management
+  -- UI to select things (files, grep results, open buffers...)
+  use { 'nvim-telescope/telescope.nvim', requires = { { 'nvim-lua/popup.nvim' }, { 'nvim-lua/plenary.nvim' } } }
+  use 'joshdick/onedark.vim' -- Theme inspired by Atom
   use 'Th3Whit3Wolf/one-nvim'
-  use 'dstein64/nvim-scrollview'
-  use 'folke/todo-comments.nvim'
+  use 'itchyny/lightline.vim' -- Fancier statusline
+  -- Add indentation guides even on blank lines
+  use 'lukas-reineke/indent-blankline.nvim'
+  -- Add git related info in the signs columns and popups
+  use { 'lewis6991/gitsigns.nvim', requires = { 'nvim-lua/plenary.nvim' } }
+  -- Highlight, edit, and navigate code using a fast incremental parsing library
+  use 'nvim-treesitter/nvim-treesitter'
+  -- Additional textobjects for treesitter
+  use 'nvim-treesitter/nvim-treesitter-textobjects'
+  use 'neovim/nvim-lspconfig' -- Collection of configurations for built-in LSP client
+  use 'hrsh7th/nvim-compe' -- Autocompletion plugin
+  use 'L3MON4D3/LuaSnip' -- Snippets plugin
+  -- My add-on
   use 'glepnir/dashboard-nvim'
-  use 'glepnir/galaxyline.nvim'
-  use 'honza/vim-snippets'
-  use 'hrsh7th/nvim-compe'
-  use 'junegunn/vim-easy-align'
+  use 'ntpeters/vim-better-whitespace'
   use 'kyazdani42/nvim-tree.lua'
   use 'kyazdani42/nvim-web-devicons'
-  use 'lervag/vimtex'
-  use 'lewis6991/gitsigns.nvim'
-  use 'liuchengxu/vim-which-key'
-  use 'lukas-reineke/indent-blankline.nvim'
-  use 'mbbill/undotree'
-  use 'ntpeters/vim-better-whitespace'
-  use 'nvim-lua/plenary.nvim'
-  use 'nvim-lua/popup.nvim'
-  use 'nvim-telescope/telescope.nvim'
-  use 'phaazon/hop.nvim'
-  use 'romgrk/barbar.nvim'
-  use 'terrortylor/nvim-comment'
-  use 'tpope/vim-fugitive'
   use 'voldikss/vim-floaterm'
-
 end)

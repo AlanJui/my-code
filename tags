@@ -1,0 +1,452 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_OUTPUT_EXCMD	mixed	/number, pattern, mixed, or combineV2/
+!_TAG_OUTPUT_FILESEP	slash	/slash or backslash/
+!_TAG_OUTPUT_MODE	u-ctags	/u-ctags or e-ctags/
+!_TAG_PATTERN_LENGTH_LIMIT	96	/0 for no limit/
+!_TAG_PROC_CWD	/Users/alanjui/.config/my-code/	//
+!_TAG_PROGRAM_AUTHOR	Universal Ctags Team	//
+!_TAG_PROGRAM_NAME	Universal Ctags	/Derived from Exuberant Ctags/
+!_TAG_PROGRAM_URL	https://ctags.io/	/official site/
+!_TAG_PROGRAM_VERSION	5.9.0	/78621a0a/
+"{test	lua/utf8/charclass/compiletime/builder.lua	/^    return "{test = function(self, cc) return cc == " .. self.codes[1] .. " end}"$/;"	f
+"{test	submodules/utf8.lua/charclass/compiletime/builder.lua	/^    return "{test = function(self, cc) return cc == " .. self.codes[1] .. " end}"$/;"	f
+0.1	submodules/lua-wcwidth/CHANGELOG.md	/^## 0.1$/;"	s	chapter:Change Log
+Added	submodules/lua-wcwidth/CHANGELOG.md	/^### Added$/;"	S	section:Change Log""0.1
+Added	submodules/lua-wcwidth/CHANGELOG.md	/^### Added$/;"	S	section:Change Log""[0.2] - 2016-07-13
+Change Log	submodules/lua-wcwidth/CHANGELOG.md	/^# Change Log$/;"	c
+Changed	submodules/lua-wcwidth/CHANGELOG.md	/^### Changed$/;"	S	section:Change Log""[0.3] - 2019-02-15
+Changed	submodules/lua-wcwidth/CHANGELOG.md	/^### Changed$/;"	S	section:Change Log""[0.4] - 2020-01-14
+Changed	submodules/lua-wcwidth/CHANGELOG.md	/^### Changed$/;"	S	section:Change Log""[0.5] - 2020-03-29
+Configuration:	lua/utf8/README.md	/^#### Configuration:$/;"	t	chapter:utf8.lua
+Configuration:	submodules/utf8.lua/README.md	/^#### Configuration:$/;"	t	chapter:utf8.lua
+Example:	lua/utf8/README.md	/^#### Example:$/;"	t	chapter:utf8.lua
+Example:	submodules/utf8.lua/README.md	/^#### Example:$/;"	t	chapter:utf8.lua
+Features	lua/json/README.md	/^## Features$/;"	s	chapter:![json.lua](https://cloud.githubusercontent.com/assets/3920290/9281532/99e5e0cc-42bd-11e5-8fce-eaff2f7fc681.png)
+Features	submodules/json.lua/README.md	/^## Features$/;"	s	chapter:![json.lua](https://cloud.githubusercontent.com/assets/3920290/9281532/99e5e0cc-42bd-11e5-8fce-eaff2f7fc681.png)
+Installation	submodules/lua-wcwidth/README.md	/^Installation$/;"	s	chapter:lua-wcwidth
+Installation	submodules/lua-wcwidth/README.md.in	/^Installation$/;"	s	chapter:lua-wcwidth
+Installation:	lua/utf8/README.md	/^#### Installation:$/;"	t	chapter:utf8.lua
+Installation:	submodules/utf8.lua/README.md	/^#### Installation:$/;"	t	chapter:utf8.lua
+Issue reporting:	lua/utf8/README.md	/^#### Issue reporting:$/;"	t	chapter:utf8.lua
+Issue reporting:	submodules/utf8.lua/README.md	/^#### Issue reporting:$/;"	t	chapter:utf8.lua
+License	lua/json/README.md	/^## License$/;"	s	chapter:![json.lua](https://cloud.githubusercontent.com/assets/3920290/9281532/99e5e0cc-42bd-11e5-8fce-eaff2f7fc681.png)
+License	submodules/json.lua/README.md	/^## License$/;"	s	chapter:![json.lua](https://cloud.githubusercontent.com/assets/3920290/9281532/99e5e0cc-42bd-11e5-8fce-eaff2f7fc681.png)
+M._align_comment_in_line	lua/utils/align_comment.lua	/^function M._align_comment_in_line(line, comment_pattern, fill_char, alignment)$/;"	f
+M._align_comments	lua/utils/align_comment.lua	/^function M._align_comments(comment_pattern, fill_char, alignment)$/;"	f
+M.align_comments	lua/utils/align_comment.lua	/^function M.align_comments(alignment)$/;"	f
+M.align_comments_with_char	lua/utils/align_comment.lua	/^function M.align_comments_with_char(fill_char, alignment)$/;"	f
+M.display_len	lua/utils/utf8_aux.lua	/^function M.display_len(str)$/;"	f
+M.fill_with_cursor_character	lua/utils/fill_text.lua	/^function M.fill_with_cursor_character()$/;"	f
+M.fill_with_input	lua/utils/fill_text.lua	/^function M.fill_with_input()$/;"	f
+M.fill_with_pattern	lua/utils/fill_text.lua	/^function M.fill_with_pattern(pattern)$/;"	f
+M.get_char_at_bytepos	lua/utils/utf8_aux.lua	/^function M.get_char_at_bytepos(line, bytepos)$/;"	f
+M.get_char_index_at_bytepos	lua/utils/utf8_aux.lua	/^function M.get_char_index_at_bytepos(line, bytepos)$/;"	f
+M.get_condition_icon	lua/weather/init.lua	/^function M.get_condition_icon()$/;"	f
+M.get_max_temp	lua/weather/init.lua	/^function M.get_max_temp()$/;"	f
+M.get_min_temp	lua/weather/init.lua	/^function M.get_min_temp()$/;"	f
+M.get_temp	lua/weather/init.lua	/^function M.get_temp()$/;"	f
+M.init	lua/weather/init.lua	/^function M.init()$/;"	f
+Notes	lua/json/README.md	/^## Notes$/;"	s	chapter:![json.lua](https://cloud.githubusercontent.com/assets/3920290/9281532/99e5e0cc-42bd-11e5-8fce-eaff2f7fc681.png)
+Notes	submodules/json.lua/README.md	/^## Notes$/;"	s	chapter:![json.lua](https://cloud.githubusercontent.com/assets/3920290/9281532/99e5e0cc-42bd-11e5-8fce-eaff2f7fc681.png)
+Unicode Tables	submodules/lua-wcwidth/README.md	/^Unicode Tables$/;"	s	chapter:lua-wcwidth
+Unicode Tables	submodules/lua-wcwidth/README.md.in	/^Unicode Tables$/;"	s	chapter:lua-wcwidth
+Usage	lua/json/README.md	/^## Usage$/;"	s	chapter:![json.lua](https://cloud.githubusercontent.com/assets/3920290/9281532/99e5e0cc-42bd-11e5-8fce-eaff2f7fc681.png)
+Usage	submodules/json.lua/README.md	/^## Usage$/;"	s	chapter:![json.lua](https://cloud.githubusercontent.com/assets/3920290/9281532/99e5e0cc-42bd-11e5-8fce-eaff2f7fc681.png)
+Usage	submodules/lua-wcwidth/README.md	/^Usage$/;"	s	chapter:lua-wcwidth
+Usage	submodules/lua-wcwidth/README.md.in	/^Usage$/;"	s	chapter:lua-wcwidth
+Usage:	lua/utf8/README.md	/^#### Usage:$/;"	t	chapter:utf8.lua
+Usage:	submodules/utf8.lua/README.md	/^#### Usage:$/;"	t	chapter:utf8.lua
+['[M']	lua/config/nvim-treesitter/init.lua	/^        ['[M'] = '@function.outer',$/;"	f
+['[m']	lua/config/nvim-treesitter/init.lua	/^        ['[m'] = '@function.outer',$/;"	f
+[']M']	lua/config/nvim-treesitter/init.lua	/^        [']M'] = '@function.outer',$/;"	f
+[']m']	lua/config/nvim-treesitter/init.lua	/^        [']m'] = '@function.outer',$/;"	f
+['af']	lua/config/nvim-treesitter/init.lua	/^        ['af'] = '@function.outer',$/;"	f
+['if']	lua/config/nvim-treesitter/init.lua	/^        ['if'] = '@function.inner',$/;"	f
+[0.2] - 2016-07-13	submodules/lua-wcwidth/CHANGELOG.md	/^## [0.2] - 2016-07-13$/;"	s	chapter:Change Log
+[0.3] - 2019-02-15	submodules/lua-wcwidth/CHANGELOG.md	/^## [0.3] - 2019-02-15$/;"	s	chapter:Change Log
+[0.4] - 2020-01-14	submodules/lua-wcwidth/CHANGELOG.md	/^## [0.4] - 2020-01-14$/;"	s	chapter:Change Log
+[0.5] - 2020-03-29	submodules/lua-wcwidth/CHANGELOG.md	/^## [0.5] - 2020-03-29$/;"	s	chapter:Change Log
+[Documentation:](test/test.lua)	lua/utf8/README.md	/^#### [Documentation:](test\/test.lua)$/;"	t	chapter:utf8.lua
+[Documentation:](test/test.lua)	submodules/utf8.lua/README.md	/^#### [Documentation:](test\/test.lua)$/;"	t	chapter:utf8.lua
+[Unreleased]	submodules/lua-wcwidth/CHANGELOG.md	/^## [Unreleased]$/;"	s	chapter:Change Log
+\x21[json.lua](https://cloud.githubusercontent.com/assets/3920290/9281532/99e5e0cc-42bd-11e5-8fce-eaff2f7fc681.png)	lua/json/README.md	/^# ![json.lua](https:\/\/cloud.githubusercontent.com\/assets\/3920290\/9281532\/99e5e0cc-42bd-11e/;"	c
+\x21[json.lua](https://cloud.githubusercontent.com/assets/3920290/9281532/99e5e0cc-42bd-11e5-8fce-eaff2f7fc681.png)	submodules/json.lua/README.md	/^# ![json.lua](https:\/\/cloud.githubusercontent.com\/assets\/3920290\/9281532\/99e5e0cc-42bd-11e/;"	c
+_G.s_tab_complete	lua/config/nvim-compe/init.lua	/^_G.s_tab_complete = function()$/;"	f
+_G.tab_complete	lua/config/nvim-compe/init.lua	/^_G.tab_complete = function()$/;"	f
+__tostring	lua/utf8/context/runtime.lua	/^  __tostring = function(self)$/;"	f
+__tostring	submodules/utf8.lua/context/runtime.lua	/^  __tostring = function(self)$/;"	f
+_lookup	lua/wcwidth/init.lua	/^local function _lookup(rune, table)$/;"	f
+_lookup	submodules/lua-wcwidth/wcwidth/init.lua	/^local function _lookup(rune, table)$/;"	f
+add	lua/utf8/regex_parser.lua	/^      local function add(fun)$/;"	f
+add	submodules/utf8.lua/regex_parser.lua	/^      local function add(fun)$/;"	f
+any	lua/utf8/ends/compiletime/vanilla.lua	/^  any = function()$/;"	f
+any	submodules/utf8.lua/ends/compiletime/vanilla.lua	/^  any = function()$/;"	f
+assert	lua/utf8/test/util.lua	/^local assert = function(cond, ...)$/;"	f
+assert	submodules/utf8.lua/test/util.lua	/^local assert = function(cond, ...)$/;"	f
+assert_equals	lua/utf8/test/util.lua	/^local function assert_equals(a,b)$/;"	f
+assert_equals	submodules/utf8.lua/test/util.lua	/^local function assert_equals(a,b)$/;"	f
+balancer	lua/utf8/modifier/compiletime/vanilla.lua	/^  balancer = function(pair, name)$/;"	f
+balancer	submodules/utf8.lua/modifier/compiletime/vanilla.lua	/^  balancer = function(pair, name)$/;"	f
+bench.get_cpu_name	lua/json/bench/util/bench.lua	/^function bench.get_cpu_name()$/;"	f
+bench.get_cpu_name	submodules/json.lua/bench/util/bench.lua	/^function bench.get_cpu_name()$/;"	f
+bench.print_results	lua/json/bench/util/bench.lua	/^function bench.print_results(results)$/;"	f
+bench.print_results	submodules/json.lua/bench/util/bench.lua	/^function bench.print_results(results)$/;"	f
+bench.print_system_info	lua/json/bench/util/bench.lua	/^function bench.print_system_info()$/;"	f
+bench.print_system_info	submodules/json.lua/bench/util/bench.lua	/^function bench.print_system_info()$/;"	f
+bench.run	lua/json/bench/util/bench.lua	/^function bench.run(name, count, func)$/;"	f
+bench.run	submodules/json.lua/bench/util/bench.lua	/^function bench.run(name, count, func)$/;"	f
+builder.new	lua/utf8/charclass/compiletime/builder.lua	/^function builder.new()$/;"	f
+builder.new	submodules/utf8.lua/charclass/compiletime/builder.lua	/^function builder.new()$/;"	f
+builder:build	lua/utf8/charclass/compiletime/builder.lua	/^function builder:build()$/;"	f
+builder:build	submodules/utf8.lua/charclass/compiletime/builder.lua	/^function builder:build()$/;"	f
+builder:include	lua/utf8/charclass/compiletime/builder.lua	/^function builder:include(b)$/;"	f
+builder:include	submodules/utf8.lua/charclass/compiletime/builder.lua	/^function builder:include(b)$/;"	f
+builder:internal	lua/utf8/charclass/compiletime/builder.lua	/^function builder:internal() -- is it enclosed in []$/;"	f
+builder:internal	submodules/utf8.lua/charclass/compiletime/builder.lua	/^function builder:internal() -- is it enclosed in []$/;"	f
+builder:invert	lua/utf8/charclass/compiletime/builder.lua	/^function builder:invert()$/;"	f
+builder:invert	submodules/utf8.lua/charclass/compiletime/builder.lua	/^function builder:invert()$/;"	f
+builder:with_classes	lua/utf8/charclass/compiletime/builder.lua	/^function builder:with_classes(...)$/;"	f
+builder:with_classes	submodules/utf8.lua/charclass/compiletime/builder.lua	/^function builder:with_classes(...)$/;"	f
+builder:with_codes	lua/utf8/charclass/compiletime/builder.lua	/^function builder:with_codes(...)$/;"	f
+builder:with_codes	submodules/utf8.lua/charclass/compiletime/builder.lua	/^function builder:with_codes(...)$/;"	f
+builder:with_ranges	lua/utf8/charclass/compiletime/builder.lua	/^function builder:with_ranges(...)$/;"	f
+builder:with_ranges	submodules/utf8.lua/charclass/compiletime/builder.lua	/^function builder:with_ranges(...)$/;"	f
+builder:without_classes	lua/utf8/charclass/compiletime/builder.lua	/^function builder:without_classes(...)$/;"	f
+builder:without_classes	submodules/utf8.lua/charclass/compiletime/builder.lua	/^function builder:without_classes(...)$/;"	f
+capture	lua/utf8/modifier/compiletime/vanilla.lua	/^  capture = function(number)$/;"	f
+capture	submodules/utf8.lua/modifier/compiletime/vanilla.lua	/^  capture = function(number)$/;"	f
+capture_finish	lua/utf8/modifier/compiletime/vanilla.lua	/^  capture_finish = function(number)$/;"	f
+capture_finish	submodules/utf8.lua/modifier/compiletime/vanilla.lua	/^  capture_finish = function(number)$/;"	f
+capture_position	lua/utf8/modifier/compiletime/vanilla.lua	/^  capture_position = function(number)$/;"	f
+capture_position	submodules/utf8.lua/modifier/compiletime/vanilla.lua	/^  capture_position = function(number)$/;"	f
+capture_start	lua/utf8/modifier/compiletime/vanilla.lua	/^  capture_start = function(number)$/;"	f
+capture_start	submodules/utf8.lua/modifier/compiletime/vanilla.lua	/^  capture_start = function(number)$/;"	f
+check	lua/utf8/modifier/compiletime/stub.lua	/^local function check(ctx)$/;"	f
+check	lua/utf8/modifier/compiletime/vanilla.lua	/^local function check(ctx)$/;"	f
+check	submodules/utf8.lua/modifier/compiletime/stub.lua	/^local function check(ctx)$/;"	f
+check	submodules/utf8.lua/modifier/compiletime/vanilla.lua	/^local function check(ctx)$/;"	f
+check_back_space	lua/config/nvim-compe/init.lua	/^local check_back_space = function()$/;"	f
+check_table	submodules/lua-wcwidth/spec/unicodetables_spec.lua	/^local function check_table(t, step)$/;"	f
+check_width	_archived/galaxyline/init.lua	/^local check_width = function()$/;"	f
+class.new	lua/utf8/charclass/runtime/base.lua	/^function class.new()$/;"	f
+class.new	submodules/utf8.lua/charclass/runtime/base.lua	/^function class.new()$/;"	f
+class:do_test	lua/utf8/charclass/runtime/base.lua	/^function class:do_test(char_code)$/;"	f
+class:do_test	submodules/utf8.lua/charclass/runtime/base.lua	/^function class:do_test(char_code)$/;"	f
+class:in_classes	lua/utf8/charclass/runtime/base.lua	/^function class:in_classes(char_code)$/;"	f
+class:in_classes	submodules/utf8.lua/charclass/runtime/base.lua	/^function class:in_classes(char_code)$/;"	f
+class:in_codes	lua/utf8/charclass/runtime/base.lua	/^function class:in_codes(item)$/;"	f
+class:in_codes	submodules/utf8.lua/charclass/runtime/base.lua	/^function class:in_codes(item)$/;"	f
+class:in_not_classes	lua/utf8/charclass/runtime/base.lua	/^function class:in_not_classes(char_code)$/;"	f
+class:in_not_classes	submodules/utf8.lua/charclass/runtime/base.lua	/^function class:in_not_classes(char_code)$/;"	f
+class:in_ranges	lua/utf8/charclass/runtime/base.lua	/^function class:in_ranges(char_code)$/;"	f
+class:in_ranges	submodules/utf8.lua/charclass/runtime/base.lua	/^function class:in_ranges(char_code)$/;"	f
+class:in_subs	lua/utf8/charclass/runtime/base.lua	/^function class:in_subs(char_code)$/;"	f
+class:in_subs	submodules/utf8.lua/charclass/runtime/base.lua	/^function class:in_subs(char_code)$/;"	f
+class:invert	lua/utf8/charclass/runtime/base.lua	/^function class:invert()$/;"	f
+class:invert	submodules/utf8.lua/charclass/runtime/base.lua	/^function class:invert()$/;"	f
+class:is	lua/utf8/charclass/runtime/base.lua	/^function class:is(class, char_code)$/;"	f
+class:is	submodules/utf8.lua/charclass/runtime/base.lua	/^function class:is(class, char_code)$/;"	f
+class:test	lua/utf8/charclass/runtime/base.lua	/^function class:test(char_code)$/;"	f
+class:test	submodules/utf8.lua/charclass/runtime/base.lua	/^function class:test(char_code)$/;"	f
+class:with_classes	lua/utf8/charclass/runtime/base.lua	/^function class:with_classes(...)$/;"	f
+class:with_classes	submodules/utf8.lua/charclass/runtime/base.lua	/^function class:with_classes(...)$/;"	f
+class:with_codes	lua/utf8/charclass/runtime/base.lua	/^function class:with_codes(...)$/;"	f
+class:with_codes	submodules/utf8.lua/charclass/runtime/base.lua	/^function class:with_codes(...)$/;"	f
+class:with_ranges	lua/utf8/charclass/runtime/base.lua	/^function class:with_ranges(...)$/;"	f
+class:with_ranges	submodules/utf8.lua/charclass/runtime/base.lua	/^function class:with_ranges(...)$/;"	f
+class:with_subs	lua/utf8/charclass/runtime/base.lua	/^function class:with_subs(...)$/;"	f
+class:with_subs	submodules/utf8.lua/charclass/runtime/base.lua	/^function class:with_subs(...)$/;"	f
+class:without_classes	lua/utf8/charclass/runtime/base.lua	/^function class:without_classes(...)$/;"	f
+class:without_classes	submodules/utf8.lua/charclass/runtime/base.lua	/^function class:without_classes(...)$/;"	f
+codepoint_to_utf8	lua/json/json.lua	/^local function codepoint_to_utf8(n)$/;"	f
+codepoint_to_utf8	submodules/json.lua/json.lua	/^local function codepoint_to_utf8(n)$/;"	f
+condition	_archived/galaxyline/init.lua	/^    condition = function()$/;"	f
+create_set	lua/json/json.lua	/^local function create_set(...)$/;"	f
+create_set	submodules/json.lua/json.lua	/^local function create_set(...)$/;"	f
+ctx.begins	lua/utf8/regex_parser.lua	/^        ctx.begins = functions$/;"	f
+ctx.begins	submodules/utf8.lua/regex_parser.lua	/^        ctx.begins = functions$/;"	f
+ctx.ends	lua/utf8/regex_parser.lua	/^        ctx.ends = functions$/;"	f
+ctx.ends	submodules/utf8.lua/regex_parser.lua	/^        ctx.ends = functions$/;"	f
+ctx.new	lua/utf8/context/runtime.lua	/^function ctx.new(obj)$/;"	f
+ctx.new	submodules/utf8.lua/context/runtime.lua	/^function ctx.new(obj)$/;"	f
+ctx:clone	lua/utf8/context/runtime.lua	/^function ctx:clone()$/;"	f
+ctx:clone	submodules/utf8.lua/context/runtime.lua	/^function ctx:clone()$/;"	f
+ctx:done	lua/utf8/context/runtime.lua	/^function ctx:done()$/;"	f
+ctx:done	submodules/utf8.lua/context/runtime.lua	/^function ctx:done()$/;"	f
+ctx:get_char	lua/utf8/context/runtime.lua	/^function ctx:get_char()$/;"	f
+ctx:get_char	submodules/utf8.lua/context/runtime.lua	/^function ctx:get_char()$/;"	f
+ctx:get_charcode	lua/utf8/context/runtime.lua	/^function ctx:get_charcode()$/;"	f
+ctx:get_charcode	submodules/utf8.lua/context/runtime.lua	/^function ctx:get_charcode()$/;"	f
+ctx:get_function	lua/utf8/context/runtime.lua	/^function ctx:get_function()$/;"	f
+ctx:get_function	submodules/utf8.lua/context/runtime.lua	/^function ctx:get_function()$/;"	f
+ctx:next_char	lua/utf8/context/runtime.lua	/^function ctx:next_char()$/;"	f
+ctx:next_char	submodules/utf8.lua/context/runtime.lua	/^function ctx:next_char()$/;"	f
+ctx:next_function	lua/utf8/context/runtime.lua	/^function ctx:next_function()$/;"	f
+ctx:next_function	submodules/utf8.lua/context/runtime.lua	/^function ctx:next_function()$/;"	f
+ctx:prev_char	lua/utf8/context/runtime.lua	/^function ctx:prev_char()$/;"	f
+ctx:prev_char	submodules/utf8.lua/context/runtime.lua	/^function ctx:prev_char()$/;"	f
+ctx:terminate	lua/utf8/context/runtime.lua	/^function ctx:terminate()$/;"	f
+ctx:terminate	submodules/utf8.lua/context/runtime.lua	/^function ctx:terminate()$/;"	f
+cursor_position	_archived/galaxyline/init.lua	/^local cursor_position = function()$/;"	f
+cursor_position_perc	_archived/galaxyline/init.lua	/^local cursor_position_perc = function()$/;"	f
+decode_error	lua/json/json.lua	/^local function decode_error(str, idx, msg)$/;"	f
+decode_error	submodules/json.lua/json.lua	/^local function decode_error(str, idx, msg)$/;"	f
+default	lua/utf8/begins/compiletime/vanilla.lua	/^local function default()$/;"	f
+default	lua/utf8/ends/compiletime/vanilla.lua	/^local function default()$/;"	f
+default	submodules/utf8.lua/begins/compiletime/vanilla.lua	/^local function default()$/;"	f
+default	submodules/utf8.lua/ends/compiletime/vanilla.lua	/^local function default()$/;"	f
+dostring	lua/utf8/test/test_pm.lua	/^local function dostring (s) return (loadstring or load)(s)() or "" end$/;"	f
+dostring	submodules/utf8.lua/test/test_pm.lua	/^local function dostring (s) return (loadstring or load)(s)() or "" end$/;"	f
+dummy.new	lua/utf8/charclass/runtime/dummy.lua	/^function dummy.new()$/;"	f
+dummy.new	submodules/utf8.lua/charclass/runtime/dummy.lua	/^function dummy.new()$/;"	f
+dummy:with_classes	lua/utf8/charclass/runtime/dummy.lua	/^function dummy:with_classes(...)$/;"	f
+dummy:with_classes	submodules/utf8.lua/charclass/runtime/dummy.lua	/^function dummy:with_classes(...)$/;"	f
+dummy:without_classes	lua/utf8/charclass/runtime/dummy.lua	/^function dummy:without_classes(...)$/;"	f
+dummy:without_classes	submodules/utf8.lua/charclass/runtime/dummy.lua	/^function dummy:without_classes(...)$/;"	f
+dump	lua/utf8/util.lua	/^local function dump(val, tab)$/;"	f
+dump	submodules/utf8.lua/util.lua	/^local function dump(val, tab)$/;"	f
+encode	lua/json/json.lua	/^encode = function(val, stack)$/;"	f
+encode	submodules/json.lua/json.lua	/^encode = function(val, stack)$/;"	f
+encode_nil	lua/json/json.lua	/^local function encode_nil(val)$/;"	f
+encode_nil	submodules/json.lua/json.lua	/^local function encode_nil(val)$/;"	f
+encode_number	lua/json/json.lua	/^local function encode_number(val)$/;"	f
+encode_number	submodules/json.lua/json.lua	/^local function encode_number(val)$/;"	f
+encode_string	lua/json/json.lua	/^local function encode_string(val)$/;"	f
+encode_string	submodules/json.lua/json.lua	/^local function encode_string(val)$/;"	f
+encode_table	lua/json/json.lua	/^local function encode_table(val, stack)$/;"	f
+encode_table	submodules/json.lua/json.lua	/^local function encode_table(val, stack)$/;"	f
+equal	lua/json/test/test.lua	/^local function equal(a, b)$/;"	f
+equal	submodules/json.lua/test/test.lua	/^local function equal(a, b)$/;"	f
+equals	lua/utf8/test/util.lua	/^local function equals(t1, t2)$/;"	f
+equals	submodules/utf8.lua/test/util.lua	/^local function equals(t1, t2)$/;"	f
+error_msg	plugin/packer_compiled.lua	/^local no_errors, error_msg = pcall(function()$/;"	f
+escape_char	lua/json/json.lua	/^local function escape_char(c)$/;"	f
+escape_char	submodules/json.lua/json.lua	/^local function escape_char(c)$/;"	f
+f	lua/utf8/test/test_pm.lua	/^function f(a,b) return utf8.gsub(a,'.',b) end$/;"	f
+f	lua/utf8/test/test_pm.lua	/^function f(s, p)$/;"	f
+f	lua/wcwidth/init.lua	/^   local ok, f = pcall(function ()$/;"	f
+f	submodules/lua-wcwidth/wcwidth/init.lua	/^   local ok, f = pcall(function ()$/;"	f
+f	submodules/utf8.lua/test/test_pm.lua	/^function f(a,b) return utf8.gsub(a,'.',b) end$/;"	f
+f	submodules/utf8.lua/test/test_pm.lua	/^function f(s, p)$/;"	f
+f1	lua/utf8/test/test_pm.lua	/^function f1(s, p)$/;"	f
+f1	submodules/utf8.lua/test/test_pm.lua	/^function f1(s, p)$/;"	f
+format_range	submodules/lua-wcwidth/update-tables	/^format_range () {$/;"	f
+fromstart	lua/utf8/begins/compiletime/vanilla.lua	/^  fromstart = function(ctx)$/;"	f
+fromstart	submodules/utf8.lua/begins/compiletime/vanilla.lua	/^  fromstart = function(ctx)$/;"	f
+frontier	lua/utf8/modifier/compiletime/frontier.lua	/^  frontier = function(class, name)$/;"	f
+frontier	submodules/utf8.lua/modifier/compiletime/frontier.lua	/^  frontier = function(class, name)$/;"	f
+func	lua/utf8/functions/lua53.lua	/^  local func = get_matcher_function(regex, false)$/;"	f
+func	lua/utf8/functions/lua53.lua	/^  local func = get_matcher_function(regex, plain)$/;"	f
+func	submodules/utf8.lua/functions/lua53.lua	/^  local func = get_matcher_function(regex, false)$/;"	f
+func	submodules/utf8.lua/functions/lua53.lua	/^  local func = get_matcher_function(regex, plain)$/;"	f
+get_matcher_function	lua/utf8/functions/lua53.lua	/^function get_matcher_function(regex, plain)$/;"	f
+get_matcher_function	submodules/utf8.lua/functions/lua53.lua	/^function get_matcher_function(regex, plain)$/;"	f
+get_temp_color	lua/weather/init.lua	/^local function get_temp_color(temp)$/;"	f
+get_weather	lua/weather/init.lua	/^local function get_weather()$/;"	f
+global	lua/utf8/test/strict.lua	/^function global(...)$/;"	f
+global	submodules/utf8.lua/test/strict.lua	/^function global(...)$/;"	f
+halfodd	lua/wcwidth/init.lua	/^local halfodd = (function ()$/;"	f
+halfodd	submodules/lua-wcwidth/wcwidth/init.lua	/^local halfodd = (function ()$/;"	f
+int32array	lua/utf8/init.lua	/^    int32array = function(size)$/;"	f
+int32array	submodules/utf8.lua/init.lua	/^    int32array = function(size)$/;"	f
+isbalanced	lua/utf8/test/test_pm.lua	/^function isbalanced (s)$/;"	f
+isbalanced	submodules/utf8.lua/test/test_pm.lua	/^function isbalanced (s)$/;"	f
+json.decode	lua/json/bench/bench_decode.lua	/^    json.decode = function(...) return _decode(json, ...) end$/;"	f
+json.decode	lua/json/bench/bench_encode.lua	/^    json.decode = function(...) return _decode(json, ...) end$/;"	f
+json.decode	lua/json/json.lua	/^function json.decode(str)$/;"	f
+json.decode	submodules/json.lua/bench/bench_decode.lua	/^    json.decode = function(...) return _decode(json, ...) end$/;"	f
+json.decode	submodules/json.lua/bench/bench_encode.lua	/^    json.decode = function(...) return _decode(json, ...) end$/;"	f
+json.decode	submodules/json.lua/json.lua	/^function json.decode(str)$/;"	f
+json.decode(str)	lua/json/README.md	/^#### json.decode(str)$/;"	t	section:![json.lua](https://cloud.githubusercontent.com/assets/3920290/9281532/99e5e0cc-42bd-11e5-8fce-eaff2f7fc681.png)""Usage
+json.decode(str)	submodules/json.lua/README.md	/^#### json.decode(str)$/;"	t	section:![json.lua](https://cloud.githubusercontent.com/assets/3920290/9281532/99e5e0cc-42bd-11e5-8fce-eaff2f7fc681.png)""Usage
+json.encode	lua/json/bench/bench_decode.lua	/^    json.encode = function(...) return _encode(json, ...) end$/;"	f
+json.encode	lua/json/bench/bench_encode.lua	/^    json.encode = function(...) return _encode(json, ...) end$/;"	f
+json.encode	lua/json/json.lua	/^function json.encode(val)$/;"	f
+json.encode	submodules/json.lua/bench/bench_decode.lua	/^    json.encode = function(...) return _encode(json, ...) end$/;"	f
+json.encode	submodules/json.lua/bench/bench_encode.lua	/^    json.encode = function(...) return _encode(json, ...) end$/;"	f
+json.encode	submodules/json.lua/json.lua	/^function json.encode(val)$/;"	f
+json.encode(value)	lua/json/README.md	/^#### json.encode(value)$/;"	t	section:![json.lua](https://cloud.githubusercontent.com/assets/3920290/9281532/99e5e0cc-42bd-11e5-8fce-eaff2f7fc681.png)""Usage
+json.encode(value)	submodules/json.lua/README.md	/^#### json.encode(value)$/;"	t	section:![json.lua](https://cloud.githubusercontent.com/assets/3920290/9281532/99e5e0cc-42bd-11e5-8fce-eaff2f7fc681.png)""Usage
+lua-wcwidth	submodules/lua-wcwidth/README.md	/^lua-wcwidth$/;"	c
+lua-wcwidth	submodules/lua-wcwidth/README.md.in	/^lua-wcwidth$/;"	c
+make_readme	submodules/lua-wcwidth/update-tables	/^make_readme () {$/;"	f
+malform	lua/utf8/test/test_pm.lua	/^local function malform (p, m)$/;"	f
+malform	submodules/utf8.lua/test/test_pm.lua	/^local function malform (p, m)$/;"	f
+minus	lua/utf8/modifier/compiletime/vanilla.lua	/^  minus = function(class, name)$/;"	f
+minus	submodules/utf8.lua/modifier/compiletime/vanilla.lua	/^  minus = function(class, name)$/;"	f
+mod	lua/wcwidth/init.lua	/^   local mod = math.mod or function (x, d)$/;"	f
+mod	submodules/lua-wcwidth/wcwidth/init.lua	/^   local mod = math.mod or function (x, d)$/;"	f
+mode_hl	_archived/galaxyline/init.lua	/^local function mode_hl()$/;"	f
+mode_name	_archived/galaxyline/init.lua	/^local function mode_name()$/;"	f
+mt.__index	lua/utf8/test/strict.lua	/^mt.__index = function (t, n)$/;"	f
+mt.__index	submodules/utf8.lua/test/strict.lua	/^mt.__index = function (t, n)$/;"	f
+mt.__newindex	lua/utf8/test/strict.lua	/^mt.__newindex = function (t, n, v)$/;"	f
+mt.__newindex	submodules/utf8.lua/test/strict.lua	/^mt.__newindex = function (t, n, v)$/;"	f
+native.new	lua/utf8/charclass/runtime/native.lua	/^function native.new()$/;"	f
+native.new	submodules/utf8.lua/charclass/runtime/native.lua	/^function native.new()$/;"	f
+native:is	lua/utf8/charclass/runtime/native.lua	/^function native:is(class, char_code)$/;"	f
+native:is	submodules/utf8.lua/charclass/runtime/native.lua	/^function native:is(class, char_code)$/;"	f
+new	lua/utf8/context/compiletime.lua	/^  new = function()$/;"	f
+new	submodules/utf8.lua/context/compiletime.lua	/^  new = function()$/;"	f
+next_char	lua/json/json.lua	/^local function next_char(str, idx, set, negate)$/;"	f
+next_char	submodules/json.lua/json.lua	/^local function next_char(str, idx, set, negate)$/;"	f
+on_attach	lua/lsp/init.lua	/^local on_attach = function(_, bufnr)$/;"	f
+p	lua/utf8/test/test_pm.lua	/^  p = utf8.gsub(p, "%%([0-9])", function (s) return "%" .. (tonumber(s)+1) end)$/;"	f
+p	submodules/utf8.lua/test/test_pm.lua	/^  p = utf8.gsub(p, "%%([0-9])", function (s) return "%" .. (tonumber(s)+1) end)$/;"	f
+parse	lua/json/json.lua	/^parse = function(str, idx)$/;"	f
+parse	lua/utf8/begins/compiletime/vanilla.lua	/^local function parse(regex, c, bs, ctx)$/;"	f
+parse	lua/utf8/charclass/compiletime/vanilla.lua	/^local function parse(str, c, bs, ctx)$/;"	f
+parse	lua/utf8/ends/compiletime/vanilla.lua	/^local function parse(regex, c, bs, ctx)$/;"	f
+parse	lua/utf8/modifier/compiletime/frontier.lua	/^local function parse(regex, c, bs, ctx)$/;"	f
+parse	lua/utf8/modifier/compiletime/stub.lua	/^local function parse(regex, c, bs, ctx)$/;"	f
+parse	lua/utf8/modifier/compiletime/vanilla.lua	/^local function parse(regex, c, bs, ctx)$/;"	f
+parse	submodules/json.lua/json.lua	/^parse = function(str, idx)$/;"	f
+parse	submodules/utf8.lua/begins/compiletime/vanilla.lua	/^local function parse(regex, c, bs, ctx)$/;"	f
+parse	submodules/utf8.lua/charclass/compiletime/vanilla.lua	/^local function parse(str, c, bs, ctx)$/;"	f
+parse	submodules/utf8.lua/ends/compiletime/vanilla.lua	/^local function parse(regex, c, bs, ctx)$/;"	f
+parse	submodules/utf8.lua/modifier/compiletime/frontier.lua	/^local function parse(regex, c, bs, ctx)$/;"	f
+parse	submodules/utf8.lua/modifier/compiletime/stub.lua	/^local function parse(regex, c, bs, ctx)$/;"	f
+parse	submodules/utf8.lua/modifier/compiletime/vanilla.lua	/^local function parse(regex, c, bs, ctx)$/;"	f
+parse_array	lua/json/json.lua	/^local function parse_array(str, i)$/;"	f
+parse_array	submodules/json.lua/json.lua	/^local function parse_array(str, i)$/;"	f
+parse_json_weather	lua/weather/init.lua	/^local function parse_json_weather()$/;"	f
+parse_literal	lua/json/json.lua	/^local function parse_literal(str, i)$/;"	f
+parse_literal	submodules/json.lua/json.lua	/^local function parse_literal(str, i)$/;"	f
+parse_number	lua/json/json.lua	/^local function parse_number(str, i)$/;"	f
+parse_number	submodules/json.lua/json.lua	/^local function parse_number(str, i)$/;"	f
+parse_object	lua/json/json.lua	/^local function parse_object(str, i)$/;"	f
+parse_object	submodules/json.lua/json.lua	/^local function parse_object(str, i)$/;"	f
+parse_string	lua/json/json.lua	/^local function parse_string(str, i)$/;"	f
+parse_string	submodules/json.lua/json.lua	/^local function parse_string(str, i)$/;"	f
+parse_unicode_escape	lua/json/json.lua	/^local function parse_unicode_escape(s)$/;"	f
+parse_unicode_escape	submodules/json.lua/json.lua	/^local function parse_unicode_escape(s)$/;"	f
+provider	_archived/galaxyline/init.lua	/^    provider = function() return ' ' end,$/;"	f
+provider	_archived/galaxyline/init.lua	/^    provider = function() return '' end,$/;"	f
+provider	_archived/galaxyline/init.lua	/^    provider = function() return '' end,$/;"	f
+provider	_archived/galaxyline/init.lua	/^    provider = function()$/;"	f
+provider	_archived/galaxyline/init.lua	/^    provider = {function() return ' ' end, 'FileSize'},$/;"	f
+question	lua/utf8/modifier/compiletime/vanilla.lua	/^  question = function(class, name)$/;"	f
+question	submodules/utf8.lua/modifier/compiletime/vanilla.lua	/^  question = function(class, name)$/;"	f
+r	lua/utf8/test/test_pm.lua	/^r = utf8.gsub(s, '()(%w+)()', function (a,w,b)$/;"	f
+r	submodules/utf8.lua/test/test_pm.lua	/^r = utf8.gsub(s, '()(%w+)()', function (a,w,b)$/;"	f
+range	lua/utf8/test/test_pm.lua	/^local function range (i, j)$/;"	f
+range	submodules/utf8.lua/test/test_pm.lua	/^local function range (i, j)$/;"	f
+replace	lua/utf8/functions/lua53.lua	/^local function replace(repl, args)$/;"	f
+replace	submodules/utf8.lua/functions/lua53.lua	/^local function replace(repl, args)$/;"	f
+require	lua/json/bench/bench_decode.lua	/^require = function(modname)$/;"	f
+require	submodules/json.lua/bench/bench_decode.lua	/^require = function(modname)$/;"	f
+res	lua/json/bench/bench_decode.lua	/^  local res = bench.run(name, 10, function() json.decode(text) end)$/;"	f
+res	lua/json/bench/bench_encode.lua	/^  local res = bench.run(name, 10, function() json.encode(data) end)$/;"	f
+res	lua/utf8/functions/lua53.lua	/^  res = generate_matcher_function(regex, plain)$/;"	f
+res	submodules/json.lua/bench/bench_decode.lua	/^  local res = bench.run(name, 10, function() json.decode(text) end)$/;"	f
+res	submodules/json.lua/bench/bench_encode.lua	/^  local res = bench.run(name, 10, function() json.encode(data) end)$/;"	f
+res	submodules/utf8.lua/functions/lua53.lua	/^  res = generate_matcher_function(regex, plain)$/;"	f
+rev	lua/utf8/test/test_pm.lua	/^local function rev (s)$/;"	f
+rev	submodules/utf8.lua/test/test_pm.lua	/^local function rev (s)$/;"	f
+save_profiles	plugin/packer_compiled.lua	/^local function save_profiles(threshold)$/;"	f
+setglobal	lua/utf8/test/test_pm.lua	/^  local function setglobal (n,v) rawset(_G, n, v) end$/;"	f
+setglobal	submodules/utf8.lua/test/test_pm.lua	/^  local function setglobal (n,v) rawset(_G, n, v) end$/;"	f
+setup	lua/utf8/test/context_runtime.lua	/^local function setup()$/;"	f
+setup	submodules/utf8.lua/test/context_runtime.lua	/^local function setup()$/;"	f
+simple	lua/utf8/modifier/compiletime/simple.lua	/^  simple = function(class, name)$/;"	f
+simple	submodules/utf8.lua/modifier/compiletime/simple.lua	/^  simple = function(class, name)$/;"	f
+sliding	lua/utf8/begins/compiletime/vanilla.lua	/^  sliding = function()$/;"	f
+sliding	submodules/utf8.lua/begins/compiletime/vanilla.lua	/^  sliding = function()$/;"	f
+star	lua/utf8/modifier/compiletime/vanilla.lua	/^  star = function(class, name)$/;"	f
+star	submodules/utf8.lua/modifier/compiletime/vanilla.lua	/^  star = function(class, name)$/;"	f
+strset	lua/utf8/test/test_pm.lua	/^function strset (p)$/;"	f
+strset	submodules/utf8.lua/test/test_pm.lua	/^function strset (p)$/;"	f
+t	lua/config/nvim-compe/init.lua	/^local t = function(str)$/;"	f
+t	lua/utf8/test/test_pm.lua	/^t = {}; setmetatable(t, {__index = function (t,s) return utf8.upper(s) end})$/;"	f
+t	submodules/utf8.lua/test/test_pm.lua	/^t = {}; setmetatable(t, {__index = function (t,s) return utf8.upper(s) end})$/;"	f
+task	lua/weather/init.lua	/^local task = vim.loop.new_async(function()$/;"	f
+test	lua/json/test/test.lua	/^local function test(name, func)$/;"	f
+test	submodules/json.lua/test/test.lua	/^local function test(name, func)$/;"	f
+test_clone	lua/utf8/test/context_runtime.lua	/^local test_clone = (function()$/;"	f
+test_clone	submodules/utf8.lua/test/context_runtime.lua	/^local test_clone = (function()$/;"	f
+test_get_char	lua/utf8/test/context_runtime.lua	/^local test_get_char = (function()$/;"	f
+test_get_char	submodules/utf8.lua/test/context_runtime.lua	/^local test_get_char = (function()$/;"	f
+test_get_charcode	lua/utf8/test/context_runtime.lua	/^local test_get_charcode = (function()$/;"	f
+test_get_charcode	submodules/utf8.lua/test/context_runtime.lua	/^local test_get_charcode = (function()$/;"	f
+test_last_char	lua/utf8/test/context_runtime.lua	/^local test_last_char = (function()$/;"	f
+test_last_char	submodules/utf8.lua/test/context_runtime.lua	/^local test_last_char = (function()$/;"	f
+test_next_char	lua/utf8/test/context_runtime.lua	/^local test_next_char = (function()$/;"	f
+test_next_char	submodules/utf8.lua/test/context_runtime.lua	/^local test_next_char = (function()$/;"	f
+test_phrase	submodules/lua-wcwidth/spec/wcwidth_spec.lua	/^local function test_phrase(input, expected_lengths, expected_total_length)$/;"	f
+time	plugin/packer_compiled.lua	/^    time = function(chunk, start) end$/;"	f
+time	plugin/packer_compiled.lua	/^    time = function(chunk, start)$/;"	f
+toend	lua/utf8/ends/compiletime/vanilla.lua	/^  toend = function(ctx)$/;"	f
+toend	submodules/utf8.lua/ends/compiletime/vanilla.lua	/^  toend = function(ctx)$/;"	f
+tostring	lua/utf8/test/util.lua	/^local function tostring(v)$/;"	f
+tostring	submodules/utf8.lua/test/util.lua	/^local function tostring(v)$/;"	f
+try_loadstring	plugin/packer_compiled.lua	/^local function try_loadstring(s, component, name)$/;"	f
+u32hex	submodules/lua-wcwidth/update-tables	/^u32hex () {$/;"	f
+utf8.debug	lua/utf8/util.lua	/^function utf8.debug(...)$/;"	f
+utf8.debug	submodules/utf8.lua/util.lua	/^function utf8.debug(...)$/;"	f
+utf8.lower	lua/utf8/primitives/native.lua	/^function utf8.lower(str)$/;"	f
+utf8.lower	submodules/utf8.lua/primitives/native.lua	/^function utf8.lower(str)$/;"	f
+utf8.lua	lua/utf8/README.md	/^# utf8.lua$/;"	c
+utf8.lua	submodules/utf8.lua/README.md	/^# utf8.lua$/;"	c
+utf8.regex.compiletime.begins.parse	lua/utf8/begins/compiletime/parser.lua	/^function utf8.regex.compiletime.begins.parse(regex, c, bs, ctx)$/;"	f
+utf8.regex.compiletime.begins.parse	submodules/utf8.lua/begins/compiletime/parser.lua	/^function utf8.regex.compiletime.begins.parse(regex, c, bs, ctx)$/;"	f
+utf8.regex.compiletime.charclass.parse	lua/utf8/charclass/compiletime/parser.lua	/^function utf8.regex.compiletime.charclass.parse(regex, c, bs, ctx)$/;"	f
+utf8.regex.compiletime.charclass.parse	submodules/utf8.lua/charclass/compiletime/parser.lua	/^function utf8.regex.compiletime.charclass.parse(regex, c, bs, ctx)$/;"	f
+utf8.regex.compiletime.ends.parse	lua/utf8/ends/compiletime/parser.lua	/^function utf8.regex.compiletime.ends.parse(regex, c, bs, ctx)$/;"	f
+utf8.regex.compiletime.ends.parse	submodules/utf8.lua/ends/compiletime/parser.lua	/^function utf8.regex.compiletime.ends.parse(regex, c, bs, ctx)$/;"	f
+utf8.regex.compiletime.modifier.parse	lua/utf8/modifier/compiletime/parser.lua	/^function utf8.regex.compiletime.modifier.parse(regex, c, bs, ctx)$/;"	f
+utf8.regex.compiletime.modifier.parse	submodules/utf8.lua/modifier/compiletime/parser.lua	/^function utf8.regex.compiletime.modifier.parse(regex, c, bs, ctx)$/;"	f
+utf8.upper	lua/utf8/primitives/native.lua	/^function utf8.upper(str)$/;"	f
+utf8.upper	submodules/utf8.lua/primitives/native.lua	/^function utf8.upper(str)$/;"	f
+utf8.util.copy	lua/utf8/util.lua	/^function utf8.util.copy(obj, deep)$/;"	f
+utf8.util.copy	submodules/utf8.lua/util.lua	/^function utf8.util.copy(obj, deep)$/;"	f
+utf8.util.debug	lua/utf8/util.lua	/^function utf8.util.debug(...)$/;"	f
+utf8.util.debug	submodules/utf8.lua/util.lua	/^function utf8.util.debug(...)$/;"	f
+utf8.util.next	lua/utf8/util.lua	/^function utf8.util.next(str, bs)$/;"	f
+utf8.util.next	submodules/utf8.lua/util.lua	/^function utf8.util.next(str, bs)$/;"	f
+utf8:init	lua/utf8/init.lua	/^function utf8:init()$/;"	f
+utf8:init	submodules/utf8.lua/init.lua	/^function utf8:init()$/;"	f
+utf8:require	lua/utf8/init.lua	/^function utf8:require(name)$/;"	f
+utf8:require	submodules/utf8.lua/init.lua	/^function utf8:require(name)$/;"	f
+utf8byte	lua/utf8/primitives/dummy.lua	/^local function utf8byte(str, i, j)$/;"	f
+utf8byte	submodules/utf8.lua/primitives/dummy.lua	/^local function utf8byte(str, i, j)$/;"	f
+utf8char	lua/utf8/primitives/dummy.lua	/^local function utf8char(...)$/;"	f
+utf8char	submodules/utf8.lua/primitives/dummy.lua	/^local function utf8char(...)$/;"	f
+utf8charbytes	lua/utf8/primitives/dummy.lua	/^local function utf8charbytes(str, bs)$/;"	f
+utf8charbytes	submodules/utf8.lua/primitives/dummy.lua	/^local function utf8charbytes(str, bs)$/;"	f
+utf8codes	lua/utf8/primitives/dummy.lua	/^local function utf8codes(str)$/;"	f
+utf8codes	submodules/utf8.lua/primitives/dummy.lua	/^local function utf8codes(str)$/;"	f
+utf8find	lua/utf8/functions/lua53.lua	/^local function utf8find(str, regex, init, plain)$/;"	f
+utf8find	submodules/utf8.lua/functions/lua53.lua	/^local function utf8find(str, regex, init, plain)$/;"	f
+utf8gensub	lua/utf8/primitives/dummy.lua	/^local function utf8gensub(str, sub_len)$/;"	f
+utf8gensub	submodules/utf8.lua/primitives/dummy.lua	/^local function utf8gensub(str, sub_len)$/;"	f
+utf8gmatch	lua/utf8/functions/lua53.lua	/^local function utf8gmatch(str, regex)$/;"	f
+utf8gmatch	submodules/utf8.lua/functions/lua53.lua	/^local function utf8gmatch(str, regex)$/;"	f
+utf8gsub	lua/utf8/functions/lua53.lua	/^local function utf8gsub(str, regex, repl, limit)$/;"	f
+utf8gsub	submodules/utf8.lua/functions/lua53.lua	/^local function utf8gsub(str, regex, repl, limit)$/;"	f
+utf8len	lua/utf8/primitives/dummy.lua	/^local function utf8len (str)$/;"	f
+utf8len	submodules/utf8.lua/primitives/dummy.lua	/^local function utf8len (str)$/;"	f
+utf8match	lua/utf8/functions/lua53.lua	/^local function utf8match(str, regex, init)$/;"	f
+utf8match	submodules/utf8.lua/functions/lua53.lua	/^local function utf8match(str, regex, init)$/;"	f
+utf8next	lua/utf8/primitives/dummy.lua	/^local function utf8next(str, bs)$/;"	f
+utf8next	submodules/utf8.lua/primitives/dummy.lua	/^local function utf8next(str, bs)$/;"	f
+utf8offset	lua/utf8/primitives/dummy.lua	/^local function utf8offset(str, n, bs)$/;"	f
+utf8offset	submodules/utf8.lua/primitives/dummy.lua	/^local function utf8offset(str, n, bs)$/;"	f
+utf8reverse	lua/utf8/primitives/dummy.lua	/^local function utf8reverse (s)$/;"	f
+utf8reverse	submodules/utf8.lua/primitives/dummy.lua	/^local function utf8reverse (s)$/;"	f
+utf8sub	lua/utf8/primitives/dummy.lua	/^local function utf8sub (s, i, j)$/;"	f
+utf8sub	submodules/utf8.lua/primitives/dummy.lua	/^local function utf8sub (s, i, j)$/;"	f
+utf8symbollen	lua/utf8/primitives/dummy.lua	/^local function utf8symbollen(byte)$/;"	f
+utf8symbollen	submodules/utf8.lua/primitives/dummy.lua	/^local function utf8symbollen(byte)$/;"	f
+utf8unicode	lua/utf8/primitives/dummy.lua	/^utf8unicode = function(str, ibs, jbs)$/;"	f
+utf8unicode	submodules/utf8.lua/primitives/dummy.lua	/^utf8unicode = function(str, ibs, jbs)$/;"	f
+utf8validate	lua/utf8/primitives/dummy.lua	/^local function utf8validate(str, byte_pos)$/;"	f
+utf8validate	submodules/utf8.lua/primitives/dummy.lua	/^local function utf8validate(str, byte_pos)$/;"	f
+utf8validator	lua/utf8/primitives/dummy.lua	/^local function utf8validator(str, bs)$/;"	f
+utf8validator	submodules/utf8.lua/primitives/dummy.lua	/^local function utf8validator(str, bs)$/;"	f
+wcwidth	lua/wcwidth/init.lua	/^local function wcwidth (rune)$/;"	f
+wcwidth	submodules/lua-wcwidth/wcwidth/init.lua	/^local function wcwidth (rune)$/;"	f
+wide_table	submodules/lua-wcwidth/update-tables	/^wide_table () {$/;"	f
+zero_table	submodules/lua-wcwidth/update-tables	/^zero_table () {$/;"	f
+安裝 Submodule	README.md	/^## 安裝 Submodule$/;"	s	chapter:安裝指引
+安裝指引	README.md	/^# 安裝指引$/;"	c

@@ -51,6 +51,19 @@ map('n', '<LocalLeader>fb', ':Telescope buffers<CR>',                   opts)
 map('n', '<LocalLeader>fg', ':Telescope live_grep<CR>',                 opts)
 map('n', '<LocalLeader>fh', ':Telescope help_tags<CR>',                 opts)
 
+-- 搬移整行文字
+map('n', '<A-j>', ':m .+1<CR>', { noremap=true })
+map('n', '<A-k>', ':m .-2<CR>', { noremap=true })
+vim.api.nvim_exec(
+[[
+imap <A-j> <Esc>:m .+1<CR>
+imap <A-k> <Esc>:m .-2<CR>
+vmap <A-j> :m '>+1<CR>
+vmap <A-k> :m '<-2<CR>
+]],
+false)
+
+
 -- -- Cursor movement
 -- -- -----------------------------------------------------------------------------
 

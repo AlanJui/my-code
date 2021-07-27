@@ -63,24 +63,26 @@ vim.api.nvim_set_keymap("i", "<CR>", "compe#confirm({ 'keys': '<CR>', 'select': 
 -- will need to extend the table yourself instead of setting a new one.
 ]]
 -- [Method 1]
--- require("luasnip/loaders/from_vscode").lazy_load({
---   path = "./my-snippets/"
--- })
+-- require("luasnip/loaders/from_vscode").lazy_load({ path = "./my-snippets" })
 
 -- [Method 2]
 -- require("luasnip/loaders/from_vscode").lazy_load()
 
 --  [Method 3]
--- require("luasnip/loaders/from_vscode").load({
---   paths = {"./my-snippets", "~/.config/my-nvim/snips"}
--- })
-
--- [Method 4]
 require("luasnip/loaders/from_vscode").load({
-  include = {"python", "django", "html", "htmldjango", "javascript"},
   paths = {
     "/Users/alanjui/.config/my-code/my-snippets",
+    "./my-snippets",
+    "~/.config/my-nvim/snips"
   }
 })
+
+-- [Method 4]
+-- require("luasnip/loaders/from_vscode").load({
+--   include = {"python", "django", "html", "htmldjango", "javascript"},
+--   paths = {
+--     "/Users/alanjui/.config/my-code/my-snippets",
+--   }
+-- })
 
 

@@ -168,6 +168,14 @@ _G.packer_plugins = {
   ["vim-rhubarb"] = {
     loaded = true,
     path = "/Users/alanjui/.local/share/nvim/site/pack/packer/start/vim-rhubarb"
+  },
+  ["vim-vsnip"] = {
+    loaded = true,
+    path = "/Users/alanjui/.local/share/nvim/site/pack/packer/start/vim-vsnip"
+  },
+  ["vim-vsnip-integ"] = {
+    loaded = true,
+    path = "/Users/alanjui/.local/share/nvim/site/pack/packer/start/vim-vsnip-integ"
   }
 }
 

@@ -47,4 +47,5 @@ require('packer').startup(function()
   use 'kyazdani42/nvim-web-devicons'
   use 'voldikss/vim-floaterm'
   -- use 'cohama/lexima.vim' -- Auto close parentheses and repeat by dot dot dot...
+  use 'jiangmiao/auto-pairs'
 end)

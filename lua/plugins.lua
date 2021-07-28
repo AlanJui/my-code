@@ -58,6 +58,8 @@ require('packer').startup(function()
   use 'jiangmiao/auto-pairs'
   -- "gc" to comment visual regions/lines
   use 'tpope/vim-commentary'
+  -- visualizes undo history and makes it easier to browse and switch between different undo branches
+  use 'mbbill/undotree'
   -- ===========================================================================
   -- Git Tools
   -- ===========================================================================

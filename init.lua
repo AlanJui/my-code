@@ -31,6 +31,7 @@ require('config/vim-vsnip')
 -- require('config/ultisnips')
 require('config/indent-blankline')
 require('config/vim-better-whitespace')
+require('config/undotree')
 
 -- Git Tools
 require('config/gitsigns')

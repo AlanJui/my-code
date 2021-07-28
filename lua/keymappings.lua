@@ -63,6 +63,8 @@ vmap <A-k> :m '<-2<CR>
 ]],
 false)
 
+map('n', '<C-\\>', ':CommentToggle<CR>', { noremap=true })
+map('v', '<C-\\>', ':CommentToggle<CR>', { noremap=true })
 
 -- Cursor movement
 -- -----------------------------------------------------------------------------
@@ -79,7 +81,7 @@ map('i', '<end>',  '<C-o>g<End>',  {silent = true, noremap = true})
 -- Function keys
 -- -----------------------------------------------------------------------------
 
-map('n', '<F5>', ':NvimTreeToggle<CR>', {silent = true})
+map('n', '<F5>', ':FloatermNew<CR>', {silent = true})
 
 -- Leader configuration
 -- -----------------------------------------------------------------------------

@@ -69,10 +69,6 @@ end
 time([[try_loadstring definition]], false)
 time([[Defining packer_plugins]], true)
 _G.packer_plugins = {
-  LuaSnip = {
-    loaded = true,
-    path = "/Users/alanjui/.local/share/nvim/site/pack/packer/start/LuaSnip"
-  },
   ["auto-pairs"] = {
     loaded = true,
     path = "/Users/alanjui/.local/share/nvim/site/pack/packer/start/auto-pairs"
@@ -96,6 +92,14 @@ _G.packer_plugins = {
   ["lightline.vim"] = {
     loaded = true,
     path = "/Users/alanjui/.local/share/nvim/site/pack/packer/start/lightline.vim"
+  },
+  neogit = {
+    loaded = true,
+    path = "/Users/alanjui/.local/share/nvim/site/pack/packer/start/neogit"
+  },
+  ["nvim-comment"] = {
+    loaded = true,
+    path = "/Users/alanjui/.local/share/nvim/site/pack/packer/start/nvim-comment"
   },
   ["nvim-compe"] = {
     loaded = true,
@@ -145,13 +149,17 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/alanjui/.local/share/nvim/site/pack/packer/start/telescope.nvim"
   },
+  ["todo-comments.nvim"] = {
+    loaded = true,
+    path = "/Users/alanjui/.local/share/nvim/site/pack/packer/start/todo-comments.nvim"
+  },
+  undotree = {
+    loaded = true,
+    path = "/Users/alanjui/.local/share/nvim/site/pack/packer/start/undotree"
+  },
   ["vim-better-whitespace"] = {
     loaded = true,
     path = "/Users/alanjui/.local/share/nvim/site/pack/packer/start/vim-better-whitespace"
-  },
-  ["vim-commentary"] = {
-    loaded = true,
-    path = "/Users/alanjui/.local/share/nvim/site/pack/packer/start/vim-commentary"
   },
   ["vim-floaterm"] = {
     loaded = true,
@@ -176,6 +184,10 @@ _G.packer_plugins = {
   ["vim-vsnip-integ"] = {
     loaded = true,
     path = "/Users/alanjui/.local/share/nvim/site/pack/packer/start/vim-vsnip-integ"
+  },
+  ["vim-which-key"] = {
+    loaded = true,
+    path = "/Users/alanjui/.local/share/nvim/site/pack/packer/start/vim-which-key"
   }
 }
 

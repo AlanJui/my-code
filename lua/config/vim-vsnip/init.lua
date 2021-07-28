@@ -58,3 +58,9 @@ vim.api.nvim_set_keymap("s", "<S-Tab>", "v:lua.s_tab_complete()", {expr = true})
 -- To automatically select the first match
 vim.api.nvim_set_keymap("i", "<CR>", "compe#confirm({ 'keys': '<CR>', 'select': v:true })", { expr = true })
 
+-- vim.g.vsnip_snippet_dirs = {
+--   "~/.config/nvim/my-snippets",
+-- }
+
+-- vim.g.vsnip_snippet_dir = "/Users/alanjui/.config/nvim/my-snippets"
+vim.g.vsnip_snippet_dir = "~/.config/nvim/my-snippets"

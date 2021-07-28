@@ -1,5 +1,5 @@
 {
-  "Django: template extending layout.html": {
+  "djextlayout": {
     "prefix": "djextlayout",
     "body": [
       "{% extends \"hello/layout.html\" %}",
@@ -14,56 +14,55 @@
     ],
     "description": "Boilerplate template that extends layout.html"
   },
-
-  "Django: extends": {
+  "dj_extends": {
     "prefix": "dj_extends",
     "body": ["{% extends '$1' %}", ""],
     "description": "Django: extends"
   },
 
-  "Django: load ": {
+  "dj_load": {
     "prefix": "dj_load",
     "body": ["{% load $1 %}", ""],
     "description": "Django: load "
   },
 
-  "Django: load static files": {
+  "dj_load_static": {
     "prefix": "dj_load_static",
     "body": ["{% load static %}", ""],
     "description": "Django: load static files"
   },
 
-  "Django: block in one line": {
+  "dj_blk": {
     "prefix": "dj_blk",
     "body": ["{% block $1 %}{% endblock $1 %}"],
     "description": "One line block "
   },
 
-  "Django: block ": {
+  "dj_block": {
     "prefix": "dj_block",
     "body": ["{% block $1 %}", "$2", "{% endblock $1 %}"],
     "description": "Django: block "
   },
 
-  "Django: if": {
+  "dj_if": {
     "prefix": "dj_if",
     "body": ["{% if $1 %}", "  $2", "{% endif %}"],
     "description": "Django: if"
   },
 
-  "Django: else": {
+  "dj_else": {
     "prefix": "dj_else",
     "body": ["{% else %}", "  $1"],
     "description": "Django: else"
   },
 
-  "Django: include": {
+  "dj_include": {
     "prefix": "dj_include",
     "body": ["{% include '$1' %}", ""],
     "description": "Django: include"
   },
 
-  "Django: Block Styles": {
+  "dj_blk_styles": {
     "prefix": "dj_blk_styles",
     "body": [
       "{% block styles %}",
@@ -74,31 +73,31 @@
     "description": "Django: Block Styles"
   },
 
-  "Django: source of style file": {
+  "dj_link_href": {
     "prefix": "dj_link_href",
     "body": ["<link rel=\"stylesheet\" href=\"{% static '$1.css' %}\" />"],
     "description": "Django: source of style file"
   },
 
-  "Django: script src ": {
+  "dj_script_src": {
     "prefix": "dj_script_src",
     "body": ["<script src=\"{% static '$1.js' %}\"></script>"],
     "description": "Django: script src "
   },
 
-  "Django: a href": {
+  "dj_a_href": {
     "prefix": "dj_a_href",
     "body": ["<a href=\"{% url '$1' %}\" $2>$3</a>"],
     "description": "Django: a href"
   },
 
-  "Django: img src": {
+  "dj_img_src": {
     "prefix": "dj_img_src",
     "body": ["<img src=\"{% static '$1' %}\" />"],
     "description": "Django: img src"
   },
 
-  "Django: form": {
+  "dj_form_asp": {
     "prefix": "dj_form_asp",
     "body": [
       "<form method=\"post\" class=\"${1:form-horizontal}\">",
@@ -110,7 +109,7 @@
     "description": "Django: form as_p"
   },
 
-  "Django: form new": {
+  "dj_form_new": {
     "prefix": "dj_form_new",
     "body": [
       "<form method=\"post\" class=\"$0\">",
@@ -122,7 +121,7 @@
     "description": "Django: new form"
   },
 
-  "Django: input field #1": {
+  "dj_fld-01": {
     "prefix": "dj_fld-01",
     "body": [
       "<div class=\"row\">",
@@ -137,7 +136,7 @@
     "description": "Django: input field #1"
   },
 
-  "Django: input field with label": {
+  "dj_fld-02": {
     "prefix": "dj_fld-02",
     "body": [
       "<div class=\"form-group\">",
@@ -152,25 +151,25 @@
     "description": "Django: input field with label"
   },
 
-  "Django: for loop": {
+  "dj_for": {
     "prefix": "dj_for",
     "body": ["{% for $1 in $2 %}", "  $3", "{% empty %}", "", "{% endfor %}"],
     "description": "Django: for loop"
   },
 
-  "Django: block content": {
+  "dj_blkc": {
     "prefix": "dj_blkc",
     "body": ["{% block content %}$1", "{% endblock content %}"],
     "description": "Django: block content"
   },
 
-  "Django: block title": {
+  "dj_blkt": {
     "prefix": "dj_blkt",
     "body": ["{% block title %}$1{% endblock %}"],
     "description": "Django: block title"
   },
 
-  "Django: block script source": {
+  "dj_blksrc": {
     "prefix": "dj_blksrc",
     "body": [
       "{% block javascript %}",
@@ -185,7 +184,7 @@
     "description": "Django: block script source"
   },
 
-  "Django: Block Script src": {
+  "dj_blk_src": {
     "prefix": "dj_blk_src",
     "body": [
       "{% block javascript %}",
@@ -200,13 +199,13 @@
     "description": "Django: Block Script src"
   },
 
-  "Django: load static files": {
+  "dj_loads": {
     "prefix": "dj_loads",
     "body": ["{% load static %}"],
     "description": "Django: load static files"
   },
 
-  "Django: HTML tags for View": {
+  "dj_view": {
     "prefix": "dj_view",
     "body": [
       "{% extends 'base.html' %}",
@@ -229,7 +228,7 @@
     "description": "Django: HTML tags for View"
   },
 
-  "Django: base.html": {
+  "dj_base": {
     "prefix": "dj_base",
     "body": [
       "{% load static %}",
@@ -263,75 +262,5 @@
       ""
     ],
     "description": "Django: base.html"
-  },
-  "卦爻辭": {
-    "prefix": "yi_table",
-    "body": [
-      "<!-- ****************************** -->",
-      "<!-- 卦                          辭 -->",
-      "<!-- ****************************** -->",
-      "<tr>",
-      "  <td>",
-      "    ",
-      "  </td>",
-      "  <td>",
-      "    ",
-      "  </td>",
-      "  <td></td>",
-      "</tr>",
-      "<!-- ---------------------------- -->",
-      "<!-- 爻                        辭 -->",
-      "<!-- ---------------------------- -->",
-      "",
-      "<!-- 初爻 -->",
-      "<tr>",
-      "  <td></td>",
-      "  <td></td>",
-      "  <td>",
-      "    ",
-      "  </td>",
-      "</tr>",
-      "<!-- 二爻 -->",
-      "<tr>",
-      "  <td></td>",
-      "  <td></td>",
-      "  <td>",
-      "    ",
-      "  </td>",
-      "</tr>",
-      "<!-- 三爻 -->",
-      "<tr>",
-      "  <td></td>",
-      "  <td></td>",
-      "  <td>",
-      "    ",
-      "  </td>",
-      "</tr>",
-      "<!-- 四爻 -->",
-      "<tr>",
-      "  <td></td>",
-      "  <td></td>",
-      "  <td>",
-      "    ",
-      "  </td>",
-      "</tr>",
-      "<!-- 五爻 -->",
-      "<tr>",
-      "  <td></td>",
-      "  <td></td>",
-      "  <td>",
-      "    ",
-      "  </td>",
-      "</tr>",
-      "<!-- 上爻 -->",
-      "<tr>",
-      "  <td></td>",
-      "  <td></td>",
-      "  <td>",
-      "    ",
-      "  </td>",
-      "</tr>"
-    ],
-    "description": "編輯卦爻辭用"
   }
 }

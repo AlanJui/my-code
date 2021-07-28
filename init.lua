@@ -1,34 +1,42 @@
+-- =========================================================================
+-- Plugins
+-- =========================================================================
 require('plugins')
+
+-- =========================================================================
+-- Generanl (Gobal) setting
+-- =========================================================================
 require('general')
 
+-- =========================================================================
 -- Appearance
--- ============================================================================
-
+-- =========================================================================
  require('appearence')
 
--- Local plugins
--- =============================================================================
+-- =========================================================================
+-- Plugin configuration
+-- =========================================================================
 
--- require('weather').init()
-
--- Configuration of the plugins
--- ============================================================================
-
-
-require('lsp')
-
-require('config/indent-blankline')
-require('config/vim-better-whitespace')
+-- UI
 require('config/dashboard-nvim')
+require('config/vim-which-key')
 require('config/nvim-tree')
 require('config/telescope')
-require('config/gitsigns')
-require('config/floatterm')
+
+-- Editting Utilities
+require('lsp')
 require('config/nvim-compe')
 require('config/vim-vsnip')
 -- require('config/LuaSnip')
 -- require('config/ultisnips')
--- require('config/vim-which-key')
+require('config/indent-blankline')
+require('config/vim-better-whitespace')
+
+-- Git Tools
+require('config/gitsigns')
+
+-- Misc.
+require('config/floatterm')
 -- require('config/undotree')
 -- require('config/todo-comments')
 -- require('config/galaxyline')
@@ -37,7 +45,13 @@ require('config/vim-vsnip')
 -- require('config/nvim-scrollview')
 -- require('config/vimtex')
 
+-- =========================================================================
 -- Key mappings
--- ============================================================================
-
+-- =========================================================================
 require('keymappings')
+
+-- =========================================================================
+-- Misc.
+-- =========================================================================
+-- require('weather').init()
+

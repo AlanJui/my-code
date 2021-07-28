@@ -59,8 +59,14 @@ vim.api.nvim_set_keymap("s", "<S-Tab>", "v:lua.s_tab_complete()", {expr = true})
 vim.api.nvim_set_keymap("i", "<CR>", "compe#confirm({ 'keys': '<CR>', 'select': v:true })", { expr = true })
 
 -- vim.g.vsnip_snippet_dirs = {
---   "~/.config/nvim/my-snippets",
+--   "./my-snippets",
+--   ".~/.config/nvim/my-snippets",
+--   "~/.local/share/nvim/site/pack/packer/start/friendly-snippets"
+-- }
+-- vim.g.vsnip_snippet_dirs = {
+--   "/Users/alanjui/.config/my-code/my-snippets",
+--   "~/.local/share/nvim/site/pack/packer/start/friendly-snippets"
 -- }
 
--- vim.g.vsnip_snippet_dir = "/Users/alanjui/.config/nvim/my-snippets"
-vim.g.vsnip_snippet_dir = "~/.config/nvim/my-snippets"
+-- vim.g.vsnip_snippet_dir = "~/.config/nvim/my-snippets"
+vim.g.vsnip_snippet_dir = "./my-snippets"

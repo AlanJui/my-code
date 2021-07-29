@@ -73,6 +73,10 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/alanjui/.local/share/nvim/site/pack/packer/start/auto-pairs"
   },
+  ["bracey.vim"] = {
+    loaded = true,
+    path = "/Users/alanjui/.local/share/nvim/site/pack/packer/start/bracey.vim"
+  },
   ["dashboard-nvim"] = {
     loaded = true,
     path = "/Users/alanjui/.local/share/nvim/site/pack/packer/start/dashboard-nvim"
@@ -108,6 +112,10 @@ _G.packer_plugins = {
   ["nvim-lspconfig"] = {
     loaded = true,
     path = "/Users/alanjui/.local/share/nvim/site/pack/packer/start/nvim-lspconfig"
+  },
+  ["nvim-scrollview"] = {
+    loaded = true,
+    path = "/Users/alanjui/.local/share/nvim/site/pack/packer/start/nvim-scrollview"
   },
   ["nvim-tree.lua"] = {
     loaded = true,
@@ -172,6 +180,10 @@ _G.packer_plugins = {
   ["vim-gutentags"] = {
     loaded = true,
     path = "/Users/alanjui/.local/share/nvim/site/pack/packer/start/vim-gutentags"
+  },
+  ["vim-instant-markdown"] = {
+    loaded = true,
+    path = "/Users/alanjui/.local/share/nvim/site/pack/packer/start/vim-instant-markdown"
   },
   ["vim-rhubarb"] = {
     loaded = true,

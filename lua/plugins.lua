@@ -90,4 +90,13 @@ require('packer').startup(function()
   use 'voldikss/vim-floaterm'
   -- highlight your todo comments in different styles
   use 'folke/todo-comments.nvim'
+  -- Live server
+  use 'turbio/bracey.vim'
+  -- Markdown preview
+  use 'instant-markdown/vim-instant-markdown'
+  -- PlantUML
+  use 'weirongxu/plantuml-previewer.vim'
+  use 'tyru/open-browser.vim'
+  -- PlantUML syntax highlighting
+  use 'aklt/plantuml-syntax'
 end)

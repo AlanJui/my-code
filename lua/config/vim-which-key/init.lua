@@ -1,7 +1,8 @@
 -- Plugin configuration: vim-which-key
 -- ============================================================================
 
-vim.g.which_key_timeout = 100
+-- vim.g.which_key_timeout = 100
+vim.g.which_key_timeout = 10
 vim.g.which_key_display_names = {['<CR>'] = '↵', ['<TAB>'] = '⇆'}
 vim.g.which_key_sep = '→'
 vim.g.which_key_use_floating_win = 0

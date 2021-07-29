@@ -16,3 +16,10 @@ submodules/lua-wcwidth
 
 $ git submodule add https://github.com/Stepets/utf8.lua submodules/utf8.lua
 ```
+
+
+## 待辧事項
+
+ - 加入 Markdown Preview 功能
+ - 加入 PlantUML Drawing 功能
+ - 加入 HTML/CSS Live Server 功能

@@ -34,6 +34,8 @@ require('config/nvim-comment')
 require('config/indent-blankline')
 require('config/vim-better-whitespace')
 require('config/undotree')
+require('config/tagalong')
+-- require('config/ale')
 
 -- Git Tools
 require('config/gitsigns')

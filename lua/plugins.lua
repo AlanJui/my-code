@@ -25,6 +25,7 @@ require('packer').startup(function()
   -- UI
   -- ===========================================================
   -- Themes
+  use 'lifepillar/vim-solarized8'
   use 'joshdick/onedark.vim' -- Theme inspired by Atom
   use 'Th3Whit3Wolf/one-nvim'
   -- Status Line
@@ -65,8 +66,26 @@ require('packer').startup(function()
   use 'ntpeters/vim-better-whitespace'
   -- Auto close parentheses and repeat by dot dot dot...
   use 'jiangmiao/auto-pairs'
+  -- "surroundings": parentheses, brackets, quotes, XML tags, and more
+  use 'tpope/vim-surround'
+  -- Multiple cursor editting
+  use 'mg979/vim-visual-multi'
+  -- Auto change html tags
+  use 'AndrewRadev/tagalong.vim'
   -- visualizes undo history and makes it easier to browse and switch between different undo branches
   use 'mbbill/undotree'
+
+  -- Python: provides text objects and motions for Python classes, methods,
+  -- functions and doc strings
+  use 'jeetsukumaran/vim-pythonsense'
+  -- ALE (Asynchronous Lint Engine) is a plugin providing linting (syntax
+  -- checking and semantic errors) in NeooVim while you edit your text files,
+  -- and acts as a Vim Language Server Protocol client.
+  use 'dense-analysis/ale'
+  -- View and search LSP symbols, tags in NeoVim
+  use 'liuchengxu/vista.vim'
+  --  Modifies Vim’s indentation behavior to comply with PEP8 and my aesthetic preferences.
+  use 'Vimjas/vim-python-pep8-indent'
 
   -- ===========================================================
   -- Git Tools

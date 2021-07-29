@@ -141,9 +141,21 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/alanjui/.local/share/nvim/site/pack/packer/start/onedark.vim"
   },
+  ["open-browser.vim"] = {
+    loaded = true,
+    path = "/Users/alanjui/.local/share/nvim/site/pack/packer/start/open-browser.vim"
+  },
   ["packer.nvim"] = {
     loaded = true,
     path = "/Users/alanjui/.local/share/nvim/site/pack/packer/start/packer.nvim"
+  },
+  ["plantuml-previewer.vim"] = {
+    loaded = true,
+    path = "/Users/alanjui/.local/share/nvim/site/pack/packer/start/plantuml-previewer.vim"
+  },
+  ["plantuml-syntax"] = {
+    loaded = true,
+    path = "/Users/alanjui/.local/share/nvim/site/pack/packer/start/plantuml-syntax"
   },
   ["plenary.nvim"] = {
     loaded = true,
@@ -152,6 +164,10 @@ _G.packer_plugins = {
   ["popup.nvim"] = {
     loaded = true,
     path = "/Users/alanjui/.local/share/nvim/site/pack/packer/start/popup.nvim"
+  },
+  ["tagalong.vim"] = {
+    loaded = true,
+    path = "/Users/alanjui/.local/share/nvim/site/pack/packer/start/tagalong.vim"
   },
   ["telescope.nvim"] = {
     loaded = true,
@@ -185,9 +201,25 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/alanjui/.local/share/nvim/site/pack/packer/start/vim-instant-markdown"
   },
+  ["vim-pythonsense"] = {
+    loaded = true,
+    path = "/Users/alanjui/.local/share/nvim/site/pack/packer/start/vim-pythonsense"
+  },
   ["vim-rhubarb"] = {
     loaded = true,
     path = "/Users/alanjui/.local/share/nvim/site/pack/packer/start/vim-rhubarb"
+  },
+  ["vim-solarized8"] = {
+    loaded = true,
+    path = "/Users/alanjui/.local/share/nvim/site/pack/packer/start/vim-solarized8"
+  },
+  ["vim-surround"] = {
+    loaded = true,
+    path = "/Users/alanjui/.local/share/nvim/site/pack/packer/start/vim-surround"
+  },
+  ["vim-visual-multi"] = {
+    loaded = true,
+    path = "/Users/alanjui/.local/share/nvim/site/pack/packer/start/vim-visual-multi"
   },
   ["vim-vsnip"] = {
     loaded = true,

@@ -49,7 +49,7 @@ vim.cmd [[
 
 autocmd FileType plantuml let g:plantuml_previewer#plantuml_jar_path = '/Users/alanjui/.config/nvim/autoload/plantuml.jar'
 
-" PlantumlSave default formatprg
+" PlantumlSave default formate
 let g:plantuml_previewer#save_format = 'png'
 
 ]]

@@ -233,13 +233,19 @@ vim.g.which_key_leader = {
   -- utilities
   ['u'] = {
     ['name'] = '+utility',
+    [';']    = {':FloatermNew --wintype=normal --height=6', 'Terminal window'},
+    ['d']    = {':FloatermNew django-admin shell', 'Django-admin Shell'},
+    ['p']    = {':FloatermNew python', 'Python shell'},
+    ['n']    = {':FloatermNew node', 'Node.js shell'},
+    ['f']    = {':FloatermNew vifm', 'Terminal window'},
     ['l']    = {':Bracey', 'start live server'},
     ['L']    = {':BraceyStop', 'stop live server'},
     ['r']    = {':BraceyReload', 'web page to be reloaded'},
     ['m']    = {':MarkdownPreview', 'start markdown preview'},
     ['M']    = {':MarkdownPreviewStop', 'stop markdown preview'},
     ['u']    = {':PlantumlOpen', 'start PlantUML preview'},
-    ['U']    = {':PlantumlSave docs/diagrams/out png', 'export PlantUML diagram'},
+    ['U']    = {':PlantumlSave docs/diagrams/out.png', 'export PlantUML diagram'},
+    ['v']    = {':Vista!!', 'toogle vista view window'},
   },
 
   -- Window
@@ -281,4 +287,3 @@ vim.g.which_key_s = {
 
 -- -- Y yank until the end of line
 -- vim.api.nvim_set_keymap('n', 'Y', 'y$', { noremap = true })
-

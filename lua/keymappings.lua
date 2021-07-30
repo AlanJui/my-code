@@ -145,6 +145,7 @@ vim.g.which_key_leader = {
   ['name']    = '',
   [' ']       = {':Telescope find_files', 'File manager'},
   [',']       = {':Telescope buffers', 'Show buffers'},
+  [';']       = {':FloatermNew --wintype=normal --height=10', 'Terminal pane'},
   ['<Up>']    = 'Up window',
   ['<Down>']  = 'Down window',
   ['<Left>']  = 'Left window',
@@ -233,8 +234,9 @@ vim.g.which_key_leader = {
   -- utilities
   ['u'] = {
     ['name'] = '+utility',
-    [';']    = {':FloatermNew --wintype=normal --height=6', 'Terminal window'},
-    ['d']    = {':FloatermNew django-admin shell', 'Django-admin Shell'},
+    [';']    = {':FloatermNew --wintype=normal --height=6', 'Terminal pane'},
+    ['t']    = {':FloatermNew', 'Terminal window'},
+    ['d']    = {':FloatermNew python manage.py shell', 'Django-admin Shell'},
     ['p']    = {':FloatermNew python', 'Python shell'},
     ['n']    = {':FloatermNew node', 'Node.js shell'},
     ['f']    = {':FloatermNew vifm', 'Terminal window'},

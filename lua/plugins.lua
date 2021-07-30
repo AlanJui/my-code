@@ -1,10 +1,13 @@
--- Install packer
+-- Install packer: Check if `packer` exists. If not, install it as a start plugin.
 local install_path = vim.fn.stdpath 'data' .. '/site/pack/packer/start/packer.nvim'
 
 if vim.fn.empty(vim.fn.glob(install_path)) > 0 then
   vim.fn.execute('!git clone https://github.com/wbthomason/packer.nvim ' .. install_path)
 end
 
+
+-- Auto compile when there are changes in `plugins.lua`.
+-- vim.cmd 'autocmd BufWritePost plugins.lua PackerCompile'
 vim.api.nvim_exec(
   [[
   augroup Packer

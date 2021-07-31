@@ -1,82 +1,72 @@
 {
+  "myCommentLine": {
+    "prefix": "myComment",
+    "body": ["{# comment-out a line #}"],
+    "description": "comment out single line"
+  },
+  "myComment": {
+    "prefix": "myComment",
+    "body": [
+      "{% block comment \"Optional note\" %}",
+      "$1",
+      "{% endcomment %}"
+    ],
+    "description": "block comment"
+  },
+  "myExtends": {
+    "prefix": "myExtends",
+    "body": ["{% extends \"base.html\" %}"],
+    "description": "extends layout"
+  },
+  "myTitle": {
+    "prefix": "myTitle",
+    "body": ["{% block title %}{% endblock %}"],
+    "description": "block title"
+  },
+  "myContent": {
+    "prefix": "myContent",
+    "body": [
+      "{% block content %}",
+      "  $1",
+      "{% endblock %}"
+    ],
+    "description": "block content"
+  },
+  "myDivID": {
+    "prefix": "myDivID",
+    "body": [
+      "<div id=\"$1\">",
+      "  $2",
+      "</div>"
+    ],
+    "description": "div with ID"
+  },
+  "myDivClass": {
+    "prefix": "myDivClass",
+    "body": [
+      "<div class=\"$1\">",
+      "  $2",
+      "</div>"
+    ],
+    "description": "div with class"
+  },
+  "myLinkHref": {
+    "prefix": "myLinkHref",
+    "body": ["<link rel=\"stylesheet\" href=\"$1\">"],
+    "description": "stylesheet link ref"
+  },
+  "myScriptSrc": {
+    "prefix": "myScriptSrc",
+    "body": ["<script src=\"$1\"></script>"],
+    "description": "script source"
+  },
   "myform": {
     "prefix": "myform",
     "body": [
       "<form method=\"$1\">",
-      "$2",
+      "  $2",
       "</form>"
     ],
-    "description": "My form for Django Template",
-    "scope": "text.html"
-  },
-  "yi_table": {
-    "prefix": "yi_table",
-    "body": [
-      "<!-- ****************************** -->",
-      "<!-- 卦                          辭 -->",
-      "<!-- ****************************** -->",
-      "<tr>",
-      "  <td>",
-      "    ",
-      "  </td>",
-      "  <td>",
-      "    ",
-      "  </td>",
-      "  <td></td>",
-      "</tr>",
-      "<!-- ---------------------------- -->",
-      "<!-- 爻                        辭 -->",
-      "<!-- ---------------------------- -->",
-      "",
-      "<!-- 初爻 -->",
-      "<tr>",
-      "  <td></td>",
-      "  <td></td>",
-      "  <td>",
-      "    ",
-      "  </td>",
-      "</tr>",
-      "<!-- 二爻 -->",
-      "<tr>",
-      "  <td></td>",
-      "  <td></td>",
-      "  <td>",
-      "    ",
-      "  </td>",
-      "</tr>",
-      "<!-- 三爻 -->",
-      "<tr>",
-      "  <td></td>",
-      "  <td></td>",
-      "  <td>",
-      "    ",
-      "  </td>",
-      "</tr>",
-      "<!-- 四爻 -->",
-      "<tr>",
-      "  <td></td>",
-      "  <td></td>",
-      "  <td>",
-      "    ",
-      "  </td>",
-      "</tr>",
-      "<!-- 五爻 -->",
-      "<tr>",
-      "  <td></td>",
-      "  <td></td>",
-      "  <td>",
-      "    ",
-      "  </td>",
-      "</tr>",
-      "<!-- 上爻 -->",
-      "<tr>",
-      "  <td></td>",
-      "  <td></td>",
-      "  <td>",
-      "    ",
-      "  </td>",
-      "</tr>"
-    ],
-    "description": "編輯卦爻辭用"
+    "description": "My form for myango Template"
   }
 }

@@ -159,6 +159,12 @@ vim.g.which_key_leader = {
   ['a'] = {
     ['name'] = '+actions',
     ['h']    = {':let @/ = ""', 'remove search highlight'},
+    ['t']    = {':set filetype=htmldjango', 'set file type to django template'},
+    ['T']    = {':set filetype=html', 'set file type to HTML'},
+    ['d']    = {'<Cmd>lua vim.lsp.buf.declaration()', 'go to definition'},
+    ['D']    = {'<Cmd>lua vim.lsp.buf.declaration()', 'go to declaration'},
+    ['q']    = {'<Cmd>lua vim.lsp.diagnostic.set_loclist()', 'lint code'},
+    ['f']    = {'<Cmd>lua vim.lsp.buf.formatting()', 'format code'},
     ['l']    = {':set wrap!', 'on/off line wrap'},
     ['n']    = {'set nonumber!', 'on/off line-numbers'},
     ['N']    = {'set norelativenumber!', 'on/off relative line-numbers'},

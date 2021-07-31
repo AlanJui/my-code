@@ -68,5 +68,12 @@ vim.api.nvim_set_keymap("i", "<CR>", "compe#confirm({ 'keys': '<CR>', 'select': 
 --   "~/.local/share/nvim/site/pack/packer/start/friendly-snippets"
 -- }
 
--- vim.g.vsnip_snippet_dir = "~/.config/nvim/my-snippets"
-vim.g.vsnip_snippet_dir = "./my-snippets"
+-- vim.g.vsnip_snippet_dir = "./my-snippets"
+vim.g.vsnip_snippet_dir = "~/.config/nvim/my-snippets"
+
+vim.cmd [[
+let g:vsnip_filetypes = {}
+let g:vsnip_filetypes.htmldjango = ['html']
+let g:vsnip_filetypes.javascriptreact = ['javascript']
+let g:vsnip_filetypes.typescriptreact = ['typescript']
+]]

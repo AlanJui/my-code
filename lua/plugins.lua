@@ -89,6 +89,8 @@ require('packer').startup(function()
   use 'liuchengxu/vista.vim'
   --  Modifies Vim’s indentation behavior to comply with PEP8 and my aesthetic preferences.
   use 'Vimjas/vim-python-pep8-indent'
+  -- provides support for expanding abbreviations similar to emmet
+  use 'mattn/emmet-vim'
 
   -- ===========================================================
   -- Git Tools

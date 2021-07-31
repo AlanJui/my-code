@@ -35,7 +35,7 @@ require('config/indent-blankline')
 require('config/vim-better-whitespace')
 require('config/undotree')
 require('config/tagalong')
--- require('config/ale')
+require('config/emmet-vim')
 
 -- Git Tools
 require('config/gitsigns')
@@ -62,4 +62,3 @@ require('keymappings')
 -- Misc.
 -- ==========================================================
 -- require('weather').init()
-

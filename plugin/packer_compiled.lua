@@ -85,6 +85,10 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/alanjui/.local/share/nvim/site/pack/packer/start/dashboard-nvim"
   },
+  ["emmet-vim"] = {
+    loaded = true,
+    path = "/Users/alanjui/.local/share/nvim/site/pack/packer/start/emmet-vim"
+  },
   ["friendly-snippets"] = {
     loaded = true,
     path = "/Users/alanjui/.local/share/nvim/site/pack/packer/start/friendly-snippets"

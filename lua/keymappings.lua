@@ -197,7 +197,35 @@ vim.g.which_key_leader = {
   -- Git
   ['g'] = {
     ['name'] = '+git',
-    ['g']    = {'Git', 'Fugitive'},
+    ['a']    = {':Git add .', 'add all' },
+    ['b']    = {':Git blame', 'blame' },
+    ['B']    = {':GBrowse', 'blame' },
+    ['c']    = {':Git commit', 'commit' },
+    ['d']    = {':Git diff', 'diff' },
+    ['D']    = {':Gdiffsplit', 'diff split' },
+    ['g']    = {':GGrep', 'git grep' },
+    ['l']    = {':Git log', 'post gist' },
+    ['p']    = {':Git push', 'push' },
+    ['P']    = {':Git pull', 'pull' },
+    ['r']    = {':GRemove', 'remove' },
+    ['s']    = {':Git', 'status'},
+    ['t']    = {':GitGutterSignsToggle', 'toggle signs' },
+    ['v']    = {':GV', 'view commits' },
+    ['V']    = {':GV!', 'view buffer commits' },
+  },
+
+  -- Gist
+  ['G'] = {
+    ['name'] = '+gist',
+    ['a']    = {':Gist -a', 'post gist anon' },
+    ['b']    = {':Gist -b', 'post gist browser' },
+    ['d']    = {':Gist -d', 'delete gist' },
+    ['e']    = {':Gist -e', 'edit gist' },
+    ['l']    = {':Gist -l', 'list public gists' },
+    ['s']    = {':Gist -ls', 'list starred gists' },
+    ['m']    = {':Gist -m', 'post gist all buffers' },
+    ['p']    = {':Gist -p', 'post public gist' },
+    ['P']    = {':Gist -P', 'post private gist' },
   },
 
   -- Bookmark
@@ -241,6 +269,7 @@ vim.g.which_key_leader = {
   ['u'] = {
     ['name'] = '+utility',
     [';']    = {':FloatermNew --wintype=normal --height=6', 'Terminal pane'},
+    ['g']    = {':FloatermNew lazygit', 'Lazygit'},
     ['t']    = {':FloatermNew', 'Terminal window'},
     ['d']    = {':FloatermNew python manage.py shell', 'Django-admin Shell'},
     ['p']    = {':FloatermNew python', 'Python shell'},

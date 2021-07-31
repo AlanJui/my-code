@@ -103,6 +103,9 @@ require('packer').startup(function()
   use 'tpope/vim-rhubarb'
   -- A work-in-progress Magit clone for Neovim that is geared toward the Vim philosophy.
   use { 'TimUntersberger/neogit', requires = 'nvim-lua/plenary.nvim' }
+  -- for creating gist
+  use 'mattn/webapi-vim'
+  use 'mattn/vim-gist'
 
 
   -- ===========================================================

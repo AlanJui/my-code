@@ -18,8 +18,8 @@
 vim.g.better_whitespace_enabled = 1
 vim.g.strip_whitespace_on_save = 1
 
--- autocmd FileType <desired_filetypes> EnableStripWhitespaceOnSave
 
+-- autocmd FileType <desired_filetypes> EnableStripWhitespaceOnSave
 vim.api.nvim_exec(
   [[
     autocmd FileType dashboard DisableWhitespace
@@ -32,4 +32,10 @@ vim.api.nvim_exec(
 -- vim.cmd [[
 --   let g:better_whitespace_filetypes_blacklist = ['diff', 'gitcommit', 'qf', 'help', 'markdown', 'dashboard']
 -- ]]
-vim.g.better_whitespace_filetypes_blacklist = {'dashboard', 'packer'}
+vim.g.better_whitespace_filetypes_blacklist = {
+  'dashboard', 'packer'
+}
+
+-- Don't ask for confirmation before whitespace is stripped when you save the
+-- file.
+vim.g.strip_whitespace_confirm = 0

@@ -201,6 +201,10 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/alanjui/.local/share/nvim/site/pack/packer/start/vim-fugitive"
   },
+  ["vim-gist"] = {
+    loaded = true,
+    path = "/Users/alanjui/.local/share/nvim/site/pack/packer/start/vim-gist"
+  },
   ["vim-gutentags"] = {
     loaded = true,
     path = "/Users/alanjui/.local/share/nvim/site/pack/packer/start/vim-gutentags"
@@ -248,6 +252,10 @@ _G.packer_plugins = {
   ["vista.vim"] = {
     loaded = true,
     path = "/Users/alanjui/.local/share/nvim/site/pack/packer/start/vista.vim"
+  },
+  ["webapi-vim"] = {
+    loaded = true,
+    path = "/Users/alanjui/.local/share/nvim/site/pack/packer/start/webapi-vim"
   }
 }
 

@@ -23,12 +23,20 @@
     "body": ["{% block title %}{% endblock %}"],
     "description": "block title"
   },
-  "myContent": {
-    "prefix": "myContent",
+  "myLabel": {
+    "prefix": "myLabel",
     "body": [
-      "{% block content %}",
+      "<label for=\"\" class=\"col-md-5 control-label\" >",
+      "\t${1:LABEL}"
+      "</label>"
+    ]
+  },
+  "myFormGroup": {
+    "prefix": "myFormGroup",
+    "body": [
+      "<div class=\"form-group\">",
       "  $1",
-      "{% endblock %}"
+      "</div>"
     ],
     "description": "block content"
   },

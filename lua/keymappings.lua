@@ -31,10 +31,12 @@ map('n', '<LocalLeader>fg', ':Telescope live_grep<CR>',                 opts)
 map('n', '<LocalLeader>fh', ':Telescope help_tags<CR>',                 opts)
 
 -- 搬移整行文字
-map('n', '<A-j>', ':m .+1<CR>', { noremap=true })
-map('n', '<A-k>', ':m .-2<CR>', { noremap=true })
+-- map('n', '<A-j>', ':m .+1<CR>', { noremap=true })
+-- map('n', '<A-k>', ':m .-2<CR>', { noremap=true })
 vim.api.nvim_exec(
 [[
+nmap <A-j> :m .+1<CR>
+nmap <A-k> :m .-2<CR>
 imap <A-j> <Esc>:m .+1<CR>
 imap <A-k> <Esc>:m .-2<CR>
 vmap <A-j> :m '>+1<CR>
@@ -44,6 +46,71 @@ false)
 
 map('n', '<C-\\>', ':CommentToggle<CR>', { noremap=true })
 map('v', '<C-\\>', ':CommentToggle<CR>', { noremap=true })
+
+--
+-- 視窗操作
+--
+
+-- 視窗入焦 window Zoom-in/Zoon-out
+vim.cmd [[
+
+nmap <LocalLeader>wi <C-W>_ \| <c-w>\|
+nmap <LocalLeader>wo <C-W>=
+
+]]
+
+-- 視窗寬度／高度調增／減
+-- (1) 水平減小
+-- (2) 水平增長
+-- (3) 垂直增長
+-- (4) 垂直減小
+
+vim.cmd [[
+
+nmap <S-left>  <C-w><
+nmap <S-right> <C-w>>
+nmap <S-up>    <C-w>+
+nmap <S-down>  <C-w>-
+
+]]
+
+
+-- 調整視窗的寬度／高度
+-- 指令：resize (res)
+-- 水平調整格式：
+--  (1) :res 60
+--  (2) :res +5
+--  (3) :res -5
+-- 垂直調整格式：
+--  (1) :vertical res 60
+--  (2) :vertical res +5
+--  (3) :vertical res -5
+
+vim.cmd [[
+
+nmap <silent> <C-+>          :exe "vertical resize " . (winwidth(0) * 3/2)<CR>
+nmap <silent> <C-=>          :exe "vertical resize " . (winwidth(0) * 2/3)<CR>
+nmap <silent> <LocalLeader>+ :exe "resize " . (winheight(0) * 3/2)<CR>
+nmap <silent> <LocalLeader>- :exe "resize " . (winheight(0) * 2/3)<CR>
+
+]]
+
+-- 半視窗捲動
+vim.cmd [[
+
+nmap <A-m> zt
+nmap <C-m> zb
+
+]]
+
+-- 在 Tab 視窗移動
+vim.cmd [[
+
+nmap <LocalLeader>p <esc>:tabprevious<CR>
+nmap <LocalLeader>n <esc>:tabnext<CR>
+
+]]
+
 
 -- Cursor movement
 -- ------------------------------------------------------------------------
@@ -150,6 +217,7 @@ vim.g.which_key_leader = {
   ['<Down>']  = 'Down window',
   ['<Left>']  = 'Left window',
   ['<Right>'] = 'Right window',
+  ['v']       = {':FloatermNew vifm', 'ViFm'},
   ['z']       = {'UndotreeToggle', 'Undo tree'},
 
   -- Submenus
@@ -192,6 +260,7 @@ vim.g.which_key_leader = {
     ['b']    = {':Telescope marks', 'Bookmarks'},
     ['f']    = {':Telescope find_files', 'Find files'},
     ['h']    = {':Telescope oldfiles', 'History'},
+    ['v']    = {':FloatermNew vifm', 'ViFm'},
   },
 
   -- Git
@@ -204,7 +273,7 @@ vim.g.which_key_leader = {
     ['d']    = {':Git diff', 'diff' },
     ['D']    = {':Gdiffsplit', 'diff split' },
     ['g']    = {':GGrep', 'git grep' },
-    ['l']    = {':Git log', 'post gist' },
+    ['l']    = {':Git log', 'log' },
     ['p']    = {':Git push', 'push' },
     ['P']    = {':Git pull', 'pull' },
     ['r']    = {':GRemove', 'remove' },
@@ -274,7 +343,7 @@ vim.g.which_key_leader = {
     ['d']    = {':FloatermNew python manage.py shell', 'Django-admin Shell'},
     ['p']    = {':FloatermNew python', 'Python shell'},
     ['n']    = {':FloatermNew node', 'Node.js shell'},
-    ['f']    = {':FloatermNew vifm', 'Terminal window'},
+    ['f']    = {':FloatermNew vifm', 'ViFm'},
     ['l']    = {':Bracey', 'start live server'},
     ['L']    = {':BraceyStop', 'stop live server'},
     ['r']    = {':BraceyReload', 'web page to be reloaded'},
@@ -288,14 +357,20 @@ vim.g.which_key_leader = {
   -- Window
   ['w'] = {
     ['name'] = '+window',
-    ['-']    = {'split', 'Horiz. window'},
-    ['|']    = {'vsplit', 'Vert. window'},
-    ['c']    = {'close', 'Close window'},
-    ['k']    = {'<C-w>k', 'Up window'},
-    ['j']    = {'<C-w>j', 'Down window'},
-    ['h']    = {'<C-w>h', 'Left window'},
-    ['l']    = {'<C-w>l', 'Right window'},
-    ['t']    = {':FloatermNew', 'New terminal window'},
+    ['-']    = {'split',   'Horiz. window'},
+    ['|']    = {'vsplit',  'Vert. window'},
+    ['z']    = {'<C-W>_',  'Zoom-in'},
+    ['Z']    = {'<C-W>|',  'Zoom-in (Vertical)'},
+    ['o']    = {'<C-W>=',  'Zoom-out'},
+    ['c']    = {'close',   'Close window'},
+    ['k']    = {'<C-w>k',  'Up window'},
+    ['j']    = {'<C-w>j',  'Down window'},
+    ['h']    = {'<C-w>h',  'Left window'},
+    ['l']    = {'<C-w>l',  'Right window'},
+    ['w']    = {':exe "resize" . (winwidth(0) * 3/2)',           'Increase weight'},
+    ['W']    = {':exe "resize" . (winwidth(0) * 2/3)',           'Increase weight'},
+    ['v']    = {':exe "vertical resize" . (winheight(0) * 3/2)', 'Increase height'},
+    ['V']    = {':exe "vertical resize" . (winheight(0) * 2/3)', 'Increase height'},
   }
 }
 

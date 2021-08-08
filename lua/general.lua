@@ -30,7 +30,8 @@ vim.wo.list = true                       -- Show some invisible characters (tabs
 vim.wo.number = true                     -- Print line number
 vim.wo.relativenumber = true             -- Relative line numbers
 vim.wo.signcolumn = "yes"                -- Always show the signcolumn
-vim.wo.wrap = true                       -- Enable line wrap
+-- vim.wo.wrap = true                       -- Enable line wrap
+vim.wo.wrap = false                       -- Diable line wrap
 
 -- Those commands must be executed using `vim.cmd` due to:
 --     https://github.com/neovim/neovim/issues/12978

@@ -5,7 +5,7 @@
 
 -- Prerequisite
 -- vim.o.completeopt = 'menuone,noselect'
-vim.o.completeopt = 'menuone,noinsert'
+-- vim.o.completeopt = 'menuone,noinsert'
 
 
 -- Compe setup for LuaSnip

@@ -53,6 +53,7 @@ require('packer').startup(function()
   -- ===========================================================
   -- LSP
   use 'neovim/nvim-lspconfig' -- Collection of configurations for built-in LSP client
+  use 'kabouzeid/nvim-lspinstall'  -- Support missing command :LspInstall
   use 'hrsh7th/nvim-compe' -- Autocompletion plugin
   -- Snippets
   use 'rafamadriz/friendly-snippets'

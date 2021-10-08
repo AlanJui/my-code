@@ -210,13 +210,14 @@ map('t', '<Esc>', '<C-\\><C-n>', {noremap = true, silent = true})
 
 vim.g.which_key_leader = {
   ['name']    = '',
-  [' ']       = {':Telescope find_files', 'File manager'},
+  [' ']       = {':Telescope find_files', 'Find files'},
   [',']       = {':Telescope buffers', 'Show buffers'},
   [';']       = {':FloatermNew --wintype=normal --height=10', 'Terminal pane'},
   ['<Up>']    = 'Up window',
   ['<Down>']  = 'Down window',
   ['<Left>']  = 'Left window',
   ['<Right>'] = 'Right window',
+  ['e']       = {':NvimTreeToggle', 'File explorer'},
   ['v']       = {':FloatermNew vifm', 'ViFm'},
   ['z']       = {'UndotreeToggle', 'Undo tree'},
 

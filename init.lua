@@ -1,3 +1,4 @@
+vim.g.python3_host_prog = "/home/alanjui/.pyenv/versions/venv-397/bin/python3"
 vim.g.loaded_python_provider = 0
 vim.g.loaded_ruby_provider = 0
 vim.g.loaded_perl_provider = 0

@@ -36,9 +36,12 @@ require('packer').startup(function()
   -- Screnn Navigation
   use 'glepnir/dashboard-nvim'
   use 'liuchengxu/vim-which-key'
-  -- File/Flolders explorer
-  use 'kyazdani42/nvim-tree.lua'
-  use 'kyazdani42/nvim-web-devicons'
+  -- File/Flolders explorer:nvim-tree
+  use {
+    'kyazdani42/nvim-tree.lua',
+    requires = 'kyazdani42/nvim-web-devicons',
+    config = function() require'nvim-tree'.setup {} end
+  }
   -- UI to select things (files, grep results, open buffers...)
   use { 'nvim-telescope/telescope.nvim', requires = { { 'nvim-lua/popup.nvim' }, { 'nvim-lua/plenary.nvim' } } }
   -- Displays interactive scrollbars

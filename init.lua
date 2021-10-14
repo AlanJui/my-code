@@ -1,3 +1,4 @@
+vim.g.python3_host_prog = "/home/alanjui/.pyenv/versions/venv-397/bin/python3"
 vim.g.loaded_python_provider = 0
 vim.g.loaded_ruby_provider = 0
 vim.g.loaded_perl_provider = 0
@@ -15,7 +16,7 @@ require('general')
 -- ==========================================================
 -- Appearance
 -- ==========================================================
- require('appearence')
+require('appearence')
 
 -- ==========================================================
 -- Plugin configuration
@@ -67,3 +68,7 @@ require('keymappings')
 -- Misc.
 -- ==========================================================
 -- require('weather').init()
+
+-- Diable line wrap
+vim.opt.textwidth=0
+vim.opt.wrapmargin=0

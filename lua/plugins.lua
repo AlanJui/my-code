@@ -23,7 +23,7 @@ require('packer').startup(function()
   -- Package manager
   use 'wbthomason/packer.nvim'
   -- Nvim 0.5 Libs
-  use 'nvim-lua/plenary.nvim'
+  -- use 'nvim-lua/plenary.nvim'
   -- ===========================================================
   -- UI
   -- ===========================================================

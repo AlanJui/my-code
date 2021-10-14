@@ -40,6 +40,7 @@ require('config/vim-better-whitespace')
 require('config/undotree')
 require('config/tagalong')
 require('config/emmet-vim')
+require('config/nvim-ts-autotag')
 
 -- Git Tools
 require('config/gitsigns')

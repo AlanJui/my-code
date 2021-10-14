@@ -211,6 +211,7 @@ map('t', '<Esc>', '<C-\\><C-n>', {noremap = true, silent = true})
 vim.g.which_key_leader = {
   ['name']    = '',
   [' ']       = {':Telescope find_files', 'File manager'},
+  ['.']       = {':e ~/.config/nvim/init.lua', 'Open init'},
   [',']       = {':Telescope buffers', 'Show buffers'},
   [';']       = {':FloatermNew --wintype=normal --height=10', 'Terminal pane'},
   ['<Up>']    = 'Up window',

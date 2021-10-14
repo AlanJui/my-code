@@ -92,6 +92,9 @@ require('packer').startup(function()
   use 'Vimjas/vim-python-pep8-indent'
   -- provides support for expanding abbreviations similar to emmet
   use 'mattn/emmet-vim'
+  -- Auto pairing tags
+  --use 'alvan/vim-closetag'
+  use 'windwp/nvim-ts-autotag'
 
   -- ===========================================================
   -- Git Tools

@@ -3,3 +3,4 @@ tags
 _archived/
 _tmp/
 test*.*
+plugin/packer_compiled.lua

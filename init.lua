@@ -55,12 +55,4 @@ require('config/which-key')
 -----------------------------------------------------------
 -- require('dbg')
 
--- Display none-display characters
--- set listchars=eol:$,tab:>-,trail:~,extends:>,precedes:<
--- set listchars=tab:→\ ,space:·,nbsp:␣,trail:•,eol:¶,precedes:«,extends:»
-vim.cmd([[
-set listchars=tab:→\ ,space:·,nbsp:␣,trail:•,eol:¶,precedes:«,extends:»
-set list
-]])
-
 if DEBUG then print('===== End of loading init.lua... =====') end

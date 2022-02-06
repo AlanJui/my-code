@@ -1,74 +1,66 @@
-vim.g.python3_host_prog = "/home/alanjui/.pyenv/versions/venv-397/bin/python3"
-vim.g.loaded_python_provider = 0
-vim.g.loaded_ruby_provider = 0
-vim.g.loaded_perl_provider = 0
+-----------------------------------------------------------
+-- Startup
+-----------------------------------------------------------
+DEBUG = false
+-- DEBUG = true
 
--- ==========================================================
--- Plugins
--- ==========================================================
+if DEBUG then print('===== Begin of loading init.lua... =====') end
+-----------------------------------------------------------
+-- Global Functions
+-----------------------------------------------------------
+vim.api.nvim_command('luafile ~/.config/my-code/lua/globals.lua')
+
+-----------------------------------------------------------
+-- Initial environment
+-----------------------------------------------------------
+vim.api.nvim_command('luafile ~/.config/my-code/lua/init-env.lua')
+
+-----------------------------------------------------------
+-- Setup runtimepath: stdpath('config'), stdpath('data')
+-----------------------------------------------------------
+vim.api.nvim_command('luafile ~/.config/my-code/lua/setup-rtp.lua')
+
+-----------------------------------------------------------
+-- Essential configuration on development init.lua
+-----------------------------------------------------------
+require('essential')
+require('nvim_utils')
+
+-----------------------------------------------------------
+-- Plugin Manager: install plugins
+-----------------------------------------------------------
 require('plugins')
 
--- ==========================================================
--- Generanl (Gobal) setting
--- ==========================================================
-require('general')
+-----------------------------------------------------------
+-- Configurations for Neovim
+-----------------------------------------------------------
+require('options')
 
--- ==========================================================
--- Appearance
--- ==========================================================
-require('appearence')
+-----------------------------------------------------------
+-- Color Themes
+-----------------------------------------------------------
+require('color-themes')
 
--- ==========================================================
--- Plugin configuration
--- ==========================================================
+-----------------------------------------------------------
+-- Key bindings
+-----------------------------------------------------------
+-- Load Shortcut Key
+require('keymaps')
 
--- UI
-require('config/dashboard-nvim')
-require('config/vim-which-key')
-require('config/nvim-tree')
-require('config/telescope')
-require('config/nvim-scrollview')
+-- Load Which-key
+require('config/which-key')
 
--- Editting Utilities
-require('lsp')
-require('config/nvim-compe')
-require('config/vim-vsnip')
--- require('config/LuaSnip')
--- require('config/ultisnips')
-require('config/nvim-comment')
-require('config/indent-blankline')
-require('config/vim-better-whitespace')
-require('config/undotree')
-require('config/tagalong')
-require('config/emmet-vim')
-require('config/nvim-ts-autotag')
+-----------------------------------------------------------
+-- Experiments
+-----------------------------------------------------------
+-- require('dbg')
 
--- Git Tools
-require('config/gitsigns')
-require('config/neogit')
+-- Display none-display characters
+-- set listchars=eol:$,tab:>-,trail:~,extends:>,precedes:<
+-- set listchars=tab:→\ ,space:·,nbsp:␣,trail:•,eol:¶,precedes:«,extends:»
+vim.cmd([[
+set listchars=tab:→\ ,space:·,nbsp:␣,trail:•,eol:¶,precedes:«,extends:»
+set list
+]])
 
--- Misc.
-require('config/floatterm')
-require('config/undotree')
-require('config/todo-comments')
-require('config/vim-instant-markdown')
-require('config/bracey-vim')
-require('config/plantuml-previewer-vim')
-
--- require('config/galaxyline')
--- require('config/julia')
--- require('config/vimtex')
-
--- ==========================================================
--- Key mappings
--- ==========================================================
-require('keymappings')
-
--- ==========================================================
--- Misc.
--- ==========================================================
--- require('weather').init()
-
--- Diable line wrap
-vim.opt.textwidth=0
-vim.opt.wrapmargin=0
+if DEBUG then print('===== End of loading init.lua... =====') end

@@ -51,40 +51,40 @@ return require('packer').startup({
         -- install LSP servers locally
         use {
             'williamboman/nvim-lsp-installer',
-            -- config = [[ require('config.nvim-lsp-installer') ]]
+            -- config = [[ require('plugins.nvim-lsp-installer') ]]
         }
 
         -- A collection of common configurations for Neovim's built-in language
         -- server client
         use {
             'neovim/nvim-lspconfig',
-            -- config = [[ require('config.nvim-lspconfig') ]]
+            -- config = [[ require('plugins.nvim-lspconfig') ]]
         }
 
         -- vscode-like pictograms for neovim lsp completion items Topics
-        -- use {
-        --     'onsails/lspkind-nvim',
-        --     config = [[ require('config.lspkind') ]]
-        -- }
+        use {
+            'onsails/lspkind-nvim',
+            config = [[ require('plugins.lspkind') ]]
+        }
 
         -- Utility functions for getting diagnostic status and progress messages
         -- from LSP servers, for use in the Neovim statusline
         use {
             'nvim-lua/lsp-status.nvim',
-            config = [[ require('config.lspstatus') ]]
+            config = [[ require('plugins.lspstatus') ]]
         }
 
         -- Support LSP CodeAction
         use {
             'kosayoda/nvim-lightbulb',
-            config = [[ require('config.nvim-lightbulb') ]]
+            config = [[ require('plugins.nvim-lightbulb') ]]
         }
 
         -- LSP plugin based on Neovim build-in LSP with highly a performant UI
         -- use {
         --     'glepnir/lspsaga.nvim',
         --     requires = { 'neovim/nvim-lspconfig' },
-        --     config = [[ require('config.lspsaga-nvim') ]]
+        --     config = [[ require('plugins.lspsaga-nvim') ]]
         -- }
 
         -----------------------------------------------------------
@@ -132,8 +132,8 @@ return require('packer').startup({
         use {
             'nvim-treesitter/nvim-treesitter',
             run = ':TSUpdate',
-            -- config = [[ require('config.treesitter') ]]
-            config = [[ require('config.nvim-treesitter') ]]
+            -- config = [[ require('plugins.treesitter') ]]
+            config = [[ require('plugins.nvim-treesitter') ]]
         }
         -- Additional textobjects for treesitter
         use 'nvim-treesitter/nvim-treesitter-textobjects'
@@ -152,7 +152,7 @@ return require('packer').startup({
         -- Icons
         use {
             'kyazdani42/nvim-web-devicons',
-            config = [[ require('config.nvim-web-devicons') ]]
+            config = [[ require('plugins.nvim-web-devicons') ]]
         }
         -- use {
         --     'yamatsum/nvim-nonicons',
@@ -166,27 +166,27 @@ return require('packer').startup({
                 { 'nvim-lua/plenary.nvim', },
                 { 'nvim-telescope/telescope-live-grep-raw.nvim' },
             },
-            config = [[ require('config.telescope-nvim') ]]
+            config = [[ require('plugins.telescope-nvim') ]]
         }
 
         -- File/Flolders explorer:nvim-tree
         use {
             'kyazdani42/nvim-tree.lua',
             requires = 'kyazdani42/nvim-web-devicons',
-            config = [[ require('config.nvim-tree') ]]
+            config = [[ require('plugins.nvim-tree') ]]
         }
 
         -- Status Line
         use {
             'nvim-lualine/lualine.nvim',
             requires = {'kyazdani42/nvim-web-devicons', opt = true},
-            config = [[ require('config.lualine.material') ]]
-            -- config = [[ require('config.lualine.bubbles') ]]
-            -- config = [[ require('config.lualine.lualine-nvim') ]]
+            config = [[ require('plugins.lualine.material') ]]
+            -- config = [[ require('plugins.lualine.bubbles') ]]
+            -- config = [[ require('plugins.lualine.lualine-nvim') ]]
         }
         use {
             'arkav/lualine-lsp-progress',
-            -- config = [[ require('config.lualine.lualine-lsp-progress') ]]
+            -- config = [[ require('plugins.lualine.lualine-lsp-progress') ]]
         }
         use {
             'kdheepak/tabline.nvim',
@@ -203,12 +203,12 @@ return require('packer').startup({
         use {
             'folke/which-key.nvim',
             config = function ()
-                require('config.which-key')
+                require('plugins.which-key')
             end
             -- 'liuchengxu/vim-which-key',
             -- config = function ()
             --     if vim.inspect(package.loaded) then
-            --         require('config.vim-which-key')
+            --         require('plugins.vim-which-key')
             --     end
             -- end
         }
@@ -239,7 +239,7 @@ return require('packer').startup({
                 'nvim-lua/plenary.nvim',
                 'sindrets/diffview.nvim',
             },
-            config = [[ require('config.neogit') ]]
+            config = [[ require('plugins.neogit') ]]
         }
 
         -- for creating gist
@@ -269,7 +269,7 @@ return require('packer').startup({
         use { 'tpope/vim-commentary' }
         -- use {
         --     'terrortylor/nvim-comment',
-        --     -- config = [[ require('config.nvim-comment') ]]
+        --     -- config = [[ require('plugins.nvim-comment') ]]
         --     config = function ()
         --         require('nvim_comment').setup()
         --     end
@@ -284,16 +284,16 @@ return require('packer').startup({
         }
 
         -- Add indentation guides even on blank lines
-        -- use {
-        --     'lukas-reineke/indent-blankline.nvim',
-        --     config = [[ require('config.indent-blankline') ]]
-        -- }
+        use {
+            'lukas-reineke/indent-blankline.nvim',
+            config = [[ require('plugins.indent-blankline') ]]
+        }
 
         -- Auto close parentheses and repeat by dot dot dot ...
         -- use 'jiangmiao/auto-pairs'
         use {
             'windwp/nvim-autopairs',
-            config = [[ require('config.autopairs') ]]
+            config = [[ require('plugins.autopairs') ]]
         }
 
         -- Multiple cursor editting
@@ -302,7 +302,7 @@ return require('packer').startup({
         -- visualizes undo history and makes it easier to browse and switch between different undo branches
         use {
             'mbbill/undotree',
-            config = [[ require('config.undotree') ]]
+            config = [[ require('plugins.undotree') ]]
         }
 
         -- HTML
@@ -335,7 +335,7 @@ return require('packer').startup({
         -- Use treesitter to autoclose and autorename HTML tag
         -- use {
         --     'windwp/nvim-ts-autotag',
-        --     config = [[ require('config.nvim-ts-autotag') ]]
+        --     config = [[ require('plugins.nvim-ts-autotag') ]]
         -- }
 
         -- Python
@@ -370,20 +370,20 @@ return require('packer').startup({
             'rcarriga/nvim-dap-ui',
             requires = { 'mfussenegger/nvim-dap' },
         }
-        -- -- nvim-dap unit test tools
-        -- use {
-        --     "rcarriga/vim-ultest",
-        --     requires = {"vim-test/vim-test"},
-        --     run = ":UpdateRemotePlugins",
-        --     config = [[ require('config.ultest').post() ]],
-        -- }
-        -- -- DAP adapter for Python
-        -- use { 'mfussenegger/nvim-dap-python' }
-        -- -- DAP adapter for the Neovim lua language
-        -- use {
-        --     'jbyuki/one-small-step-for-vimkind',
-        --     -- config = [[ require('config.one-small-step-for-vimkind') ]],
-        -- }
+        -- nvim-dap unit test tools
+        use {
+            "rcarriga/vim-ultest",
+            requires = {"vim-test/vim-test"},
+            run = ":UpdateRemotePlugins",
+            config = [[ require('plugins.ultest').post() ]],
+        }
+        -- DAP adapter for Python
+        use { 'mfussenegger/nvim-dap-python' }
+        -- DAP adapter for the Neovim lua language
+        use {
+            'jbyuki/one-small-step-for-vimkind',
+            -- config = [[ require('plugins.one-small-step-for-vimkind') ]],
+        }
 
         -----------------------------------------------------------
         -- Utility

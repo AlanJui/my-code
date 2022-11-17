@@ -74,6 +74,11 @@ end
 time([[try_loadstring definition]], false)
 time([[Defining packer_plugins]], true)
 _G.packer_plugins = {
+  ["Comment.nvim"] = {
+    loaded = true,
+    path = "/Users/alanjui/.local/share/my-code/site/pack/packer/start/Comment.nvim",
+    url = "https://github.com/numToStr/Comment.nvim"
+  },
   ["DAPInstall.nvim"] = {
     loaded = true,
     path = "/Users/alanjui/.local/share/my-code/site/pack/packer/start/DAPInstall.nvim",
@@ -83,12 +88,6 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/alanjui/.local/share/my-code/site/pack/packer/start/LuaSnip",
     url = "https://github.com/L3MON4D3/LuaSnip"
-  },
-  ale = {
-    config = { "" },
-    loaded = true,
-    path = "/Users/alanjui/.local/share/my-code/site/pack/packer/start/ale",
-    url = "https://github.com/dense-analysis/ale"
   },
   ["bracey.vim"] = {
     loaded = true,
@@ -140,28 +139,35 @@ _G.packer_plugins = {
     path = "/Users/alanjui/.local/share/my-code/site/pack/packer/start/diffview.nvim",
     url = "https://github.com/sindrets/diffview.nvim"
   },
-  ["emmet-vim"] = {
-    config = { "" },
-    loaded = true,
-    path = "/Users/alanjui/.local/share/my-code/site/pack/packer/start/emmet-vim",
-    url = "https://github.com/mattn/emmet-vim"
-  },
   ["friendly-snippets"] = {
     loaded = true,
     path = "/Users/alanjui/.local/share/my-code/site/pack/packer/start/friendly-snippets",
     url = "https://github.com/rafamadriz/friendly-snippets"
   },
   ["gitsigns.nvim"] = {
-    config = { "\27LJ\2\n6\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\rgitsigns\frequire\0" },
     loaded = true,
     path = "/Users/alanjui/.local/share/my-code/site/pack/packer/start/gitsigns.nvim",
     url = "https://github.com/lewis6991/gitsigns.nvim"
   },
+  ["indent-blankline.nvim"] = {
+    loaded = true,
+    path = "/Users/alanjui/.local/share/my-code/site/pack/packer/start/indent-blankline.nvim",
+    url = "https://github.com/lukas-reineke/indent-blankline.nvim"
+  },
   ["lsp-status.nvim"] = {
-    config = { " require('config.lspstatus') " },
     loaded = true,
     path = "/Users/alanjui/.local/share/my-code/site/pack/packer/start/lsp-status.nvim",
     url = "https://github.com/nvim-lua/lsp-status.nvim"
+  },
+  ["lspkind-nvim"] = {
+    loaded = true,
+    path = "/Users/alanjui/.local/share/my-code/site/pack/packer/start/lspkind-nvim",
+    url = "https://github.com/onsails/lspkind-nvim"
+  },
+  ["lspsaga.nvim"] = {
+    loaded = true,
+    path = "/Users/alanjui/.local/share/my-code/site/pack/packer/start/lspsaga.nvim",
+    url = "https://github.com/glepnir/lspsaga.nvim"
   },
   ["lualine-lsp-progress"] = {
     loaded = true,
@@ -169,19 +175,16 @@ _G.packer_plugins = {
     url = "https://github.com/arkav/lualine-lsp-progress"
   },
   ["lualine.nvim"] = {
-    config = { " require('config.lualine.material') " },
     loaded = true,
     path = "/Users/alanjui/.local/share/my-code/site/pack/packer/start/lualine.nvim",
     url = "https://github.com/nvim-lualine/lualine.nvim"
   },
   neogit = {
-    config = { " require('config.neogit') " },
     loaded = true,
     path = "/Users/alanjui/.local/share/my-code/site/pack/packer/start/neogit",
     url = "https://github.com/TimUntersberger/neogit"
   },
   ["nvim-autopairs"] = {
-    config = { " require('config.autopairs') " },
     loaded = true,
     path = "/Users/alanjui/.local/share/my-code/site/pack/packer/start/nvim-autopairs",
     url = "https://github.com/windwp/nvim-autopairs"
@@ -207,7 +210,6 @@ _G.packer_plugins = {
     url = "https://github.com/theHamsta/nvim-dap-virtual-text"
   },
   ["nvim-lightbulb"] = {
-    config = { " require('config.nvim-lightbulb') " },
     loaded = true,
     path = "/Users/alanjui/.local/share/my-code/site/pack/packer/start/nvim-lightbulb",
     url = "https://github.com/kosayoda/nvim-lightbulb"
@@ -223,13 +225,11 @@ _G.packer_plugins = {
     url = "https://github.com/neovim/nvim-lspconfig"
   },
   ["nvim-tree.lua"] = {
-    config = { " require('config.nvim-tree') " },
     loaded = true,
     path = "/Users/alanjui/.local/share/my-code/site/pack/packer/start/nvim-tree.lua",
     url = "https://github.com/kyazdani42/nvim-tree.lua"
   },
   ["nvim-treesitter"] = {
-    config = { " require('config.nvim-treesitter') " },
     loaded = true,
     path = "/Users/alanjui/.local/share/my-code/site/pack/packer/start/nvim-treesitter",
     url = "https://github.com/nvim-treesitter/nvim-treesitter"
@@ -239,8 +239,14 @@ _G.packer_plugins = {
     path = "/Users/alanjui/.local/share/my-code/site/pack/packer/start/nvim-treesitter-textobjects",
     url = "https://github.com/nvim-treesitter/nvim-treesitter-textobjects"
   },
+  ["nvim-ts-autotag"] = {
+    load_after = {},
+    loaded = true,
+    needs_bufread = false,
+    path = "/Users/alanjui/.local/share/my-code/site/pack/packer/opt/nvim-ts-autotag",
+    url = "https://github.com/windwp/nvim-ts-autotag"
+  },
   ["nvim-web-devicons"] = {
-    config = { " require('config.nvim-web-devicons') " },
     loaded = true,
     path = "/Users/alanjui/.local/share/my-code/site/pack/packer/start/nvim-web-devicons",
     url = "https://github.com/kyazdani42/nvim-web-devicons"
@@ -266,7 +272,6 @@ _G.packer_plugins = {
     url = "https://github.com/wbthomason/packer.nvim"
   },
   ["plantuml-previewer.vim"] = {
-    config = { "" },
     loaded = true,
     path = "/Users/alanjui/.local/share/my-code/site/pack/packer/start/plantuml-previewer.vim",
     url = "https://github.com/weirongxu/plantuml-previewer.vim"
@@ -287,16 +292,9 @@ _G.packer_plugins = {
     url = "https://github.com/shaeinst/roshnivim-cs"
   },
   ["tabline.nvim"] = {
-    config = { "\27LJ\2\nD\0\0\3\0\4\0\a6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\3\0B\0\2\1K\0\1\0\1\0\1\venable\1\nsetup\ftabline\frequire\0" },
     loaded = true,
     path = "/Users/alanjui/.local/share/my-code/site/pack/packer/start/tabline.nvim",
     url = "https://github.com/kdheepak/tabline.nvim"
-  },
-  ["tagalong.vim"] = {
-    config = { "" },
-    loaded = true,
-    path = "/Users/alanjui/.local/share/my-code/site/pack/packer/start/tagalong.vim",
-    url = "https://github.com/AndrewRadev/tagalong.vim"
   },
   ["telescope-dap.nvim"] = {
     loaded = true,
@@ -309,7 +307,6 @@ _G.packer_plugins = {
     url = "https://github.com/nvim-telescope/telescope-live-grep-raw.nvim"
   },
   ["telescope.nvim"] = {
-    config = { " require('config.telescope-nvim') " },
     loaded = true,
     path = "/Users/alanjui/.local/share/my-code/site/pack/packer/start/telescope.nvim",
     url = "https://github.com/nvim-telescope/telescope.nvim"
@@ -326,27 +323,14 @@ _G.packer_plugins = {
     url = "https://github.com/folke/tokyonight.nvim"
   },
   undotree = {
-    config = { " require('config.undotree') " },
     loaded = true,
     path = "/Users/alanjui/.local/share/my-code/site/pack/packer/start/undotree",
     url = "https://github.com/mbbill/undotree"
   },
   ["vim-better-whitespace"] = {
-    config = { "" },
     loaded = true,
     path = "/Users/alanjui/.local/share/my-code/site/pack/packer/start/vim-better-whitespace",
     url = "https://github.com/ntpeters/vim-better-whitespace"
-  },
-  ["vim-closetag"] = {
-    config = { "" },
-    loaded = true,
-    path = "/Users/alanjui/.local/share/my-code/site/pack/packer/start/vim-closetag",
-    url = "https://github.com/alvan/vim-closetag"
-  },
-  ["vim-commentary"] = {
-    loaded = true,
-    path = "/Users/alanjui/.local/share/my-code/site/pack/packer/start/vim-commentary",
-    url = "https://github.com/tpope/vim-commentary"
   },
   ["vim-floaterm"] = {
     loaded = true,
@@ -365,7 +349,6 @@ _G.packer_plugins = {
     url = "https://github.com/mattn/vim-gist"
   },
   ["vim-instant-markdown"] = {
-    config = { "" },
     loaded = true,
     path = "/Users/alanjui/.local/share/my-code/site/pack/packer/start/vim-instant-markdown",
     url = "https://github.com/instant-markdown/vim-instant-markdown"
@@ -379,11 +362,6 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/alanjui/.local/share/my-code/site/pack/packer/start/vim-nightfly-guicolors",
     url = "https://github.com/bluz71/vim-nightfly-guicolors"
-  },
-  ["vim-python-pep8-indent"] = {
-    loaded = true,
-    path = "/Users/alanjui/.local/share/my-code/site/pack/packer/start/vim-python-pep8-indent",
-    url = "https://github.com/Vimjas/vim-python-pep8-indent"
   },
   ["vim-pythonsense"] = {
     loaded = true,
@@ -411,7 +389,6 @@ _G.packer_plugins = {
     url = "https://github.com/mattn/webapi-vim"
   },
   ["which-key.nvim"] = {
-    config = { "\27LJ\2\n0\0\0\3\0\2\0\0046\0\0\0'\2\1\0B\0\2\1K\0\1\0\21config.which-key\frequire\0" },
     loaded = true,
     path = "/Users/alanjui/.local/share/my-code/site/pack/packer/start/which-key.nvim",
     url = "https://github.com/folke/which-key.nvim"
@@ -419,94 +396,19 @@ _G.packer_plugins = {
 }
 
 time([[Defining packer_plugins]], false)
--- Config for: vim-better-whitespace
-time([[Config for vim-better-whitespace]], true)
-
-time([[Config for vim-better-whitespace]], false)
--- Config for: gitsigns.nvim
-time([[Config for gitsigns.nvim]], true)
-try_loadstring("\27LJ\2\n6\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\rgitsigns\frequire\0", "config", "gitsigns.nvim")
-time([[Config for gitsigns.nvim]], false)
--- Config for: vim-closetag
-time([[Config for vim-closetag]], true)
-
-time([[Config for vim-closetag]], false)
--- Config for: which-key.nvim
-time([[Config for which-key.nvim]], true)
-try_loadstring("\27LJ\2\n0\0\0\3\0\2\0\0046\0\0\0'\2\1\0B\0\2\1K\0\1\0\21config.which-key\frequire\0", "config", "which-key.nvim")
-time([[Config for which-key.nvim]], false)
--- Config for: lsp-status.nvim
-time([[Config for lsp-status.nvim]], true)
- require('config.lspstatus') 
-time([[Config for lsp-status.nvim]], false)
--- Config for: nvim-tree.lua
-time([[Config for nvim-tree.lua]], true)
- require('config.nvim-tree') 
-time([[Config for nvim-tree.lua]], false)
--- Config for: tagalong.vim
-time([[Config for tagalong.vim]], true)
-
-time([[Config for tagalong.vim]], false)
--- Config for: nvim-treesitter
-time([[Config for nvim-treesitter]], true)
- require('config.nvim-treesitter') 
-time([[Config for nvim-treesitter]], false)
--- Config for: nvim-web-devicons
-time([[Config for nvim-web-devicons]], true)
- require('config.nvim-web-devicons') 
-time([[Config for nvim-web-devicons]], false)
--- Config for: lualine.nvim
-time([[Config for lualine.nvim]], true)
- require('config.lualine.material') 
-time([[Config for lualine.nvim]], false)
--- Config for: nvim-autopairs
-time([[Config for nvim-autopairs]], true)
- require('config.autopairs') 
-time([[Config for nvim-autopairs]], false)
--- Config for: nvim-lightbulb
-time([[Config for nvim-lightbulb]], true)
- require('config.nvim-lightbulb') 
-time([[Config for nvim-lightbulb]], false)
--- Config for: vim-instant-markdown
-time([[Config for vim-instant-markdown]], true)
-
-time([[Config for vim-instant-markdown]], false)
--- Config for: telescope.nvim
-time([[Config for telescope.nvim]], true)
- require('config.telescope-nvim') 
-time([[Config for telescope.nvim]], false)
--- Config for: neogit
-time([[Config for neogit]], true)
- require('config.neogit') 
-time([[Config for neogit]], false)
--- Config for: vim-gist
-time([[Config for vim-gist]], true)
-
-time([[Config for vim-gist]], false)
--- Config for: ale
-time([[Config for ale]], true)
-
-time([[Config for ale]], false)
 -- Config for: todo-comments.nvim
 time([[Config for todo-comments.nvim]], true)
 try_loadstring("\27LJ\2\n?\0\0\3\0\3\0\a6\0\0\0'\2\1\0B\0\2\0029\0\2\0004\2\0\0B\0\2\1K\0\1\0\nsetup\18todo-comments\frequire\0", "config", "todo-comments.nvim")
 time([[Config for todo-comments.nvim]], false)
--- Config for: plantuml-previewer.vim
-time([[Config for plantuml-previewer.vim]], true)
+-- Config for: vim-gist
+time([[Config for vim-gist]], true)
 
-time([[Config for plantuml-previewer.vim]], false)
--- Config for: emmet-vim
-time([[Config for emmet-vim]], true)
-
-time([[Config for emmet-vim]], false)
--- Config for: tabline.nvim
-time([[Config for tabline.nvim]], true)
-try_loadstring("\27LJ\2\nD\0\0\3\0\4\0\a6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\3\0B\0\2\1K\0\1\0\1\0\1\venable\1\nsetup\ftabline\frequire\0", "config", "tabline.nvim")
-time([[Config for tabline.nvim]], false)
--- Config for: undotree
-time([[Config for undotree]], true)
- require('config.undotree') 
-time([[Config for undotree]], false)
+time([[Config for vim-gist]], false)
+-- Load plugins in order defined by `after`
+time([[Sequenced loading]], true)
+vim.cmd [[ packadd nvim-treesitter ]]
+vim.cmd [[ packadd nvim-ts-autotag ]]
+time([[Sequenced loading]], false)
 
 _G._packer.inside_compile = false
 if _G._packer.needs_bufread == true then

@@ -83,30 +83,31 @@ return packer.startup(function(use)
     }
 
     -- vscode-like pictograms for neovim lsp completion items Topics
-    -- use {
-    --     'onsails/lspkind-nvim',
+    use {
+        'onsails/lspkind-nvim',
     --     config = [[ require('config.lspkind') ]]
-    -- }
+    }
 
     -- Utility functions for getting diagnostic status and progress messages
     -- from LSP servers, for use in the Neovim statusline
     use {
         'nvim-lua/lsp-status.nvim',
-        config = [[ require('config.lspstatus') ]]
+        -- config = [[ require('config.lspstatus') ]]
     }
 
     -- Support LSP CodeAction
     use {
         'kosayoda/nvim-lightbulb',
-        config = [[ require('config.nvim-lightbulb') ]]
+        -- config = [[ require('config.nvim-lightbulb') ]]
     }
 
     -- LSP plugin based on Neovim build-in LSP with highly a performant UI
-    -- use {
-    --     'glepnir/lspsaga.nvim',
-    --     requires = { 'neovim/nvim-lspconfig' },
-    --     config = [[ require('config.lspsaga-nvim') ]]
-    -- }
+    use {
+        'glepnir/lspsaga.nvim',
+        branch = 'main',
+        requires = { 'neovim/nvim-lspconfig' },
+        -- config = [[ require('config.lspsaga-nvim') ]]
+    }
 
     -----------------------------------------------------------
     -- Completion: for auto-completion/suggestion/snippets
@@ -135,7 +136,7 @@ return packer.startup(function(use)
         -- config = [[ require('auto-cmp.nvim-cmp') ]]
     }
 
-    -- -- Snippet Engine for Neovim written in Lua.
+    -- Snippet Engine for Neovim written in Lua.
     use {
         'L3MON4D3/LuaSnip',
         requires = {
@@ -152,9 +153,10 @@ return packer.startup(function(use)
     -- Nvim Treesitter configurations and abstraction layer
     use {
         'nvim-treesitter/nvim-treesitter',
-        run = ':TSUpdate',
-        -- config = [[ require('config.treesitter') ]]
-        config = [[ require('config.nvim-treesitter') ]]
+        run = function()
+            local ts_update = require("nvim-treesitter.install").update({ with_sync = true })
+            ts_update()
+        end,
     }
     -- Additional textobjects for treesitter
     use 'nvim-treesitter/nvim-treesitter-textobjects'
@@ -173,7 +175,7 @@ return packer.startup(function(use)
     -- Icons
     use {
         'kyazdani42/nvim-web-devicons',
-        config = [[ require('config.nvim-web-devicons') ]]
+        -- config = [[ require('config.nvim-web-devicons') ]]
     }
     -- use {
     --     'yamatsum/nvim-nonicons',
@@ -187,21 +189,21 @@ return packer.startup(function(use)
             { 'nvim-lua/plenary.nvim', },
             { 'nvim-telescope/telescope-live-grep-raw.nvim' },
         },
-        config = [[ require('config.telescope-nvim') ]]
+        -- config = [[ require('config.telescope-nvim') ]]
     }
 
     -- File/Flolders explorer:nvim-tree
     use {
         'kyazdani42/nvim-tree.lua',
         requires = 'kyazdani42/nvim-web-devicons',
-        config = [[ require('config.nvim-tree') ]]
+        -- config = [[ require('config.nvim-tree') ]]
     }
 
     -- Status Line
     use {
         'nvim-lualine/lualine.nvim',
         requires = {'kyazdani42/nvim-web-devicons', opt = true},
-        config = [[ require('config.lualine.material') ]]
+        -- config = [[ require('config.lualine.material') ]]
         -- config = [[ require('config.lualine.bubbles') ]]
         -- config = [[ require('config.lualine.lualine-nvim') ]]
     }
@@ -215,22 +217,16 @@ return packer.startup(function(use)
             'hoob3rt/lualine.nvim',
             'kyazdani42/nvim-web-devicons'
         },
-        config = function ()
-            require('tabline').setup({ enable = false })
-        end
+        -- config = function ()
+        --     require('tabline').setup({ enable = false })
+        -- end
     }
 
     -- Screen Navigation
     use {
         'folke/which-key.nvim',
-        config = function ()
-            require('config.which-key')
-        end
-        -- 'liuchengxu/vim-which-key',
         -- config = function ()
-        --     if vim.inspect(package.loaded) then
-        --         require('config.vim-which-key')
-        --     end
+        --     require('config.which-key')
         -- end
     }
 
@@ -248,9 +244,9 @@ return packer.startup(function(use)
     use {
         'lewis6991/gitsigns.nvim',
         requires = { 'nvim-lua/plenary.nvim' },
-        config = function ()
-            require('gitsigns').setup()
-        end
+        -- config = function ()
+        --     require('gitsigns').setup()
+        -- end
     }
 
     -- A work-in-progress Magit clone for Neovim that is geared toward the Vim philosophy.
@@ -260,7 +256,7 @@ return packer.startup(function(use)
             'nvim-lua/plenary.nvim',
             'sindrets/diffview.nvim',
         },
-        config = [[ require('config.neogit') ]]
+        -- config = [[ require('config.neogit') ]]
     }
 
     -- for creating gist
@@ -287,34 +283,27 @@ return packer.startup(function(use)
     }
 
     -- Toggle comments in Neovim
-    use { 'tpope/vim-commentary' }
-    -- use {
-    --     'terrortylor/nvim-comment',
-    --     -- config = [[ require('config.nvim-comment') ]]
-    --     config = function ()
-    --         require('nvim_comment').setup()
-    --     end
-    -- }
+    use("numToStr/Comment.nvim")
 
     -- Causes all trailing whitespace characters to be highlighted
     use {
         'ntpeters/vim-better-whitespace',
-        config = vim.cmd([[
-            runtime ./lua/plugins/vim-better-whitespace.rc.vim
-        ]])
+        -- config = vim.cmd([[
+        --     runtime ./lua/plugins/vim-better-whitespace.rc.vim
+        -- ]])
     }
 
     -- Add indentation guides even on blank lines
-    -- use {
-    --     'lukas-reineke/indent-blankline.nvim',
-    --     config = [[ require('config.indent-blankline') ]]
-    -- }
+    use {
+        'lukas-reineke/indent-blankline.nvim',
+        -- config = [[ require('config.indent-blankline') ]]
+    }
 
     -- Auto close parentheses and repeat by dot dot dot ...
     -- use 'jiangmiao/auto-pairs'
     use {
         'windwp/nvim-autopairs',
-        config = [[ require('config.autopairs') ]]
+        -- config = [[ require('config.autopairs') ]]
     }
 
     -- Multiple cursor editting
@@ -323,57 +312,18 @@ return packer.startup(function(use)
     -- visualizes undo history and makes it easier to browse and switch between different undo branches
     use {
         'mbbill/undotree',
-        config = [[ require('config.undotree') ]]
+        -- config = [[ require('config.undotree') ]]
     }
 
     -- HTML
     ---------------------------------------------------------------
 
-    -- provides support for expanding abbreviations similar to emmet
-    use {
-        'mattn/emmet-vim',
-        config = vim.cmd([[
-            runtime ./lua/plugins/emmet-vim.rc.vim
-        ]])
-    }
-
     -- Auto close tag
-    use {
-        'alvan/vim-closetag',
-        config = vim.cmd([[
-            runtime ./lua/plugins/vim-closetag.rc.vim
-        ]])
-    }
-
-    -- Auto change html tags
-    use {
-        'AndrewRadev/tagalong.vim',
-        config = vim.cmd([[
-            runtime ./lua/plugins/tagalong-vim.rc.vim
-        ]])
-    }
-
     -- Use treesitter to autoclose and autorename HTML tag
-    -- use {
-    --     'windwp/nvim-ts-autotag',
-    --     config = [[ require('config.nvim-ts-autotag') ]]
-    -- }
+    use({ "windwp/nvim-ts-autotag", after = "nvim-treesitter" })
 
     -- Python
     ---------------------------------------------------------------
-    -- ALE (Asynchronous Lint Engine) is a plugin providing linting (syntax
-    -- checking and semantic errors) in NeooVim while you edit your text files,
-    -- and acts as a Vim Language Server Protocol client.
-    use {
-        'dense-analysis/ale',
-        config = vim.cmd([[
-            runtime ./lua/plugins/ale.rc.vim
-        ]])
-    }
-
-    --  Modifies Vim’s indentation behavior to comply with PEP8 and my aesthetic preferences.
-    use 'Vimjas/vim-python-pep8-indent'
-
     -- Python: provides text objects and motions for Python classes, methods,
     -- functions and doc strings
     use 'jeetsukumaran/vim-pythonsense'
@@ -391,14 +341,8 @@ return packer.startup(function(use)
         'rcarriga/nvim-dap-ui',
         requires = { 'mfussenegger/nvim-dap' },
     }
-    -- -- nvim-dap unit test tools
-    -- use {
-    --     "rcarriga/vim-ultest",
-    --     requires = {"vim-test/vim-test"},
-    --     run = ":UpdateRemotePlugins",
-    --     config = [[ require('config.ultest').post() ]],
-    -- }
-    -- -- DAP adapter for Python
+
+    -- DAP adapter for Python
     -- use { 'mfussenegger/nvim-dap-python' }
     -- -- DAP adapter for the Neovim lua language
     -- use {
@@ -431,17 +375,17 @@ return packer.startup(function(use)
     -- Markdown preview
     use {
         'instant-markdown/vim-instant-markdown',
-        config = vim.cmd([[
-            runtime ./lua/plugins/vim-instant-markdown.rc.vim
-        ]])
+        -- config = vim.cmd([[
+        --     runtime ./lua/plugins/vim-instant-markdown.rc.vim
+        -- ]])
     }
 
     -- PlantUML
     use {
         'weirongxu/plantuml-previewer.vim',
-        config = vim.cmd([[
-            runtime ./lua/plugins/plantuml-previewer.rc.vim
-        ]])
+        -- config = vim.cmd([[
+        --     runtime ./lua/plugins/plantuml-previewer.rc.vim
+        -- ]])
     }
 
     -- PlantUML syntax highlighting

@@ -9,23 +9,26 @@ vim.api.nvim_command('packadd packer.nvim')
 
 local no_errors, error_msg = pcall(function()
 
-  local time
-  local profile_info
-  local should_profile = false
-  if should_profile then
-    local hrtime = vim.loop.hrtime
-    profile_info = {}
-    time = function(chunk, start)
-      if start then
-        profile_info[chunk] = hrtime()
-      else
-        profile_info[chunk] = (hrtime() - profile_info[chunk]) / 1e6
-      end
+_G._packer = _G._packer or {}
+_G._packer.inside_compile = true
+
+local time
+local profile_info
+local should_profile = false
+if should_profile then
+  local hrtime = vim.loop.hrtime
+  profile_info = {}
+  time = function(chunk, start)
+    if start then
+      profile_info[chunk] = hrtime()
+    else
+      profile_info[chunk] = (hrtime() - profile_info[chunk]) / 1e6
     end
-  else
-    time = function(chunk, start) end
   end
-  
+else
+  time = function(chunk, start) end
+end
+
 local function save_profiles(threshold)
   local sorted_times = {}
   for chunk_name, time_taken in pairs(profile_info) do
@@ -38,8 +41,10 @@ local function save_profiles(threshold)
       results[i] = elem[1] .. ' took ' .. elem[2] .. 'ms'
     end
   end
+  if threshold then
+    table.insert(results, '(Only showing plugins that took longer than ' .. threshold .. ' ms ' .. 'to load)')
+  end
 
-  _G._packer = _G._packer or {}
   _G._packer.profile_output = results
 end
 
@@ -414,78 +419,66 @@ _G.packer_plugins = {
 }
 
 time([[Defining packer_plugins]], false)
--- Config for: todo-comments.nvim
-time([[Config for todo-comments.nvim]], true)
-try_loadstring("\27LJ\2\n?\0\0\3\0\3\0\a6\0\0\0'\2\1\0B\0\2\0029\0\2\0004\2\0\0B\0\2\1K\0\1\0\nsetup\18todo-comments\frequire\0", "config", "todo-comments.nvim")
-time([[Config for todo-comments.nvim]], false)
--- Config for: gitsigns.nvim
-time([[Config for gitsigns.nvim]], true)
-try_loadstring("\27LJ\2\n6\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\rgitsigns\frequire\0", "config", "gitsigns.nvim")
-time([[Config for gitsigns.nvim]], false)
--- Config for: plantuml-previewer.vim
-time([[Config for plantuml-previewer.vim]], true)
-
-time([[Config for plantuml-previewer.vim]], false)
--- Config for: nvim-lightbulb
-time([[Config for nvim-lightbulb]], true)
- require('config.nvim-lightbulb') 
-time([[Config for nvim-lightbulb]], false)
--- Config for: undotree
-time([[Config for undotree]], true)
- require('config.undotree') 
-time([[Config for undotree]], false)
 -- Config for: vim-better-whitespace
 time([[Config for vim-better-whitespace]], true)
 
 time([[Config for vim-better-whitespace]], false)
--- Config for: lsp-status.nvim
-time([[Config for lsp-status.nvim]], true)
- require('config.lspstatus') 
-time([[Config for lsp-status.nvim]], false)
+-- Config for: gitsigns.nvim
+time([[Config for gitsigns.nvim]], true)
+try_loadstring("\27LJ\2\n6\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\rgitsigns\frequire\0", "config", "gitsigns.nvim")
+time([[Config for gitsigns.nvim]], false)
 -- Config for: vim-closetag
 time([[Config for vim-closetag]], true)
 
 time([[Config for vim-closetag]], false)
--- Config for: nvim-tree.lua
-time([[Config for nvim-tree.lua]], true)
- require('config.nvim-tree') 
-time([[Config for nvim-tree.lua]], false)
--- Config for: tabline.nvim
-time([[Config for tabline.nvim]], true)
-try_loadstring("\27LJ\2\nD\0\0\3\0\4\0\a6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\3\0B\0\2\1K\0\1\0\1\0\1\venable\1\nsetup\ftabline\frequire\0", "config", "tabline.nvim")
-time([[Config for tabline.nvim]], false)
--- Config for: lualine.nvim
-time([[Config for lualine.nvim]], true)
- require('config.lualine.material') 
-time([[Config for lualine.nvim]], false)
--- Config for: nvim-treesitter
-time([[Config for nvim-treesitter]], true)
- require('config.nvim-treesitter') 
-time([[Config for nvim-treesitter]], false)
--- Config for: neogit
-time([[Config for neogit]], true)
- require('config.neogit') 
-time([[Config for neogit]], false)
--- Config for: emmet-vim
-time([[Config for emmet-vim]], true)
-
-time([[Config for emmet-vim]], false)
--- Config for: nvim-autopairs
-time([[Config for nvim-autopairs]], true)
- require('config.autopairs') 
-time([[Config for nvim-autopairs]], false)
--- Config for: nvim-web-devicons
-time([[Config for nvim-web-devicons]], true)
- require('config.nvim-web-devicons') 
-time([[Config for nvim-web-devicons]], false)
 -- Config for: which-key.nvim
 time([[Config for which-key.nvim]], true)
 try_loadstring("\27LJ\2\n0\0\0\3\0\2\0\0046\0\0\0'\2\1\0B\0\2\1K\0\1\0\21config.which-key\frequire\0", "config", "which-key.nvim")
 time([[Config for which-key.nvim]], false)
+-- Config for: lsp-status.nvim
+time([[Config for lsp-status.nvim]], true)
+ require('config.lspstatus') 
+time([[Config for lsp-status.nvim]], false)
+-- Config for: nvim-tree.lua
+time([[Config for nvim-tree.lua]], true)
+ require('config.nvim-tree') 
+time([[Config for nvim-tree.lua]], false)
+-- Config for: tagalong.vim
+time([[Config for tagalong.vim]], true)
+
+time([[Config for tagalong.vim]], false)
+-- Config for: nvim-treesitter
+time([[Config for nvim-treesitter]], true)
+ require('config.nvim-treesitter') 
+time([[Config for nvim-treesitter]], false)
+-- Config for: nvim-web-devicons
+time([[Config for nvim-web-devicons]], true)
+ require('config.nvim-web-devicons') 
+time([[Config for nvim-web-devicons]], false)
+-- Config for: lualine.nvim
+time([[Config for lualine.nvim]], true)
+ require('config.lualine.material') 
+time([[Config for lualine.nvim]], false)
+-- Config for: nvim-autopairs
+time([[Config for nvim-autopairs]], true)
+ require('config.autopairs') 
+time([[Config for nvim-autopairs]], false)
+-- Config for: nvim-lightbulb
+time([[Config for nvim-lightbulb]], true)
+ require('config.nvim-lightbulb') 
+time([[Config for nvim-lightbulb]], false)
 -- Config for: vim-instant-markdown
 time([[Config for vim-instant-markdown]], true)
 
 time([[Config for vim-instant-markdown]], false)
+-- Config for: telescope.nvim
+time([[Config for telescope.nvim]], true)
+ require('config.telescope-nvim') 
+time([[Config for telescope.nvim]], false)
+-- Config for: neogit
+time([[Config for neogit]], true)
+ require('config.neogit') 
+time([[Config for neogit]], false)
 -- Config for: vim-gist
 time([[Config for vim-gist]], true)
 
@@ -494,18 +487,38 @@ time([[Config for vim-gist]], false)
 time([[Config for ale]], true)
 
 time([[Config for ale]], false)
--- Config for: telescope.nvim
-time([[Config for telescope.nvim]], true)
- require('config.telescope-nvim') 
-time([[Config for telescope.nvim]], false)
--- Config for: tagalong.vim
-time([[Config for tagalong.vim]], true)
+-- Config for: todo-comments.nvim
+time([[Config for todo-comments.nvim]], true)
+try_loadstring("\27LJ\2\n?\0\0\3\0\3\0\a6\0\0\0'\2\1\0B\0\2\0029\0\2\0004\2\0\0B\0\2\1K\0\1\0\nsetup\18todo-comments\frequire\0", "config", "todo-comments.nvim")
+time([[Config for todo-comments.nvim]], false)
+-- Config for: plantuml-previewer.vim
+time([[Config for plantuml-previewer.vim]], true)
 
-time([[Config for tagalong.vim]], false)
+time([[Config for plantuml-previewer.vim]], false)
+-- Config for: emmet-vim
+time([[Config for emmet-vim]], true)
+
+time([[Config for emmet-vim]], false)
+-- Config for: tabline.nvim
+time([[Config for tabline.nvim]], true)
+try_loadstring("\27LJ\2\nD\0\0\3\0\4\0\a6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\3\0B\0\2\1K\0\1\0\1\0\1\venable\1\nsetup\ftabline\frequire\0", "config", "tabline.nvim")
+time([[Config for tabline.nvim]], false)
+-- Config for: undotree
+time([[Config for undotree]], true)
+ require('config.undotree') 
+time([[Config for undotree]], false)
+
+_G._packer.inside_compile = false
+if _G._packer.needs_bufread == true then
+  vim.cmd("doautocmd BufRead")
+end
+_G._packer.needs_bufread = false
+
 if should_profile then save_profiles() end
 
 end)
 
 if not no_errors then
+  error_msg = error_msg:gsub('"', '\\"')
   vim.api.nvim_command('echohl ErrorMsg | echom "Error in packer_compiled: '..error_msg..'" | echom "Please check your config for correctness" | echohl None')
 end

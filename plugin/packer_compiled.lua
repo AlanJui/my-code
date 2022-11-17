@@ -79,10 +79,10 @@ _G.packer_plugins = {
     path = "/Users/alanjui/.local/share/my-code/site/pack/packer/start/Comment.nvim",
     url = "https://github.com/numToStr/Comment.nvim"
   },
-  ["DAPInstall.nvim"] = {
+  ["FixCursorHold.nvim"] = {
     loaded = true,
-    path = "/Users/alanjui/.local/share/my-code/site/pack/packer/start/DAPInstall.nvim",
-    url = "https://github.com/Pocco81/DAPInstall.nvim"
+    path = "/Users/alanjui/.local/share/my-code/site/pack/packer/start/FixCursorHold.nvim",
+    url = "https://github.com/antoinemadec/FixCursorHold.nvim"
   },
   LuaSnip = {
     loaded = true,
@@ -109,6 +109,11 @@ _G.packer_plugins = {
     path = "/Users/alanjui/.local/share/my-code/site/pack/packer/start/cmp-cmdline",
     url = "https://github.com/hrsh7th/cmp-cmdline"
   },
+  ["cmp-dap"] = {
+    loaded = true,
+    path = "/Users/alanjui/.local/share/my-code/site/pack/packer/start/cmp-dap",
+    url = "https://github.com/rcarriga/cmp-dap"
+  },
   ["cmp-emoji"] = {
     loaded = true,
     path = "/Users/alanjui/.local/share/my-code/site/pack/packer/start/cmp-emoji",
@@ -134,6 +139,16 @@ _G.packer_plugins = {
     path = "/Users/alanjui/.local/share/my-code/site/pack/packer/start/cmp_luasnip",
     url = "https://github.com/saadparwaiz1/cmp_luasnip"
   },
+  ["consolation.nvim"] = {
+    loaded = true,
+    path = "/Users/alanjui/.local/share/my-code/site/pack/packer/start/consolation.nvim",
+    url = "https://github.com/pianocomposer321/consolation.nvim"
+  },
+  ["dap-buddy.nvim"] = {
+    loaded = true,
+    path = "/Users/alanjui/.local/share/my-code/site/pack/packer/start/dap-buddy.nvim",
+    url = "https://github.com/Pocco81/dap-buddy.nvim"
+  },
   ["diffview.nvim"] = {
     loaded = true,
     path = "/Users/alanjui/.local/share/my-code/site/pack/packer/start/diffview.nvim",
@@ -143,6 +158,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/alanjui/.local/share/my-code/site/pack/packer/start/friendly-snippets",
     url = "https://github.com/rafamadriz/friendly-snippets"
+  },
+  ["fzf-lua"] = {
+    loaded = true,
+    path = "/Users/alanjui/.local/share/my-code/site/pack/packer/start/fzf-lua",
+    url = "https://github.com/ibhagwan/fzf-lua"
   },
   ["gitsigns.nvim"] = {
     loaded = true,
@@ -219,6 +239,11 @@ _G.packer_plugins = {
     path = "/Users/alanjui/.local/share/my-code/site/pack/packer/start/nvim-dap",
     url = "https://github.com/mfussenegger/nvim-dap"
   },
+  ["nvim-dap-python"] = {
+    loaded = true,
+    path = "/Users/alanjui/.local/share/my-code/site/pack/packer/start/nvim-dap-python",
+    url = "https://github.com/mfussenegger/nvim-dap-python"
+  },
   ["nvim-dap-ui"] = {
     loaded = true,
     path = "/Users/alanjui/.local/share/my-code/site/pack/packer/start/nvim-dap-ui",
@@ -275,6 +300,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/alanjui/.local/share/my-code/site/pack/packer/start/oceanic-next",
     url = "https://github.com/mhartington/oceanic-next"
+  },
+  ["one-small-step-for-vimkind"] = {
+    loaded = true,
+    path = "/Users/alanjui/.local/share/my-code/site/pack/packer/start/one-small-step-for-vimkind",
+    url = "https://github.com/jbyuki/one-small-step-for-vimkind"
   },
   ["open-browser.vim"] = {
     loaded = true,
@@ -338,7 +368,6 @@ _G.packer_plugins = {
     url = "https://github.com/folke/todo-comments.nvim"
   },
   ["toggleterm.nvim"] = {
-    config = { "\27LJ\2\n8\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\15toggleterm\frequire\0" },
     loaded = true,
     path = "/Users/alanjui/.local/share/my-code/site/pack/packer/start/toggleterm.nvim",
     url = "https://github.com/akinsho/toggleterm.nvim"
@@ -379,6 +408,11 @@ _G.packer_plugins = {
     path = "/Users/alanjui/.local/share/my-code/site/pack/packer/start/vim-instant-markdown",
     url = "https://github.com/instant-markdown/vim-instant-markdown"
   },
+  ["vim-maximizer"] = {
+    loaded = true,
+    path = "/Users/alanjui/.local/share/my-code/site/pack/packer/start/vim-maximizer",
+    url = "https://github.com/szw/vim-maximizer"
+  },
   ["vim-moonfly-colors"] = {
     loaded = true,
     path = "/Users/alanjui/.local/share/my-code/site/pack/packer/start/vim-moonfly-colors",
@@ -409,6 +443,11 @@ _G.packer_plugins = {
     path = "/Users/alanjui/.local/share/my-code/site/pack/packer/start/vim-surround",
     url = "https://github.com/tpope/vim-surround"
   },
+  ["vim-tmux-navigator"] = {
+    loaded = true,
+    path = "/Users/alanjui/.local/share/my-code/site/pack/packer/start/vim-tmux-navigator",
+    url = "https://github.com/christoomey/vim-tmux-navigator"
+  },
   ["webapi-vim"] = {
     loaded = true,
     path = "/Users/alanjui/.local/share/my-code/site/pack/packer/start/webapi-vim",
@@ -418,22 +457,23 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/alanjui/.local/share/my-code/site/pack/packer/start/which-key.nvim",
     url = "https://github.com/folke/which-key.nvim"
+  },
+  ["yabs.nvim"] = {
+    loaded = true,
+    path = "/Users/alanjui/.local/share/my-code/site/pack/packer/start/yabs.nvim",
+    url = "https://github.com/pianocomposer321/yabs.nvim"
   }
 }
 
 time([[Defining packer_plugins]], false)
--- Config for: todo-comments.nvim
-time([[Config for todo-comments.nvim]], true)
-try_loadstring("\27LJ\2\n?\0\0\3\0\3\0\a6\0\0\0'\2\1\0B\0\2\0029\0\2\0004\2\0\0B\0\2\1K\0\1\0\nsetup\18todo-comments\frequire\0", "config", "todo-comments.nvim")
-time([[Config for todo-comments.nvim]], false)
 -- Config for: vim-gist
 time([[Config for vim-gist]], true)
 
 time([[Config for vim-gist]], false)
--- Config for: toggleterm.nvim
-time([[Config for toggleterm.nvim]], true)
-try_loadstring("\27LJ\2\n8\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\15toggleterm\frequire\0", "config", "toggleterm.nvim")
-time([[Config for toggleterm.nvim]], false)
+-- Config for: todo-comments.nvim
+time([[Config for todo-comments.nvim]], true)
+try_loadstring("\27LJ\2\n?\0\0\3\0\3\0\a6\0\0\0'\2\1\0B\0\2\0029\0\2\0004\2\0\0B\0\2\1K\0\1\0\nsetup\18todo-comments\frequire\0", "config", "todo-comments.nvim")
+time([[Config for todo-comments.nvim]], false)
 -- Load plugins in order defined by `after`
 time([[Sequenced loading]], true)
 vim.cmd [[ packadd nvim-treesitter ]]

@@ -35,6 +35,7 @@ LSP_SERVERS = {
 	"emmet_ls",
 	"html",
 	"cssls",
+	"tailwindcss",
 	"stylelint_lsp",
 	"eslint",
 	"jsonls",
@@ -108,7 +109,7 @@ elseif INSTALLED then
 	-- 否則：略過擴充套件設定的載入。
 
 	-- Neovim kernel
-	-- require('plugins-rc.nvim-treesitter')
+	require("plugins-rc.nvim-treesitter")
 
 	-- lsp
 	require("lsp.auto-cmp")
@@ -131,29 +132,29 @@ elseif INSTALLED then
 	-- editting tools
 	require("plugins-rc.comment-nvim")
 	require("plugins-rc.autopairs")
-	-- require('plugins-rc.nvim-ts-autotag')
-	-- require('plugins-rc.undotree')
-	-- vim.cmd([[runtime ./lua/plugins-rc/vim-closetag.rc.vim]])
-	-- vim.cmd([[runtime ./lua/plugins-rc/tagalong-vim.rc.vim]])
+	require("plugins-rc.nvim-ts-autotag")
+	require("plugins-rc.undotree")
 
 	-- programming
 	require("plugins-rc.toggleterm")
-	-- require('plugins-rc.yabs')
+	require("plugins-rc.consolation-nvim")
+	require("plugins-rc.yabs")
 
 	-- versional control
 	require("plugins-rc.neogit")
 	require("plugins-rc.gitsigns")
 	require("plugins-rc.vim-gist")
 	-- vim.cmd([[ runtime ./lua/plugins-rc/vim-signify.rc.vim]])
+
 	-- Utilities
-	-- vim.cmd([[runtime ./lua/plugins-rc/bracey.rc.vim]])
-	-- vim.cmd([[runtime ./lua/plugins-rc/vim-instant-markdown.rc.vim]])
-	-- vim.cmd([[runtime ./lua/plugins-rc/plantuml-previewer.rc.vim]])
-	-- vim.cmd([[runtime ./lua/plugins-rc/vimtex.rc.vim]])
+	vim.cmd([[runtime ./lua/plugins-rc/bracey.rc.vim]])
+	vim.cmd([[runtime ./lua/plugins-rc/vim-instant-markdown.rc.vim]])
+	vim.cmd([[runtime ./lua/plugins-rc/plantuml-previewer.rc.vim]])
+	vim.cmd([[runtime ./lua/plugins-rc/vimtex.rc.vim]])
 
 	-- debug
-	-- require('dap-debug')
-	-- require('plugins-rc.ultest')
+	require("dap-debug")
+	require("plugins-rc.ultest")
 end
 
 -----------------------------------------------------------

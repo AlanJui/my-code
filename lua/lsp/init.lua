@@ -112,6 +112,7 @@ local on_attach = function(client, bufnr)
 	keymap.set("n", "<leader>d", "<cmd>Lspsaga show_cursor_diagnostics<CR>", opts) -- show diagnostics for cursor
 	keymap.set("n", "[d", "<cmd>Lspsaga diagnostic_jump_prev<CR>", opts) -- jump to previous diagnostic in buffer
 	keymap.set("n", "]d", "<cmd>Lspsaga diagnostic_jump_next<CR>", opts) -- jump to next diagnostic in buffer
+	keymap.set("n", "gl", "<cmd>lua vim.diagnostic.open_float()<CR>", opts)
 	keymap.set("n", "K", "<cmd>Lspsaga hover_doc<CR>", opts) -- show documentation for what is under cursor
 	keymap.set("n", "<leader>o", "<cmd>LSoutlineToggle<CR>", opts) -- see outline on right hand side
 
@@ -160,6 +161,109 @@ vim.lsp.handlers["textDocument/signatureHelp"] = vim.lsp.with(vim.lsp.handlers.s
 -----------------------------------------------------------------------------------------------
 -- Setup LSP client for connectting to LSP server
 -----------------------------------------------------------------------------------------------
+
+-- require("mason-lspconfig").setup_handlers({
+--     -- The first entry (without a key) will be the default handler
+--     -- and will be called for each installed server that doesn't have
+--     -- a dedicated handler.
+--     function (server_name) -- default handler (optional)
+--         require("lspconfig")[server_name].setup({})
+--     end,
+--     -- Next, you can provide a dedicated handler for specific servers.
+--     -- For example, a handler override for the `rust_analyzer`:
+--     ["sumneko_lua"] = function()
+--         lsp_config.sumneko_lua.setup({
+--             settings = {
+--                 Lua = {
+--                     diagnostics = {
+--                         globals = { 'vim' }
+--                     }
+--                 }
+--             }
+--         })
+--     end,
+--     ["pyright"] = function ()
+--         lsp_config.pyright.setup({
+--             cmd = { "pyright-langserver", "--stdio" },
+--             root_dir = function ()
+--                 return vim.loop.cwd()
+--             end,
+--             filetypes = { 'python' },
+--             settings = {
+--                 python = {
+--                     analysis = {
+--                         autoSearchPaths = true,
+--                         diagnosticMode = 'workspace',
+--                         useLibraryCodeForTypes = true,
+--                         typeCheckingMode = 'off',
+--                         logLevel = 'Error',
+--                     },
+--                     -- linting = {
+--                     --     pylintArgs = {
+--                     --         '--load-plugins=pylint_django',
+--                     --         '--load-plugins=pylint_dango.checkers.migrations',
+--                     --         '--errors-only',
+--                     --     },
+--                     -- },
+--                 },
+--             },
+--             single_file_support = true,
+--         })
+--     end,
+--     ["jsonls"] = function ()
+--         lsp_config.jsonls.setup({
+--             filetypes = { 'json', 'jsonc' },
+--             settings = {
+--                 json = {
+--                     schemas = require('lsp/json-schemas'),
+--                 },
+--             },
+--             setup = {
+--                 commands = {
+--                     Format = {
+--                         function()
+--                             vim.lsp.buf.range_formatting({}, { 0, 0 }, { vim.fn.line('$'), 0 })
+--                         end,
+--                     },
+--                 },
+--             },
+--             init_options = {
+--                 provideFormatter = true,
+--             },
+--             single_file_support = true,
+--         })
+--     end,
+-- })
+
+-- configure pyright server
+lspconfig["pyright"].setup({
+	cmd = { "pyright-langserver", "--stdio" },
+	root_dir = function()
+		return vim.loop.cwd()
+	end,
+	filetypes = { "python" },
+	settings = {
+		python = {
+			analysis = {
+				autoSearchPaths = true,
+				diagnosticMode = "workspace",
+				useLibraryCodeForTypes = true,
+				typeCheckingMode = "off",
+				logLevel = "Error",
+			},
+			linting = {
+				pylintArgs = {
+					"--load-plugins=pylint_django",
+					"--load-plugins=pylint_dango.checkers.migrations",
+					"--errors-only",
+				},
+			},
+		},
+	},
+	single_file_support = true,
+	capabilities = capabilities,
+	on_attach = on_attach,
+})
 
 -- configure html server
 lspconfig["html"].setup({ capabilities = capabilities, on_attach = on_attach })

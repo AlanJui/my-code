@@ -1,39 +1,164 @@
 --------------------------------------------------------------------
--- (1) LSP config
--- (2) Autocomplete
+-- (1) Auto-completion
+-- (2) Enable Maon
+-- (2) Enable UI for LSP
 -----------------------------------------------------------
+
+-- import mason plugin safely
+local mason_status, mason = pcall(require, "mason")
+if not mason_status then
+  return
+end
+
+-- import mason-lspconfig plugin safely
+local mason_lspconfig_status, mason_lspconfig = pcall(require, "mason-lspconfig")
+if not mason_lspconfig_status then
+  return
+end
+
+-- import mason-null-ls plugin safely
+local mason_null_ls_status, mason_null_ls = pcall(require, "mason-null-ls")
+if not mason_null_ls_status then
+  return
+end
+
+-----------------------------------------------------------
+-- Enable mason
+-----------------------------------------------------------
+
+mason.setup()
+
+-----------------------------------------------------------------------------------------------
+-- Auto-install LSP Servers
+-----------------------------------------------------------------------------------------------
+
+-- mason_lspconfig.setup({
+--     ensure_installed = LSP_SERVERS,
+--     automatic_installation = true,
+-- })
+
+mason_lspconfig.setup({
+    -- list of servers for mason to install
+    ensure_installed = {
+        'tsserver',
+        'html',
+        'cssls',
+        'tailwindcss',
+        'sumneko_lua',
+        'emmet_ls',
+    },
+    -- auto-install configured servers (with lspconfig)
+    automatic_installation = true, 
+})
+
+mason_null_ls.setup({
+  -- list of formatters & linters for mason to install
+  ensure_installed = {
+    "prettier", -- ts/js formatter
+    "stylua", -- lua formatter
+    "eslint_d", -- ts/js linter
+  },
+  -- auto-install configured formatters & linters (with null-ls)
+  automatic_installation = true,
+})
+
+-----------------------------------------------------------
+-- Enbale LspSaga
+-----------------------------------------------------------
+
+-- import lspsaga safely
+local saga_status, saga = pcall(require, "lspsaga")
+if not saga_status then
+  return
+end
+
+saga.init_lsp_saga({
+  -- keybinds for navigation in lspsaga window
+  move_in_saga = { prev = "<C-k>", next = "<C-j>" },
+  -- use enter to open file with finder
+  finder_action_keys = {
+    open = "<CR>",
+  },
+  -- use enter to open file with definition preview
+  definition_action_keys = {
+    edit = "<CR>",
+  },
+})
+
+-----------------------------------------------------------
+-- Setup configuration for LSP
+-----------------------------------------------------------
+
+-- import lspconfig plugin safely
+local lspconfig_status, lspconfig = pcall(require, "lspconfig")
+if not lspconfig_status then
+  return
+end
+
+-- import cmp-nvim-lsp plugin safely
+local cmp_nvim_lsp_status, cmp_nvim_lsp = pcall(require, "cmp_nvim_lsp")
+if not cmp_nvim_lsp_status then
+  return
+end
+
+-- import typescript plugin safely
+local typescript_setup, typescript = pcall(require, "typescript")
+if not typescript_setup then
+  return
+end
 
 ---
 -- Keybindings
 ---
 
-vim.api.nvim_create_autocmd('LspAttach', {
-  desc = 'LSP actions',
-  callback = function()
-    local bufmap = function(mode, lhs, rhs)
-      local opts = {buffer = true}
-      vim.keymap.set(mode, lhs, rhs, opts)
-    end
+local keymap = vim.keymap -- for conciseness
 
-    bufmap('n', 'K', '<cmd>lua vim.lsp.buf.hover()<cr>')
-    bufmap('n', 'gd', '<cmd>lua vim.lsp.buf.definition()<cr>')
-    bufmap('n', 'gD', '<cmd>lua vim.lsp.buf.declaration()<cr>')
-    bufmap('n', 'gi', '<cmd>lua vim.lsp.buf.implementation()<cr>')
-    bufmap('n', 'go', '<cmd>lua vim.lsp.buf.type_definition()<cr>')
-    bufmap('n', 'gr', '<cmd>lua vim.lsp.buf.references()<cr>')
-    bufmap('n', '<C-k>', '<cmd>lua vim.lsp.buf.signature_help()<cr>')
-    bufmap('n', '<F2>', '<cmd>lua vim.lsp.buf.rename()<cr>')
-    bufmap('n', '<F4>', '<cmd>lua vim.lsp.buf.code_action()<cr>')
-    bufmap('x', '<F4>', '<cmd>lua vim.lsp.buf.range_code_action()<cr>')
-    bufmap('n', 'gl', '<cmd>lua vim.diagnostic.open_float()<cr>')
-    bufmap('n', '[d', '<cmd>lua vim.diagnostic.goto_prev()<cr>')
-    bufmap('n', ']d', '<cmd>lua vim.diagnostic.goto_next()<cr>')
+-- enable keybinds only for when lsp server available
+local on_attach = function(client, bufnr)
+  -- keybind options
+  local opts = { noremap = true, silent = true, buffer = bufnr }
+
+  -- set keybinds
+  keymap.set("n", "gf", "<cmd>Lspsaga lsp_finder<CR>", opts) -- show definition, references
+  keymap.set("n", "gD", "<Cmd>lua vim.lsp.buf.declaration()<CR>", opts) -- got to declaration
+  keymap.set("n", "gd", "<cmd>Lspsaga peek_definition<CR>", opts) -- see definition and make edits in window
+  keymap.set("n", "gi", "<cmd>lua vim.lsp.buf.implementation()<CR>", opts) -- go to implementation
+  keymap.set("n", "<leader>ca", "<cmd>Lspsaga code_action<CR>", opts) -- see available code actions
+  keymap.set("n", "<leader>rn", "<cmd>Lspsaga rename<CR>", opts) -- smart rename
+  keymap.set("n", "<leader>d", "<cmd>Lspsaga show_line_diagnostics<CR>", opts) -- show  diagnostics for line
+  keymap.set("n", "<leader>d", "<cmd>Lspsaga show_cursor_diagnostics<CR>", opts) -- show diagnostics for cursor
+  keymap.set("n", "[d", "<cmd>Lspsaga diagnostic_jump_prev<CR>", opts) -- jump to previous diagnostic in buffer
+  keymap.set("n", "]d", "<cmd>Lspsaga diagnostic_jump_next<CR>", opts) -- jump to next diagnostic in buffer
+  keymap.set("n", "K", "<cmd>Lspsaga hover_doc<CR>", opts) -- show documentation for what is under cursor
+  keymap.set("n", "<leader>o", "<cmd>LSoutlineToggle<CR>", opts) -- see outline on right hand side
+
+  -- typescript specific keymaps (e.g. rename file and update imports)
+  if client.name == "tsserver" then
+    keymap.set("n", "<leader>rf", ":TypescriptRenameFile<CR>") -- rename file and update imports
+    keymap.set("n", "<leader>oi", ":TypescriptOrganizeImports<CR>") -- organize imports (not in youtube nvim video)
+    keymap.set("n", "<leader>ru", ":TypescriptRemoveUnused<CR>") -- remove unused variables (not in youtube nvim video)
   end
-})
+end
+
+---
+-- Enable autocompletion
+---
+
+-- used to enable autocompletion (assign to every lsp server config)
+local capabilities = cmp_nvim_lsp.default_capabilities()
 
 ---
 -- Diagnostics
 ---
+
+-- Change the Diagnostic symbols in the sign column (gutter)
+-- (not in youtube nvim video)
+local signs = { Error = " ", Warn = " ", Hint = "ﴞ ", Info = " " }
+
+for type, icon in pairs(signs) do
+  local hl = "DiagnosticSign" .. type
+  vim.fn.sign_define(hl, { text = icon, texthl = hl, numhl = "" })
+end
 
 local sign = function(opts)
   vim.fn.sign_define(opts.name, {
@@ -42,11 +167,6 @@ local sign = function(opts)
     numhl = ''
   })
 end
-
-sign({name = 'DiagnosticSignError', text = '✘'})
-sign({name = 'DiagnosticSignWarn', text = ' '})
-sign({name = 'DiagnosticSignHint', text = ''})
-sign({name = 'DiagnosticSignInfo', text = ''})
 
 vim.diagnostic.config({
   virtual_text = false,
@@ -70,230 +190,59 @@ vim.lsp.handlers['textDocument/signatureHelp'] = vim.lsp.with(
 )
 
 -----------------------------------------------------------------------------------------------
--- Setup mason
------------------------------------------------------------------------------------------------
-local mason = safe_require("mason")
-if not mason then
-	return
-end
-
-mason.setup({
-	ui = {
-		icons = {
-			server_installed = "✓",
-			server_pending = "➜",
-			server_uninstalled = "✗",
-		},
-	}
-})
-
------------------------------------------------------------------------------------------------
--- Auto-install LSP Servers
------------------------------------------------------------------------------------------------
-require('mason-lspconfig').setup({
-    ensure_installed = LSP_SERVERS,
-    automatic_installation = true,
-})
-
------------------------------------------------------------------------------------------------
 -- Setup LSP client for connectting to LSP server
 -----------------------------------------------------------------------------------------------
-local lsp_config = safe_require("lspconfig")
-if not lsp_config then
-	return
-end
 
-local lsp_defaults = lsp_config.util.default_config
-lsp_defaults.capabilities = vim.tbl_deep_extend(
-    'force',
-    lsp_defaults.capabilities,
-    -- Add additional capabliities supported by nvim-cmp
-    require('cmp_nvim_lsp').default_capabilities()
-)
-
----
--- LSP servers
----
-require('mason-lspconfig').setup()
-
-require("mason-lspconfig").setup_handlers({
-    -- The first entry (without a key) will be the default handler
-    -- and will be called for each installed server that doesn't have
-    -- a dedicated handler.
-    function (server_name) -- default handler (optional)
-        require("lspconfig")[server_name].setup({})
-    end,
-    -- Next, you can provide a dedicated handler for specific servers.
-    -- For example, a handler override for the `rust_analyzer`:
-    ["sumneko_lua"] = function()
-        lsp_config.sumneko_lua.setup({
-            settings = {
-                Lua = {
-                    diagnostics = {
-                        globals = { 'vim' }
-                    }
-                }
-            }
-        })
-    end,
-    ["pyright"] = function ()
-        lsp_config.pyright.setup({
-            cmd = { "pyright-langserver", "--stdio" },
-            root_dir = function ()
-                return vim.loop.cwd()
-            end,
-            filetypes = { 'python' },
-            settings = {
-                python = {
-                    analysis = {
-                        autoSearchPaths = true,
-                        diagnosticMode = 'workspace',
-                        useLibraryCodeForTypes = true,
-                        typeCheckingMode = 'off',
-                        logLevel = 'Error',
-                    },
-                    -- linting = {
-                    --     pylintArgs = {
-                    --         '--load-plugins=pylint_django',
-                    --         '--load-plugins=pylint_dango.checkers.migrations',
-                    --         '--errors-only',
-                    --     },
-                    -- },
-                },
-            },
-            single_file_support = true,
-        })
-    end,
-    ["jsonls"] = function ()
-        lsp_config.jsonls.setup({
-            filetypes = { 'json', 'jsonc' },
-            settings = {
-                json = {
-                    schemas = require('lsp/json-schemas'),
-                },
-            },
-            setup = {
-                commands = {
-                    Format = {
-                        function()
-                            vim.lsp.buf.range_formatting({}, { 0, 0 }, { vim.fn.line('$'), 0 })
-                        end,
-                    },
-                },
-            },
-            init_options = {
-                provideFormatter = true,
-            },
-            single_file_support = true,
-        })
-    end,
+-- configure html server
+lspconfig["html"].setup({
+  capabilities = capabilities,
+  on_attach = on_attach,
 })
 
-------------------------------------------------------------
--- Autocomplete
-------------------------------------------------------------
-vim.opt.completeopt = {'menu', 'menuone', 'noselect'}
-
---
--- Add Snippets
---
-
--- Load your own custom vscode style snippets
-require("luasnip.loaders.from_vscode").lazy_load({
-	paths = {
-		CONFIG_DIR .. "/my-snippets",
-		RUNTIME_DIR .. "/site/pack/packer/start/friendly-snippets",
-	},
+-- configure typescript server with plugin
+typescript.setup({
+  server = {
+    capabilities = capabilities,
+    on_attach = on_attach,
+  },
 })
--- extends filetypes supported by snippets
-require("luasnip").filetype_extend("vimwik", { "markdown" })
-require("luasnip").filetype_extend("html", { "htmldjango" })
 
---
--- Setup cmp.nvim
---
+-- configure css server
+lspconfig["cssls"].setup({
+  capabilities = capabilities,
+  on_attach = on_attach,
+})
 
-local cmp = require('cmp')
-local luasnip = require('luasnip')
+-- configure tailwindcss server
+lspconfig["tailwindcss"].setup({
+  capabilities = capabilities,
+  on_attach = on_attach,
+})
 
-local select_opts = {behavior = cmp.SelectBehavior.Select}
+-- configure emmet language server
+lspconfig["emmet_ls"].setup({
+  capabilities = capabilities,
+  on_attach = on_attach,
+  filetypes = { "html", "typescriptreact", "javascriptreact", "css", "sass", "scss", "less", "svelte" },
+})
 
-cmp.setup({
-  snippet = {
-    expand = function(args)
-      luasnip.lsp_expand(args.body)
-    end
-  },
-  sources = {
-    {name = 'path'},
-    {name = 'nvim_lsp', keyword_length = 1},
-    {name = 'buffer', keyword_length = 1},
-    {name = 'luasnip', keyword_length = 1},
-  },
-  window = {
-    documentation = cmp.config.window.bordered()
-  },
-  formatting = {
-    fields = {'menu', 'abbr', 'kind'},
-    format = function(entry, item)
-      local menu_icon = {
-        nvim_lsp = 'λ',
-        luasnip = '⋗',
-        buffer = 'Ω',
-        path = '🖫',
-      }
-
-      item.menu = menu_icon[entry.source.name]
-      return item
-    end,
-  },
-  mapping = {
-    ['<Up>'] = cmp.mapping.select_prev_item(select_opts),
-    ['<Down>'] = cmp.mapping.select_next_item(select_opts),
-
-    ['<C-p>'] = cmp.mapping.select_prev_item(select_opts),
-    ['<C-n>'] = cmp.mapping.select_next_item(select_opts),
-
-    ['<C-u>'] = cmp.mapping.scroll_docs(-4),
-    ['<C-f>'] = cmp.mapping.scroll_docs(4),
-
-    ['<C-e>'] = cmp.mapping.abort(),
-    ['<CR>'] = cmp.mapping.confirm({select = false}),
-
-    ['<C-d>'] = cmp.mapping(function(fallback)
-      if luasnip.jumpable(1) then
-        luasnip.jump(1)
-      else
-        fallback()
-      end
-    end, {'i', 's'}),
-
-    ['<C-b>'] = cmp.mapping(function(fallback)
-      if luasnip.jumpable(-1) then
-        luasnip.jump(-1)
-      else
-        fallback()
-      end
-    end, {'i', 's'}),
-
-    ['<Tab>'] = cmp.mapping(function(fallback)
-      local col = vim.fn.col('.') - 1
-
-      if cmp.visible() then
-        cmp.select_next_item(select_opts)
-      elseif col == 0 or vim.fn.getline('.'):sub(col, col):match('%s') then
-        fallback()
-      else
-        cmp.complete()
-      end
-    end, {'i', 's'}),
-
-    ['<S-Tab>'] = cmp.mapping(function(fallback)
-      if cmp.visible() then
-        cmp.select_prev_item(select_opts)
-      else
-        fallback()
-      end
-    end, {'i', 's'}),
+-- configure lua server (with special settings)
+lspconfig["sumneko_lua"].setup({
+  capabilities = capabilities,
+  on_attach = on_attach,
+  settings = { -- custom settings for lua
+    Lua = {
+      -- make the language server recognize "vim" global
+      diagnostics = {
+        globals = { "vim" },
+      },
+      workspace = {
+        -- make language server aware of runtime files
+        library = {
+          [vim.fn.expand("$VIMRUNTIME/lua")] = true,
+          [vim.fn.stdpath("config") .. "/lua"] = true,
+        },
+      },
+    },
   },
 })

@@ -68,12 +68,9 @@ return packer.startup(function(use)
     -- LSP/LspInstaller: configurations for the Nvim LSP client
     -----------------------------------------------------------
 
-    -- companion plugin for nvim-lspconfig that allows you to seamlessly
-    -- install LSP servers locally
-    use {
-        'williamboman/nvim-lsp-installer',
-        -- config = [[ require('config.nvim-lsp-installer') ]]
-    }
+    -- managing & installing lsp servers, linters & formatters
+    use("williamboman/mason.nvim") -- in charge of managing lsp servers, linters & formatters
+    use("williamboman/mason-lspconfig.nvim") -- bridges gap b/w mason & lspconfig
 
     -- A collection of common configurations for Neovim's built-in language
     -- server client
@@ -81,6 +78,22 @@ return packer.startup(function(use)
         'neovim/nvim-lspconfig',
         -- config = [[ require('config.nvim-lspconfig') ]]
     }
+
+    -- formatting & linting
+    use("jose-elias-alvarez/null-ls.nvim") -- configure formatters & linters
+    use("jayp0521/mason-null-ls.nvim") -- bridges gap b/w mason & null-ls
+
+    -- LSP plugin based on Neovim build-in LSP with highly a performant UI
+    use {
+        'glepnir/lspsaga.nvim',
+        branch = 'main',
+        requires = { 'neovim/nvim-lspconfig' },
+        -- config = [[ require('config.lspsaga-nvim') ]]
+    }
+
+    -- additional functionality for typescript server 
+    -- (e.g. rename file & update imports)
+    use("jose-elias-alvarez/typescript.nvim") 
 
     -- vscode-like pictograms for neovim lsp completion items Topics
     use {
@@ -99,14 +112,6 @@ return packer.startup(function(use)
     use {
         'kosayoda/nvim-lightbulb',
         -- config = [[ require('config.nvim-lightbulb') ]]
-    }
-
-    -- LSP plugin based on Neovim build-in LSP with highly a performant UI
-    use {
-        'glepnir/lspsaga.nvim',
-        branch = 'main',
-        requires = { 'neovim/nvim-lspconfig' },
-        -- config = [[ require('config.lspsaga-nvim') ]]
     }
 
     -----------------------------------------------------------
@@ -166,10 +171,10 @@ return packer.startup(function(use)
     -----------------------------------------------------------
 
     -- colorscheme for neovim written in lua specially made for roshnvim
+    use("bluz71/vim-nightfly-guicolors") -- preferred colorscheme
     use 'shaeinst/roshnivim-cs'
     use 'mhartington/oceanic-next'
     use 'bluz71/vim-moonfly-colors'
-    use 'bluz71/vim-nightfly-guicolors'
     use 'folke/tokyonight.nvim'
 
     -- Icons
@@ -183,8 +188,10 @@ return packer.startup(function(use)
     -- }
 
     -- Fuzzy files finder
+    use({ "nvim-telescope/telescope-fzf-native.nvim", run = "make" }) -- dependency for better sorting performance
     use {
         'nvim-telescope/telescope.nvim',
+        branch = '0.1.x',
         requires = {
             { 'nvim-lua/plenary.nvim', },
             { 'nvim-telescope/telescope-live-grep-raw.nvim' },
@@ -286,12 +293,7 @@ return packer.startup(function(use)
     use("numToStr/Comment.nvim")
 
     -- Causes all trailing whitespace characters to be highlighted
-    use {
-        'ntpeters/vim-better-whitespace',
-        -- config = vim.cmd([[
-        --     runtime ./lua/plugins/vim-better-whitespace.rc.vim
-        -- ]])
-    }
+    use({ "cappyzawa/trim.nvim" })
 
     -- Add indentation guides even on blank lines
     use {
@@ -355,7 +357,13 @@ return packer.startup(function(use)
     -----------------------------------------------------------
 
     -- Floater Terminal
-    use 'voldikss/vim-floaterm'
+    use({
+        "akinsho/toggleterm.nvim",
+        tag = "*",
+        config = function ()
+            require("toggleterm").setup()
+        end
+    })
 
     -- highlight your todo comments in different styles
     use {

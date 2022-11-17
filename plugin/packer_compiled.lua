@@ -179,10 +179,30 @@ _G.packer_plugins = {
     path = "/Users/alanjui/.local/share/my-code/site/pack/packer/start/lualine.nvim",
     url = "https://github.com/nvim-lualine/lualine.nvim"
   },
+  ["mason-lspconfig.nvim"] = {
+    loaded = true,
+    path = "/Users/alanjui/.local/share/my-code/site/pack/packer/start/mason-lspconfig.nvim",
+    url = "https://github.com/williamboman/mason-lspconfig.nvim"
+  },
+  ["mason-null-ls.nvim"] = {
+    loaded = true,
+    path = "/Users/alanjui/.local/share/my-code/site/pack/packer/start/mason-null-ls.nvim",
+    url = "https://github.com/jayp0521/mason-null-ls.nvim"
+  },
+  ["mason.nvim"] = {
+    loaded = true,
+    path = "/Users/alanjui/.local/share/my-code/site/pack/packer/start/mason.nvim",
+    url = "https://github.com/williamboman/mason.nvim"
+  },
   neogit = {
     loaded = true,
     path = "/Users/alanjui/.local/share/my-code/site/pack/packer/start/neogit",
     url = "https://github.com/TimUntersberger/neogit"
+  },
+  ["null-ls.nvim"] = {
+    loaded = true,
+    path = "/Users/alanjui/.local/share/my-code/site/pack/packer/start/null-ls.nvim",
+    url = "https://github.com/jose-elias-alvarez/null-ls.nvim"
   },
   ["nvim-autopairs"] = {
     loaded = true,
@@ -213,11 +233,6 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/alanjui/.local/share/my-code/site/pack/packer/start/nvim-lightbulb",
     url = "https://github.com/kosayoda/nvim-lightbulb"
-  },
-  ["nvim-lsp-installer"] = {
-    loaded = true,
-    path = "/Users/alanjui/.local/share/my-code/site/pack/packer/start/nvim-lsp-installer",
-    url = "https://github.com/williamboman/nvim-lsp-installer"
   },
   ["nvim-lspconfig"] = {
     loaded = true,
@@ -301,6 +316,11 @@ _G.packer_plugins = {
     path = "/Users/alanjui/.local/share/my-code/site/pack/packer/start/telescope-dap.nvim",
     url = "https://github.com/nvim-telescope/telescope-dap.nvim"
   },
+  ["telescope-fzf-native.nvim"] = {
+    loaded = true,
+    path = "/Users/alanjui/.local/share/my-code/site/pack/packer/start/telescope-fzf-native.nvim",
+    url = "https://github.com/nvim-telescope/telescope-fzf-native.nvim"
+  },
   ["telescope-live-grep-raw.nvim"] = {
     loaded = true,
     path = "/Users/alanjui/.local/share/my-code/site/pack/packer/start/telescope-live-grep-raw.nvim",
@@ -317,25 +337,31 @@ _G.packer_plugins = {
     path = "/Users/alanjui/.local/share/my-code/site/pack/packer/start/todo-comments.nvim",
     url = "https://github.com/folke/todo-comments.nvim"
   },
+  ["toggleterm.nvim"] = {
+    config = { "\27LJ\2\n8\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\15toggleterm\frequire\0" },
+    loaded = true,
+    path = "/Users/alanjui/.local/share/my-code/site/pack/packer/start/toggleterm.nvim",
+    url = "https://github.com/akinsho/toggleterm.nvim"
+  },
   ["tokyonight.nvim"] = {
     loaded = true,
     path = "/Users/alanjui/.local/share/my-code/site/pack/packer/start/tokyonight.nvim",
     url = "https://github.com/folke/tokyonight.nvim"
   },
+  ["trim.nvim"] = {
+    loaded = true,
+    path = "/Users/alanjui/.local/share/my-code/site/pack/packer/start/trim.nvim",
+    url = "https://github.com/cappyzawa/trim.nvim"
+  },
+  ["typescript.nvim"] = {
+    loaded = true,
+    path = "/Users/alanjui/.local/share/my-code/site/pack/packer/start/typescript.nvim",
+    url = "https://github.com/jose-elias-alvarez/typescript.nvim"
+  },
   undotree = {
     loaded = true,
     path = "/Users/alanjui/.local/share/my-code/site/pack/packer/start/undotree",
     url = "https://github.com/mbbill/undotree"
-  },
-  ["vim-better-whitespace"] = {
-    loaded = true,
-    path = "/Users/alanjui/.local/share/my-code/site/pack/packer/start/vim-better-whitespace",
-    url = "https://github.com/ntpeters/vim-better-whitespace"
-  },
-  ["vim-floaterm"] = {
-    loaded = true,
-    path = "/Users/alanjui/.local/share/my-code/site/pack/packer/start/vim-floaterm",
-    url = "https://github.com/voldikss/vim-floaterm"
   },
   ["vim-fugitive"] = {
     loaded = true,
@@ -404,6 +430,10 @@ time([[Config for todo-comments.nvim]], false)
 time([[Config for vim-gist]], true)
 
 time([[Config for vim-gist]], false)
+-- Config for: toggleterm.nvim
+time([[Config for toggleterm.nvim]], true)
+try_loadstring("\27LJ\2\n8\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\15toggleterm\frequire\0", "config", "toggleterm.nvim")
+time([[Config for toggleterm.nvim]], false)
 -- Load plugins in order defined by `after`
 time([[Sequenced loading]], true)
 vim.cmd [[ packadd nvim-treesitter ]]

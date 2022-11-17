@@ -1,14 +1,14 @@
 {
-  "djextlayout": {
+  "Django Tutorial: template extending layout.html": {
     "prefix": "djextlayout",
     "body": [
-      "{% extends \"base.html\" %}",
-      "",
-      "{% block title %}$1{% endblock title %}",
+      "{% extends \"$1/layout.html\" %}",
+      "{% block title %}",
+      "$2",
+      "{% endblock %}",
       "",
       "{% block content %}",
-      "$2",
-      "{% endblock content %}"
+      "{% endblock %}"
     ],
     "description": "Boilerplate template that extends layout.html"
   },
@@ -121,10 +121,10 @@
   "dj_form_asp": {
     "prefix": "dj_form_asp",
     "body": [
-      "<form method=\"post\" class=\"${1:form-horizontal}\">",
-      "  {% csrf_token %}",
-      "  {{ form.as_p }}",
-      "  <button type=\"submit\" class=\"btn btn-primary\">$2</button>",
+      "<form method=\"POST\" class=\"${2:form-horizontal}\">",
+      "\t{% csrf_token %}",
+      "\t{{ form.as_p }}",
+      "\t<button type=\"submit\" class=\"btn btn-primary\">$1</button>",
       "</form>"
     ],
     "description": "Django: form as_p"
@@ -133,10 +133,10 @@
   "dj_form_new": {
     "prefix": "dj_form_new",
     "body": [
-      "<form method=\"post\" class=\"${1:form-horizontal}\">",
-      "  {% csrf_token %}",
-      "  $3",
-      "  <button type=\"submit\" class=\"btn btn-primary\">$2</button>",
+      "<form method=\"POST\" class=\"${1:form-horizontal}\">",
+      "\t{% csrf_token %}",
+      "\t$3",
+      "\t<button type=\"submit\" class=\"btn btn-primary\">$2</button>",
       "</form>"
     ],
     "description": "Django: new form"
@@ -199,6 +199,12 @@
     "description": "Django: block title"
   },
 
+  "dj_blkt1": {
+    "prefix": "dj_blkt1",
+    "body": ["{% block title %}\n$1\n{% endblock %}"],
+    "description": "Django: block title"
+  },
+
   "dj_blksrc": {
     "prefix": "dj_blksrc",
     "body": [
@@ -206,7 +212,7 @@
       "<script src=\"$1\"></script>",
       "",
       "<script>",
-      "  $2",
+      "\t$2",
       "</script>",
       "{% endblock javascript %}",
       ""
@@ -257,7 +263,36 @@
     ],
     "description": "Django: HTML tags for View"
   },
-
+  "dj_html": {
+    "prefix": "dj_html",
+    "body": [
+      "{% load static %}",
+      "<!DOCTYPE html>",
+      "<html lang=\"zh-tw\">",
+      "<head>",
+      "    <meta charset=\"UTF-8\">",
+      "    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">",
+      "    <title>{% block title %}{% endblock%}</title>",
+      "    <link rel=\"stylesheet\" href=\"{% static '$1/$2.css' %}\">",
+      "</head>",
+      "<body>",
+      "    <div class=\"navbar\">",
+      "        <a href=\"{% url 'home' %}\" class=\"navbar-brand\">Home</a>",
+      "        <a href=\"{% url 'about' %}\" class=\"navbar-item\">About</a>",
+      "        <a href=\"{% url 'contact' %}\" class=\"navbar-item\">Contact</a>",
+      "    </div>",
+      "    <div class=\"body-content\">",
+      "        {% block content %}{% endblock %}",
+      "        <hr/>",
+      "        <footer>",
+      "            <p>&copy; 2022</p>",
+      "        </footer>",
+      "    </div>",
+      "</body>",
+      "</html>"
+    ],
+    "description": "Django: base.html"
+  },
   "dj_base": {
     "prefix": "dj_base",
     "body": [
@@ -270,6 +305,7 @@
       "    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">",
       "    <title>{% block title %}{% endblock%}</title>",
       "    <link rel=\"stylesheet\" href=\"{% static 'css/bootstrap.css' %}\">",
+      "    <link rel=\"stylesheet\" href=\"{% static '$1/$2.css' %}\">",
       "</head>",
       "<body>",
       "    <div class=\"container\">",
@@ -288,8 +324,8 @@
       "    <script src=\"{% static 'js/layer.js' %}\"></script>",
       "",
       "    {% block javascript %}{% endblock %}",
-      "</html>",
-      ""
+      "</body>",
+      "</html>"
     ],
     "description": "Django: base.html"
   }

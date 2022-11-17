@@ -112,9 +112,7 @@ elseif INSTALLED then
 	require("plugins-rc.nvim-treesitter")
 
 	-- lsp
-	require("lsp.auto-cmp")
 	require("lsp")
-	require("lsp.null-langserver")
 
 	-- status line
 	require("plugins-rc.lualine-material")
@@ -130,6 +128,7 @@ elseif INSTALLED then
 	require("plugins-rc.nvim-tree")
 
 	-- editting tools
+	require("plugins-rc.trim-nvim")
 	require("plugins-rc.comment-nvim")
 	require("plugins-rc.autopairs")
 	require("plugins-rc.nvim-ts-autotag")
